@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field"
+	default-cascade="save-update">
+	<class name="domain.User">
+		<id column="ID" name="id">
+			<generator class="native" />
+		</id>
+		<property name="userName" />
+		<property name="password" />
+		<property name="mail" />
+		<one-to-one name="profile" class="domain.Profile" cascade="all"/>
+		<bag name="tours" lazy="false" >
+            <key column="TourUserId" />
+            <many-to-many class="domain.Tour"  />
+        </bag>
+        <bag name="events" lazy="false" >
+            <key column="EventUserId" />
+            <many-to-many class="domain.Event"  />
+        </bag>
+        <bag name="friends" lazy="false" >
+            <key column="FriendsUserId" />
+            <many-to-many class="domain.User"  />
+        </bag>
+        <bag name="friendsRequests" lazy="false" >
+            <key column="FriendsRequestsUserId" />
+            <many-to-many class="domain.User"  />
+        </bag>
+		<property name="logged" type="boolean"/>
+	</class>
+</hibernate-mapping>

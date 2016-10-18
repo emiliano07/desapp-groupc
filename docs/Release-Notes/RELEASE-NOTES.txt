@@ -1,0 +1,18 @@
+---------------------------------------------------------------------
+Entrega_1.0
+---------------------------------------------------------------------
+NEW FEATURES:
+* Configuración del entorno de desarrollo.
+* Modelo de objetos implementado.
+* Coverage del modelo mayor al 90% con test unitarios.
+* Pantalla prototipo del uso de la API de gmaps.
+* Diagrama UML del modelo.
+* 4 Mockups de las ventanas de la aplicación.
+
+NOTES:
+* Falta implementar el medio de transporte de los usuarios.
+* Falta implementar un usuario administrador.
+
+KNOWN ISSUES:
+* Los algoritmos de búsqueda de eventos son bastante sencillos. Habría que pensar si es necesario mejorarlos (tener en cuenta la interacción con Hibernate).
+* Buscar una alternativa a la implementación de los enums para evitar complicaciones a la hora de persistir.

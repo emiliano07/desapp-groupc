@@ -1,0 +1,29 @@
+<div style="margin: 10px">
+
+	<div style="font-size: 25px"><b><u>Upcoming Events</u></b>
+	</div>
+
+	<div style="overflow-y: scroll; height: 500px; margin-top: 10px">
+		<div class="wrap-col" ng-repeat="event in events">
+			<div class="heading">
+				<div style="font-size: 20px"><b>{{event.address}}</b>
+				</div>
+				<div class="info">{{event.scheduler}}
+				</div>
+			</div>
+			<auto;class="content">
+			<table>
+				<tr>
+					<td>
+						<img src="images/300x300.jpg"/>
+					</td>
+					<td style="padding-left: 10px">
+						<p>{{event.amount}}</p>
+						<p class="more"><a class="button" href="#">Details</a></p>
+					</td>
+				</tr>
+			</table>
+			<hr>
+		</div>
+	</div>
+</div>

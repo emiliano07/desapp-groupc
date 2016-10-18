@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>googleMaps</title>
+    <script type="text/javascript" src="map.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, rater-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+.busquedaDeUbicacion {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 32px;
+  outline: none;
+}
+
+#origin-input,
+#destination-input {
+  background-color: #fff;
+  font-size: 18px;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  width: 250px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: #100707;
+}
+
+#mode-selector {
+  color: #fff;
+  background-color: #84AE68;
+  margin-left: 12px;
+  padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+  </style>
+  </head>
+  <body>
+    <input id="origin-input" class="busquedaDeUbicacion" type="text"
+        placeholder="origin location">
+
+    <input id="destination-input" class="busquedaDeUbicacion" type="text"
+        placeholder="destination location">
+
+    <div id="mode-selector" class="busquedaDeUbicacion">
+      <input type="radio" name="type" id="changemode-walking" checked="checked">
+      <label for="changemode-walking">Walking</label>
+
+      <input type="radio" name="type" id="changemode-driving">
+      <label for="changemode-driving">Driving</label>
+    </div>
+
+    <div id="map"></div>
+
+    <script></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuHSg0SPQeuyyCIo6GC60Qw-ENLX--LLI&signed_in=true&libraries=places&callback=initMap" async defer></script>
+  </body>
+</html>

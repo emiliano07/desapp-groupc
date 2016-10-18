@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field"
+	default-cascade="save-update">
+	<class name="domain.Tour">
+		<id column="ID" name="id">
+			<generator class="native" />
+		</id>
+		<property name="type" />
+		<property name="scheduler" />
+		<property name="date" />
+		<property name="amount" />
+		<property name="limitAmount" />
+		<bag name="friends" lazy="false" >
+            <key column="FriendId" />
+            <many-to-many class="domain.User"  />
+        </bag>
+		<bag name="eventOptions1" lazy="false" >
+            <key column="EventOptions1Id" />
+            <many-to-many class="domain.Event"  />
+        </bag>
+		<bag name="eventOptions2" lazy="false" >
+            <key column="EventOptions2Id" />
+            <many-to-many class="domain.Event"  />
+        </bag>
+		<property name="event1" />
+		<property name="event2" />
+		
+	</class>
+</hibernate-mapping>
