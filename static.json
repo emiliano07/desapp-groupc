@@ -1,5 +1,5 @@
 {
-  "root": "desapp-grupoc-frontend/dist",
+  "root": "desapp-groupc-frontend/app",
   "clean_urls": true,
   "proxies": {
     "/api/": {
