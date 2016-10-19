@@ -1,1 +1,0 @@
-web: cd desapp-groupc-backend && java -jar target/dependency/jetty-runner.jar --port $PORT target/*.war
