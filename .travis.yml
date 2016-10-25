@@ -3,4 +3,4 @@ script: cd desapp-groupc-backend && mvn clean install
 deploy:
   provider: heroku
   api_key: 502b795a-1210-464b-80f7-6bb1c00b65f1
-  app: stain
+  app: stain-backend
