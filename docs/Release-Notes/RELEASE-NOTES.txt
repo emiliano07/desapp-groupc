@@ -16,3 +16,32 @@ NOTES:
 KNOWN ISSUES:
 * Los algoritmos de búsqueda de eventos son bastante sencillos. Habría que pensar si es necesario mejorarlos (tener en cuenta la interacción con Hibernate).
 * Buscar una alternativa a la implementación de los enums para evitar complicaciones a la hora de persistir.
+
+---------------------------------------------------------------------
+Entrega_2.0
+---------------------------------------------------------------------
+NEW FEATURES:
+* Creación de datos "fake" para probar la aplicación.
+* Page Login.
+* Page Home.
+* View Perfil: Sincronización con la Page Home y primeras ideas de la estructura.
+* View Eventos: Sincronización con la Page Home y primeras ideas de la estructura.
+* Publicación de WebServices REST para Usuarios [CRUD y LIST].
+* Publicación de WebServices REST para Eventos [CRUD y LIST].
+* Persistencia de Eventos con Hibernate.
+* Persistencia de Usuarios con Hibernate.
+* Configuración del deploy en Heroku.
+
+NOTES:
+* Falta implementar el medio de transporte de los usuarios.
+* Falta implementar un usuario administrador.
+* Falta implementar I18n- US_ES.
+* Falta implementar la auditoria de servicios (Loguear <timestamp,user,operación/metodo,parámetros>, de los servicios publicados con Spring en un archivo AUDIT.LOG).
+
+KNOWN ISSUES:
+* Los algoritmos de búsqueda de eventos son bastante sencillos. Habría que pensar si es necesario mejorarlos (tener en cuenta la interacción con Hibernate).
+* Page Home: Es una page muy basica. Deberiamos definir algunas ideas para un mejor diseño e implementarlas.
+* Page Login: Bindear el contenido con el backend.
+* View Perfil: Hay que definir ideas de diseño e implementarlas.
+* View Eventos: Hay que definir ideas de diseño e implementarlas.
+* Dividir los controllers y app en archivos separados.
