@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+import domain.auth0.GoogleOauthCredential;
 import domain.exceptions.UserNotLoggedException;
 import domain.types.TypeOfScheduler;
 import domain.types.TypeOfTour;
@@ -24,12 +25,23 @@ public class User extends Entity{
 	public Sistem sistem; 
 	public List<User> friendsRequests;
 	public Boolean logged;
+	public String name;
+	public String image;
+	public GoogleOauthCredential token;
 	
 	public User() {}
-	public User(String userName, String password, String mail) {
+	public User(String name,String userName, String password, String mail,String image) {
 		this.userName = userName;
 		this.password = password;
 		this.mail = mail;
+		this.name = name;
+		this.image = image;
+	}
+	public User(String name,String userName, String password, String mail) {
+		this.userName = userName;
+		this.password = password;
+		this.mail = mail;
+		this.name = name;
 	}
 	public User(Sistem sistem, String userName, String password, String mail){
 		this.userName = userName;
@@ -42,6 +54,8 @@ public class User extends Entity{
 		this.sistem = sistem;
 		this.friendsRequests = new ArrayList<User>();
 		this.logged = false;
+		this.image = null;
+		this.name = null;
 	}
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -176,4 +190,21 @@ public class User extends Entity{
 	public void setLogged(Boolean logged){
 		this.logged = logged;
 	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public void setImage(String image){
+		this.image = image;
+	}
+	
+    
+    public GoogleOauthCredential getToken() {
+        return token;
+    }
+
+    public void setToken(GoogleOauthCredential token) {
+        this.token = token;
+    }
 }

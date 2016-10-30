@@ -28,5 +28,7 @@
             <many-to-many class="domain.User"  />
         </bag>
 		<property name="logged" type="boolean"/>
+		<property name="name" />
+		<property name="image" />
 	</class>
 </hibernate-mapping>

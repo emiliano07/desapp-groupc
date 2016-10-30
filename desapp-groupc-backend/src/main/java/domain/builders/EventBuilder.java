@@ -16,6 +16,9 @@ public class EventBuilder {
 	private int amount;
 	private int limitOfPersons;
 	private ArrayList<Event> suggestions;
+	private String name;
+	private String description;
+	private String image;
 	
 	
 	public EventBuilder(){
@@ -26,6 +29,9 @@ public class EventBuilder {
 		this.amount = 100;
 		this.limitOfPersons = 2;
 		this.suggestions = new ArrayList<Event>();
+		this.name = "no-name";
+		this.description = "no-description";
+		this.image = "no-image";
     }
     
 	public static EventBuilder aEvent(){
@@ -33,7 +39,7 @@ public class EventBuilder {
     }
 	
 	 public Event build(){
-		 Event event =  new Event(types, date, scheduler, address, amount, limitOfPersons);
+		 Event event =  new Event(types, date, scheduler, address, amount, limitOfPersons,name,description,image);
 		 event.setSuggestions(suggestions);
 	     return event;
 	 }
@@ -70,6 +76,21 @@ public class EventBuilder {
 	 
 	 public EventBuilder withSuggestions(ArrayList<Event> suggestions){
 		 this.suggestions = suggestions;
+	     return this;
+	 }
+	 
+	 public EventBuilder withName(String name){
+		 this.name = name;
+	     return this;
+	 }
+	 
+	 public EventBuilder withDescription(String description){
+		 this.description = description;
+	     return this;
+	 }
+	 
+	 public EventBuilder withImage(String image){
+		 this.image = image;
 	     return this;
 	 }
 }

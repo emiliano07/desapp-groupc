@@ -16,6 +16,9 @@
             <key column="SuggestionsOfEventId" />
             <many-to-many class="domain.Event"  />
         </bag>
+        <property name="name" />
+        <property name="description" length="1000"/>
+        <property name="image" />
 		
 	</class>
 </hibernate-mapping>

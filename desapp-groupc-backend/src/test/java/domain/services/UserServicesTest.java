@@ -26,7 +26,7 @@ public class UserServicesTest {
 	@Test
 	public void singUp() {
 		try {
-			userService.signUp("emimancu","1234","emimancu@gmail.com");
+			userService.signUp("Mancuso Emiliano","emimancu","1234","emimancu@gmail.com","image");
 		} catch (SingUpException e) {
 			Assert.fail("Usuario o Email Existente");
 		}

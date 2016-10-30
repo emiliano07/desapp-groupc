@@ -22,6 +22,8 @@ public class UserBuilder {
 	private Sistem sistem;
 	private ArrayList<User> friendsRequests;
 	private Boolean logged;
+	private String name;
+	private String image;
 	
 	public UserBuilder(){
 		this.userName = "UserName";
@@ -34,6 +36,8 @@ public class UserBuilder {
         this.sistem = new Sistem(new LogSistem());
         this.friendsRequests = new ArrayList<User>();
         this.logged = false;
+        this.image = "no-image";
+        this.name = "no-name";
     }
     
 	public static UserBuilder aUser(){
@@ -48,6 +52,8 @@ public class UserBuilder {
 		 user.setFriends(friends);
 		 user.setFriendsRequests(friendsRequests);
 		 user.setLogged(logged);
+		 user.setImage(image);
+		 user.setName(name);
 	     return user;
 	 }
 	 
@@ -93,6 +99,16 @@ public class UserBuilder {
 	 
 	 public UserBuilder withLogged(Boolean logged){
 		 this.logged = logged;
+	     return this;
+	 }
+	 
+	 public UserBuilder withName(String name){
+		 this.name = name;
+	     return this;
+	 }
+	 
+	 public UserBuilder withImage(String image){
+		 this.image = image;
 	     return this;
 	 }
 }

@@ -31,9 +31,10 @@ public class UserService extends GenericService<User>{
 	}
 	
 	@Transactional
-    public User signUp(String userName, String email, String password) throws SingUpException {
+    public User signUp(String name,String userName, String email, String password, String image) throws SingUpException {
         validateUser(userName,email);
-        User user = new User (userName,password,email);
+        User user = new User (name,userName,password,email);
+        user.setImage(image);
         userRepository.save(user);
         user = userRepository.findById(user.getId());
         return user;

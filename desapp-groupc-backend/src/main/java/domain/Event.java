@@ -20,9 +20,12 @@ public class Event extends Entity{
 	public int amount;
 	public int limitOfPersons;
 	public List<Event> suggestions;
+	public String name;
+	public String description;
+	public String image;
 	
 	public Event(){}
-	public Event(List<Type> types, Date date, TypeOfScheduler scheduler, String address, int amount, int limitOfPersons){
+	public Event(List<Type> types, Date date, TypeOfScheduler scheduler, String address, int amount, int limitOfPersons, String name, String description, String image){
 		this.types = types;
 		this.date = date;
 		this.scheduler = scheduler;
@@ -30,6 +33,9 @@ public class Event extends Entity{
 		this.amount = amount;
 		this.limitOfPersons = limitOfPersons;
 		this.suggestions = new ArrayList<Event>();
+		this.name = name;
+		this.description = description;
+		this.image = image;
 	}
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////

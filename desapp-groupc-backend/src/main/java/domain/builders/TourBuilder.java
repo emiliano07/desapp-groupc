@@ -33,8 +33,8 @@ public class TourBuilder {
 		this.friends = new ArrayList<User>();
 		this.eventOptions1 = new ArrayList<Event>();
 		this.eventOptions2 = new ArrayList<Event>();
-		this.event1 = new Event(new ArrayList<Type>(), new Date(), TypeOfScheduler.MORNING, "no-address", 100, 2);
-		this.event2 = new Event(new ArrayList<Type>(), new Date(), TypeOfScheduler.MORNING, "no-address", 200, 4);
+		this.event1 = new Event(new ArrayList<Type>(), new Date(), TypeOfScheduler.MORNING, "no-address", 100, 2,"no-name","no-description","no-image");
+		this.event2 = new Event(new ArrayList<Type>(), new Date(), TypeOfScheduler.MORNING, "no-address", 200, 4,"no-name","no-description","no-image");
 	}		
     
 	public static TourBuilder aTour(){
