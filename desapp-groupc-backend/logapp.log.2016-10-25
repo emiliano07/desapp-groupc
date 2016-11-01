@@ -1,0 +1,243 @@
+2016-10-25 21:09:14,796 INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:285) - Root WebApplicationContext: initialization started
+2016-10-25 21:09:15,298 INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:510) - Refreshing Root WebApplicationContext: startup date [Tue Oct 25 21:09:15 ART 2016]; root of context hierarchy
+2016-10-25 21:09:15,419 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from URL [file:/C:/Users/Emiliano/Desktop/UNQ/Programación/Cuatrimestre%20Actual/Desarrollo%20de%20Aplicaciones/Git%20-%20Desarrollo%20de%20Aplicaciones/desapp-groupc/desapp-groupc-backend/target/classes/META-INF/spring-persistence-context.xml]
+2016-10-25 21:09:15,798 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from URL [file:/C:/Users/Emiliano/Desktop/UNQ/Programación/Cuatrimestre%20Actual/Desarrollo%20de%20Aplicaciones/Git%20-%20Desarrollo%20de%20Aplicaciones/desapp-groupc/desapp-groupc-backend/target/classes/META-INF/spring-services-context.xml]
+2016-10-25 21:09:15,925 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2016-10-25 21:09:16,012 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2016-10-25 21:09:16,076 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2016-10-25 21:09:16,123 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml]
+2016-10-25 21:09:16,164 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2016-10-25 21:09:17,709 INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/Users/Emiliano/Desktop/UNQ/Programación/Cuatrimestre%20Actual/Desarrollo%20de%20Aplicaciones/Git%20-%20Desarrollo%20de%20Aplicaciones/desapp-groupc/desapp-groupc-backend/target/classes/META-INF/hibernate.properties]
+2016-10-25 21:09:17,712 INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/Users/Emiliano/Desktop/UNQ/Programación/Cuatrimestre%20Actual/Desarrollo%20de%20Aplicaciones/Git%20-%20Desarrollo%20de%20Aplicaciones/desapp-groupc/desapp-groupc-backend/target/classes/META-INF/jdbc.properties]
+2016-10-25 21:09:19,185 INFO  org.hibernate.annotations.common.reflection.java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-10-25 21:09:19,212 INFO  org.hibernate.Version (Version.java:54) - HHH000412: Hibernate Core {4.3.6.Final}
+2016-10-25 21:09:19,219 INFO  org.hibernate.cfg.Environment (Environment.java:239) - HHH000206: hibernate.properties not found
+2016-10-25 21:09:19,227 INFO  org.hibernate.cfg.Environment (Environment.java:346) - HHH000021: Bytecode provider name : javassist
+2016-10-25 21:09:19,414 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-10-25 21:09:19,557 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-10-25 21:09:19,591 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-10-25 21:09:19,626 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-10-25 21:09:21,114 INFO  org.hibernate.dialect.Dialect (Dialect.java:145) - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2016-10-25 21:09:21,362 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator (TransactionFactoryInitiator.java:62) - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-10-25 21:09:21,373 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory (ASTQueryTranslatorFactory.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+2016-10-25 21:09:21,806 INFO  org.hibernate.tuple.PojoInstantiator (PojoInstantiator.java:85) - HHH000182: No default (no-argument) constructor for class: domain.Tour (class must be instantiated by Interceptor)
+2016-10-25 21:09:22,229 INFO  org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:343) - HHH000227: Running hbm2ddl schema export
+2016-10-25 21:09:22,239 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Event_suggestions drop constraint FK_9nwl220ucpw8ygpwbus2bhhcs
+2016-10-25 21:09:22,239 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.EVENT_SUGGESTIONS
+2016-10-25 21:09:22,240 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Event_suggestions drop constraint FK_kmqk2bs6ng1od3ym1uskt93ej
+2016-10-25 21:09:22,241 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.EVENT_SUGGESTIONS
+2016-10-25 21:09:22,242 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_eventOptions1 drop constraint FK_mbw8gd6s5f7obj4bx2mg9dn3v
+2016-10-25 21:09:22,242 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_EVENTOPTIONS1
+2016-10-25 21:09:22,243 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_eventOptions1 drop constraint FK_gac8qo6m9dddy6q9u6bsmnkwt
+2016-10-25 21:09:22,243 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_EVENTOPTIONS1
+2016-10-25 21:09:22,245 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_eventOptions2 drop constraint FK_au1901pv5mgikf144wcmag9ve
+2016-10-25 21:09:22,246 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_EVENTOPTIONS2
+2016-10-25 21:09:22,246 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_eventOptions2 drop constraint FK_gf2o3qescdxr4lgnrrncl7ce6
+2016-10-25 21:09:22,247 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_EVENTOPTIONS2
+2016-10-25 21:09:22,247 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_friends drop constraint FK_7g27vvs19apxfyqwv0plnppii
+2016-10-25 21:09:22,247 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_FRIENDS
+2016-10-25 21:09:22,248 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_friends drop constraint FK_xajk8k082q2x0nq6kruroanr
+2016-10-25 21:09:22,249 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_FRIENDS
+2016-10-25 21:09:22,249 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_events drop constraint FK_4pr39bb5dojmtrovuvf5sdtey
+2016-10-25 21:09:22,249 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_EVENTS
+2016-10-25 21:09:22,250 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_events drop constraint FK_mfjjiiilgb4i5dibnlfw9xnsr
+2016-10-25 21:09:22,250 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_EVENTS
+2016-10-25 21:09:22,250 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_friends drop constraint FK_skh40ccucn70buj38cuq3yxol
+2016-10-25 21:09:22,251 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_FRIENDS
+2016-10-25 21:09:22,251 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_friends drop constraint FK_o3t7elxbo5l1iumd35oh6tjfd
+2016-10-25 21:09:22,252 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_FRIENDS
+2016-10-25 21:09:22,252 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_friendsRequests drop constraint FK_8dcfkc86yuiemlc0fvx9q9w4x
+2016-10-25 21:09:22,252 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_FRIENDSREQUESTS
+2016-10-25 21:09:22,253 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_friendsRequests drop constraint FK_sqcfmg76e4a8ksahcj2eu0fc5
+2016-10-25 21:09:22,253 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_FRIENDSREQUESTS
+2016-10-25 21:09:22,253 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_tours drop constraint FK_rce1xefw9f2e00o1s264j0klm
+2016-10-25 21:09:22,254 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_TOURS
+2016-10-25 21:09:22,254 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_tours drop constraint FK_9uff7s7qrh7ulblt7nbm1c8sw
+2016-10-25 21:09:22,254 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_TOURS
+2016-10-25 21:09:22,294 INFO  org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:405) - HHH000230: Schema export complete
+2016-10-25 21:09:22,385 INFO  org.springframework.orm.hibernate4.HibernateTransactionManager (HibernateTransactionManager.java:360) - Using DataSource [org.apache.commons.dbcp.BasicDataSource@5bb3d42d] of Hibernate SessionFactory for HibernateTransactionManager
+2016-10-25 21:09:22,403 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-10-25 21:09:22,464 INFO  org.springframework.jdbc.support.SQLErrorCodesFactory (SQLErrorCodesFactory.java:126) - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-10-25 21:09:23,321 INFO  org.apache.cxf.endpoint.ServerImpl (ServerImpl.java:93) - Setting the server's publish address to be null
+2016-10-25 21:09:25,035 INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:325) - Root WebApplicationContext: initialization completed in 10213 ms
+2016-10-25 21:09:25,224 INFO  org.eclipse.jetty.util.log.Log (Log.java:186) - Logging initialized @14208ms
+2016-10-25 21:09:25,645 INFO  org.apache.cxf.transport.servlet.CXFServlet (CXFServlet.java:139) - Load the bus with application context
+2016-10-25 21:09:25,656 INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:510) - Refreshing org.apache.cxf.bus.spring.BusApplicationContext@5fac521d: startup date [Tue Oct 25 21:09:25 ART 2016]; parent: Root WebApplicationContext
+2016-10-25 21:09:25,967 INFO  org.apache.cxf.transport.servlet.AbstractCXFServlet (AbstractCXFServlet.java:115) - Servlet transport factory already registered 
+2016-10-25 21:10:40,501 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+--------------------------------------
+2016-10-25 21:10:40,501 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/allEvents
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+--------------------------------------
+2016-10-25 21:10:41,783 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 26 Oct 2016 00:10:40 GMT]}
+Payload: [{"id":1,"types":null,"date":1477440564879,"scheduler":"NIGHT","address":"Pilar","amount":100,"limitOfPersons":2,"suggestions":[]},{"id":2,"types":null,"date":1477440564880,"scheduler":"NIGHT","address":"Castelar","amount":100,"limitOfPersons":2,"suggestions":[]},{"id":3,"types":null,"date":1477440564880,"scheduler":"NIGHT","address":"Villa Crespo","amount":100,"limitOfPersons":2,"suggestions":[]}]
+--------------------------------------
+2016-10-25 21:10:41,783 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 26 Oct 2016 00:10:40 GMT]}
+Payload: [{"id":2,"userName":"emimancu","password":"sanlorenzo","mail":"emimancu@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"emimancu"},{"id":3,"userName":"alanmarino","password":"rockandroll","mail":"alanmarino@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"alanmarino"},{"id":4,"userName":"martinez","password":"1234","mail":"martinez@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"martinez"},{"id":5,"userName":"lopez","password":"12345","mail":"lopez@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"lopez"},{"id":6,"userName":"juanPablo","password":"123456","mail":"juanPablo@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"juanPablo"},{"id":7,"userName":"juanMartin","password":"1234567","mail":"juanMartin@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"juanMartin"},{"id":8,"userName":"ivanFernandez","password":"12345678","mail":"ivanFernandez@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"ivanFernandez"},{"id":9,"userName":"joseLuis12","password":"123456789","mail":"joseLuis12@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"joseLuis12"}]
+--------------------------------------
+2016-10-25 21:10:41,829 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1
+Http-Method: OPTIONS
+Content-Type: 
+Headers: {Accept=[*/*], accept-encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8,es;q=0.6], Access-Control-Request-Headers=[content-type], Access-Control-Request-Method=[POST], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+--------------------------------------
+2016-10-25 21:10:41,833 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Content-Type: text/xml
+Headers: {Allow=[POST, GET, OPTIONS, HEAD], Date=[Wed, 26 Oct 2016 00:10:41 GMT]}
+--------------------------------------
+2016-10-25 21:10:41,844 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 4
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json;charset=UTF-8
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Length=[2], content-type=[application/json;charset=UTF-8], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+Payload: {}
+--------------------------------------
+2016-10-25 21:10:42,088 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Content-Type: text/xml
+Headers: {ETag=[El evento fue agregado correctamente], Date=[Wed, 26 Oct 2016 00:10:42 GMT]}
+--------------------------------------
+2016-10-25 21:10:44,330 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 5
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+--------------------------------------
+2016-10-25 21:10:44,331 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 6
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/allEvents
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+--------------------------------------
+2016-10-25 21:10:44,361 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 6
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 26 Oct 2016 00:10:44 GMT]}
+Payload: [{"id":1,"types":null,"date":1477440564879,"scheduler":"NIGHT","address":"Pilar","amount":100,"limitOfPersons":2,"suggestions":[]},{"id":2,"types":null,"date":1477440564880,"scheduler":"NIGHT","address":"Castelar","amount":100,"limitOfPersons":2,"suggestions":[]},{"id":3,"types":null,"date":1477440564880,"scheduler":"NIGHT","address":"Villa Crespo","amount":100,"limitOfPersons":2,"suggestions":[]}]
+--------------------------------------
+2016-10-25 21:10:44,418 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 5
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 26 Oct 2016 00:10:44 GMT]}
+Payload: [{"id":2,"userName":"emimancu","password":"sanlorenzo","mail":"emimancu@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"emimancu"},{"id":3,"userName":"alanmarino","password":"rockandroll","mail":"alanmarino@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"alanmarino"},{"id":4,"userName":"martinez","password":"1234","mail":"martinez@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"martinez"},{"id":5,"userName":"lopez","password":"12345","mail":"lopez@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"lopez"},{"id":6,"userName":"juanPablo","password":"123456","mail":"juanPablo@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"juanPablo"},{"id":7,"userName":"juanMartin","password":"1234567","mail":"juanMartin@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"juanMartin"},{"id":8,"userName":"ivanFernandez","password":"12345678","mail":"ivanFernandez@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"ivanFernandez"},{"id":9,"userName":"joseLuis12","password":"123456789","mail":"joseLuis12@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"joseLuis12"}]
+--------------------------------------
+2016-10-25 21:10:44,473 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 7
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1
+Http-Method: OPTIONS
+Content-Type: 
+Headers: {Accept=[*/*], accept-encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8,es;q=0.6], Access-Control-Request-Headers=[content-type], Access-Control-Request-Method=[POST], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+--------------------------------------
+2016-10-25 21:10:44,478 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 7
+Response-Code: 200
+Content-Type: text/xml
+Headers: {Allow=[POST, GET, OPTIONS, HEAD], Date=[Wed, 26 Oct 2016 00:10:44 GMT]}
+--------------------------------------
+2016-10-25 21:10:44,511 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 8
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/allEvents
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+--------------------------------------
+2016-10-25 21:10:44,552 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 8
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 26 Oct 2016 00:10:44 GMT]}
+Payload: [{"id":1,"types":null,"date":1477440564879,"scheduler":"NIGHT","address":"Pilar","amount":100,"limitOfPersons":2,"suggestions":[]},{"id":2,"types":null,"date":1477440564880,"scheduler":"NIGHT","address":"Castelar","amount":100,"limitOfPersons":2,"suggestions":[]},{"id":3,"types":null,"date":1477440564880,"scheduler":"NIGHT","address":"Villa Crespo","amount":100,"limitOfPersons":2,"suggestions":[]}]
+--------------------------------------
+2016-10-25 21:10:44,595 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 9
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+--------------------------------------
+2016-10-25 21:10:44,681 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 10
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json;charset=UTF-8
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Length=[2], content-type=[application/json;charset=UTF-8], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+Payload: {}
+--------------------------------------
+2016-10-25 21:10:44,718 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 9
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 26 Oct 2016 00:10:44 GMT]}
+Payload: [{"id":2,"userName":"emimancu","password":"sanlorenzo","mail":"emimancu@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"emimancu"},{"id":3,"userName":"alanmarino","password":"rockandroll","mail":"alanmarino@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"alanmarino"},{"id":4,"userName":"martinez","password":"1234","mail":"martinez@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"martinez"},{"id":5,"userName":"lopez","password":"12345","mail":"lopez@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"lopez"},{"id":6,"userName":"juanPablo","password":"123456","mail":"juanPablo@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"juanPablo"},{"id":7,"userName":"juanMartin","password":"1234567","mail":"juanMartin@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"juanMartin"},{"id":8,"userName":"ivanFernandez","password":"12345678","mail":"ivanFernandez@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"ivanFernandez"},{"id":9,"userName":"joseLuis12","password":"123456789","mail":"joseLuis12@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":null,"name":"joseLuis12"}]
+--------------------------------------
+2016-10-25 21:10:44,732 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 11
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json;charset=UTF-8
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Length=[2], content-type=[application/json;charset=UTF-8], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/home.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36]}
+Payload: {}
+--------------------------------------
+2016-10-25 21:10:44,769 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 10
+Response-Code: 200
+Content-Type: text/xml
+Headers: {ETag=[El evento fue agregado correctamente], Date=[Wed, 26 Oct 2016 00:10:44 GMT]}
+--------------------------------------
+2016-10-25 21:10:44,810 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 11
+Response-Code: 200
+Content-Type: text/xml
+Headers: {ETag=[El evento fue agregado correctamente], Date=[Wed, 26 Oct 2016 00:10:44 GMT]}
+--------------------------------------

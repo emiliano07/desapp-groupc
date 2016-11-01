@@ -2,8 +2,8 @@
   "root": "desapp-groupc-frontend/app",
   "clean_urls": true,
   "proxies": {
-    "/api/": {
-      "origin": "https://stain.herokuapp.com/login"
+    "/rest/": {
+      "origin": "https://stain.herokuapp.com/rest"
     }
   },
     "headers": {
