@@ -30,5 +30,6 @@
 		<property name="logged" type="boolean"/>
 		<property name="name" />
 		<property name="image" />
+		<one-to-one name="token" class="domain.auth0.GoogleOauthCredential" />
 	</class>
 </hibernate-mapping>
