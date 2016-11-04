@@ -7,7 +7,7 @@
 		<id column="ID" name="id">
 			<generator class="native" />
 		</id>
-		<property name="date" />
+		<property name="date" type="org.jadira.usertype.dateandtime.joda.PersistentDateTime"/>
 		<property name="scheduler" />
 		<property name="address" />
 		<property name="amount" />

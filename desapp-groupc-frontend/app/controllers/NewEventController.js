@@ -2,7 +2,7 @@
 
 'use strict';
 
-angular.module('app').controller("NewEventController", ["$http", "$log","$scope", function($http,$log,$scope) {
+angular.module('stain').controller("NewEventController", ["$http", "$log","$scope", function($http,$log,$scope) {
   
   $scope.lucio = 0;
 

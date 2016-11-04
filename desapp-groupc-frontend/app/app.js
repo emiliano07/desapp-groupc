@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module("app", ['ngRoute'])
+angular.module("stain", ['ngRoute','pascalprecht.translate'])
  
 .config(['$routeProvider', function($routeProvider) {
 

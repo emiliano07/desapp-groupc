@@ -2,12 +2,12 @@
 
 'use strict';
 
-angular.module('app').controller("EventsController", ["$http", "$log","$scope", function($http,$log,$scope) {
+angular.module('stain').controller("EventsController", ["$http", "$log","$scope", function($http,$log,$scope) {
 
   function succEvents(response){
     $scope.events = response.data;
     var event = {}
-    return $http.post('http://localhost:8080/rest/user/addEvent/1', event).then(suc).catch(fail);
+    return $http.post('http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1', event).then(suc).catch(fail);
   }
 
   function succFriends(response){
@@ -23,8 +23,7 @@ angular.module('app').controller("EventsController", ["$http", "$log","$scope", 
     return response.data;
   }
 
-  $http.get('http://localhost:8080/rest/event/allEvents').then(succEvents).catch(fail);
+  $http.get('http://localhost:8080/desapp-groupc-backend/rest/event/allEvents').then(succEvents).catch(fail);
   
-  $http.get('http://localhost:8080/rest/user/allFriends/1').then(succFriends).catch(fail);
-
+  $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/1').then(succFriends).catch(fail);
 }]);

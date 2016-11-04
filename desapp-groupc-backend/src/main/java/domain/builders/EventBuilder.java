@@ -1,7 +1,8 @@
 package domain.builders;
 
 import java.util.ArrayList;
-import java.util.Date;
+
+import org.joda.time.DateTime;
 
 import domain.Event;
 import domain.types.Type;
@@ -10,7 +11,7 @@ import domain.types.TypeOfScheduler;
 public class EventBuilder {
 	
 	private ArrayList<Type> types;
-	private Date date;
+	private DateTime date;
 	private TypeOfScheduler scheduler;
 	private String address;
 	private int amount;
@@ -23,7 +24,7 @@ public class EventBuilder {
 	
 	public EventBuilder(){
 		this.types = new ArrayList<Type>();
-		this.date = new Date();
+		this.date = new DateTime();
 		this.scheduler = TypeOfScheduler.NIGHT;
 		this.address = "no-address";
 		this.amount = 100;
@@ -49,7 +50,7 @@ public class EventBuilder {
 	     return this;
 	 }
 	 
-	 public EventBuilder withDate(Date date){
+	 public EventBuilder withDate(DateTime date){
 		 this.date = date;
 	     return this;
 	 }

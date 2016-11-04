@@ -74,19 +74,19 @@ public class SetupExampleData {
     					.withAddress("Palermo")
     					.withName("Rosebar")
     					.withDescription("Si estás cansado del trabajo, tuviste un día largo y querés relajarte y divertirte Rosebar es el lugar adecuado. Rosebar es un boliche ubicado en la zona de Palermo en la calle Honduras 5445 que sacar a sus clientes de la rutina diaria adentrándose en un ambiente cómodo y agradable.")
-    					.withImage("image")
+    					.withImage("images/rosebar.jpg")
     					.build();
     	Event event02 = EventBuilder.aEvent()
     					.withAddress("Palermo Soho")
     					.withName("KIKA")
     					.withDescription("Nueva disco ubicada entre Palermo Soho y Palermo Hollywood. Fácil acceso desde cualquier punto de Capital o Gran Buenos Aires. Una perfecta combinación de espacios y servicios, 800m2 distribuidos en dos plantas con capacidad para 1200 personas.")
-    					.withImage("image")
+    					.withImage("images/kika.jpg")
     					.build();
     	Event event03 = EventBuilder.aEvent()
     					.withAddress("Puerto Madero")
     					.withName("Asia de Cuba")
     					.withDescription("Asia de Cuba es un boliche ubicado en el barrio de Puerto Madero a metros del Hotel Hilton. Cubierto por una temática oriental con lamparas de papel y tonos anaranjados es un lugar especial para vivir una cena con platos extravagantes e internacionales que después se transforma en una de las discos mas prestigiosas de Buenos Aires.")
-    					.withImage("image")
+    					.withImage("images/Asia_de_Cuba.jpg")
     					.build();
     	this.eventService.save(event01);
     	this.eventService.save(event02);

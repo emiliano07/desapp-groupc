@@ -2,7 +2,7 @@
 
 'use strict';
 
-angular.module('app').controller("ProfileController", ["$http", "$log","$scope", function($http,$log,$scope) {
+angular.module('stain').controller("ProfileController", ["$http", "$log","$scope", function($http,$log,$scope) {
   
   function succUser(response){
     $scope.user = response.data;
@@ -13,6 +13,6 @@ angular.module('app').controller("ProfileController", ["$http", "$log","$scope",
     return 'Ocurrio un error';
   }
 
-  $http.get('http://localhost:8080/rest/user/userFrom/1').then(succUser).catch(failEvents);
+  $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/userFrom/1').then(succUser).catch(failEvents);
 
 }]);

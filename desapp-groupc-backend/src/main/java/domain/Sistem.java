@@ -1,7 +1,8 @@
 package domain;
 
 import java.util.ArrayList;
-import java.util.Date;
+
+import org.joda.time.DateTime;
 
 import domain.exceptions.NoFriendException;
 import domain.exceptions.UserNotExistException;
@@ -48,7 +49,7 @@ public class Sistem {
 		}
 	}
 	
-	public Tour newTour(TypeOfTour typeOfTour, Date date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
+	public Tour newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
 		Tour tour = new Tour(typeOfTour, date, scheduler, limitAmount, friends);
 		this.generateEventOptions(tour);
 		return tour;

@@ -1,7 +1,7 @@
 /*Login Controller*/
 
-'use strict';
+// 'use strict';
 
-angular.module('app').controller("LoginController", [function() {
+// angular.module('app').controller("LoginController", [function() {
 
-}]);
+// }]);

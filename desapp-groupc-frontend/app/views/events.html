@@ -15,15 +15,16 @@
 			<table>
 				<tr>
 					<td>
-						<img src="images/300x300.jpg"/>
+						<img ng-src= {{event.image}}  />
 					</td>
 					<td style="padding-left: 10px">
 						<p>{{event.amount}}</p>
-						<p class="more"><a class="button" href="#">Details</a></p>
+						<p class="more"><a class="button">{{ 'Details' | translate }}</a></p>
 					</td>
 				</tr>
 			</table>
 			<hr>
 		</div>
 	</div>
+
 </div>

@@ -9,7 +9,7 @@
 		</id>
 		<property name="type" />
 		<property name="scheduler" />
-		<property name="date" />
+		<property name="date" type="org.jadira.usertype.dateandtime.joda.PersistentDateTime"/>
 		<property name="amount" />
 		<property name="limitAmount" />
 		<bag name="friends" lazy="false" >

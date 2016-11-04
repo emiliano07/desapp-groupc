@@ -1,7 +1,8 @@
 package domain.builders;
 
 import java.util.ArrayList;
-import java.util.Date;
+
+import org.joda.time.DateTime;
 
 import domain.Event;
 import domain.Tour;
@@ -13,7 +14,7 @@ import domain.types.TypeOfTour;
 public class TourBuilder {
 	
 	private TypeOfTour type;
-	private Date date;
+	private DateTime date;
 	private TypeOfScheduler scheduler;
 	private int amount;
 	private int limitAmount;
@@ -26,15 +27,15 @@ public class TourBuilder {
 	
 	public TourBuilder(){
 		this.type = TypeOfTour.GASOLERA;
-		this.date = new Date();
+		this.date = new DateTime();
 		this.scheduler = TypeOfScheduler.MORNING;
 		this.amount = 1000;
 		this.limitAmount = 500;
 		this.friends = new ArrayList<User>();
 		this.eventOptions1 = new ArrayList<Event>();
 		this.eventOptions2 = new ArrayList<Event>();
-		this.event1 = new Event(new ArrayList<Type>(), new Date(), TypeOfScheduler.MORNING, "no-address", 100, 2,"no-name","no-description","no-image");
-		this.event2 = new Event(new ArrayList<Type>(), new Date(), TypeOfScheduler.MORNING, "no-address", 200, 4,"no-name","no-description","no-image");
+		this.event1 = new Event(new ArrayList<Type>(), new DateTime(), TypeOfScheduler.MORNING, "no-address", 100, 2,"no-name","no-description","no-image");
+		this.event2 = new Event(new ArrayList<Type>(), new DateTime(), TypeOfScheduler.MORNING, "no-address", 200, 4,"no-name","no-description","no-image");
 	}		
     
 	public static TourBuilder aTour(){
@@ -76,7 +77,7 @@ public class TourBuilder {
 	     return this;
 	 }
 	 
-	 public TourBuilder withDate(Date date){
+	 public TourBuilder withDate(DateTime date){
 		 this.date = date;
 	     return this;
 	 }

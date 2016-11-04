@@ -1,7 +1,8 @@
 package domain;
 
 import java.util.ArrayList;
-import java.util.Date;
+
+import org.joda.time.DateTime;
 
 import domain.types.TypeOfScheduler;
 import domain.types.TypeOfTour;
@@ -10,7 +11,7 @@ public class Tour extends Entity{
 	
 	private static final long serialVersionUID = 6616766018493232832L;
 	public TypeOfTour type;
-	public Date date;
+	public DateTime date;
 	public TypeOfScheduler scheduler;
 	public int amount;
 	public int limitAmount;
@@ -20,7 +21,7 @@ public class Tour extends Entity{
 	public Event event1;
 	public Event event2;
 	
-	public Tour(TypeOfTour typeOfTour, Date date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
+	public Tour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
 		this.type = typeOfTour;
 		this.date = date;
 		this.scheduler = scheduler;
@@ -71,7 +72,7 @@ public class Tour extends Entity{
 		return friends;
 	}
 
-	public Date getDate() {
+	public DateTime getDate() {
 		return date;
 	}
 	

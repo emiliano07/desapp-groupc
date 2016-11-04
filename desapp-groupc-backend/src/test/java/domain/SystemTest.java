@@ -1,14 +1,11 @@
 package domain;
 
 import java.util.ArrayList;
-import java.util.Date;
 
+import org.joda.time.DateTime;
 import org.junit.Assert;
 import org.junit.Test;
 
-import domain.Event;
-import domain.Tour;
-import domain.User;
 import domain.builders.EventBuilder;
 import domain.builders.TourBuilder;
 import domain.builders.UserBuilder;
@@ -20,7 +17,7 @@ public class SystemTest {
 	@Test
     public void newTour() {
 		User user = UserBuilder.aUser().build();
-		user.newTour(TypeOfTour.GASOLERA, new Date(), TypeOfScheduler.MORNING, 500, new ArrayList<User>());
+		user.newTour(TypeOfTour.GASOLERA, new DateTime(), TypeOfScheduler.MORNING, 500, new ArrayList<User>());
 		Assert.assertEquals(TypeOfTour.GASOLERA, user.tours.get(0).getType());
 	}
 	
@@ -62,7 +59,7 @@ public class SystemTest {
 		user.getSistem().addEvent(event01);
 		user.getSistem().addEvent(event02);
 		user.getSistem().addEvent(event03);
-		user.newTour(TypeOfTour.GASOLERA, new Date(), TypeOfScheduler.NIGHT, 300, friends);
+		user.newTour(TypeOfTour.GASOLERA, new DateTime(), TypeOfScheduler.NIGHT, 300, friends);
 		user.getSistem().selectEvent1ForATour(event02, user.getTours().get(0));
 		Assert.assertEquals(1, user.getTours().get(0).eventOptions2.size());
 		Assert.assertEquals(event03, user.getTours().get(0).eventOptions2.get(0));

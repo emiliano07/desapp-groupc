@@ -1,7 +1,7 @@
 package domain;
 
 import java.util.ArrayList;
-import java.util.Date;
+import org.joda.time.DateTime;
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
@@ -14,7 +14,7 @@ public class Event extends Entity{
 
 	private static final long serialVersionUID = 5114264723960999199L;
 	public List<Type> types;
-	public Date date;
+	public DateTime date;
 	public TypeOfScheduler scheduler;
 	public String address;
 	public int amount;
@@ -25,7 +25,7 @@ public class Event extends Entity{
 	public String image;
 	
 	public Event(){}
-	public Event(List<Type> types, Date date, TypeOfScheduler scheduler, String address, int amount, int limitOfPersons, String name, String description, String image){
+	public Event(List<Type> types, DateTime date, TypeOfScheduler scheduler, String address, int amount, int limitOfPersons, String name, String description, String image){
 		this.types = types;
 		this.date = date;
 		this.scheduler = scheduler;
@@ -54,7 +54,7 @@ public class Event extends Entity{
 		return this.amount;
 	}
 	
-	public Date getDate(){
+	public DateTime getDate(){
 		return this.date;
 	}
 	

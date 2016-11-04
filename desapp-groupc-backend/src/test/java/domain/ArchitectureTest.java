@@ -20,7 +20,7 @@ public class ArchitectureTest {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Test
 	public void testAllClasesInPackageServicesAreTransactional() {
-		Reflections reflections = new Reflections("unq.tpi.desapp.services");
+		Reflections reflections = new Reflections("domain.services");
 		Set<Class<? extends Serializable>> allClasses = reflections.getSubTypesOf(Serializable.class);
 		for (Class myClass : allClasses) {
 			Set<Method> allMethods = getAllMethods(myClass, withModifier(Modifier.PUBLIC),

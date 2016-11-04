@@ -1,10 +1,11 @@
 package domain;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
+
+import org.joda.time.DateTime;
 
 import domain.auth0.GoogleOauthCredential;
 import domain.exceptions.UserNotLoggedException;
@@ -70,7 +71,7 @@ public class User extends Entity{
 		this.events.add(event);
 	}
 
-	public void newTour(TypeOfTour typeOfTour, Date date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
+	public void newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
 		this.tours.add(this.sistem.newTour(typeOfTour, date, scheduler, limitAmount, friends));
 	}
 
