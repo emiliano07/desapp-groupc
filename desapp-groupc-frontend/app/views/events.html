@@ -4,7 +4,7 @@
 	</div>
 
 	<div style="overflow-y: scroll; height: 500px; margin-top: 10px">
-		<div class="wrap-col" ng-repeat="event in events">
+		<div class="wrap-col" ng-repeat="event in getEvents()">
 			<div class="heading">
 				<div style="font-size: 20px"><b>{{event.address}}</b>
 				</div>
@@ -15,7 +15,7 @@
 			<table>
 				<tr>
 					<td>
-						<img ng-src= {{event.image}}  />
+						<img ng-src= {{event.image}}  width="1000" height="1000"/>
 					</td>
 					<td style="padding-left: 10px">
 						<p>{{event.amount}}</p>
@@ -25,6 +25,15 @@
 			</table>
 			<hr>
 		</div>
+		<div class="text-center">
+			<ul class="pagination" text-align="center">
+				<li ng-class="{'disabled': pageIs(0)}"><a ng-click="!pageIs(0) && eventsPrevious()" ><span aria-hidden="true">«</span></a></li>
+				<li ng-repeat="number in howMuchEvents()" class="paginate_button" ng-class="{'active': pageIs(number)}" ng-click="events(number)">
+				<a>{{number + 1}}</a>
+				</li> 
+				<li ng-class="{'disabled': pageIsMax()}"><a ng-click="!pageIsMax() && eventsNext()"><span aria-hidden="true">»</span></a></li>
+		</div>
+		</ul>
 	</div>
 
 </div>

@@ -26,23 +26,23 @@ public class User extends Entity{
 	public Sistem sistem; 
 	public List<User> friendsRequests;
 	public Boolean logged;
-	public String name;
+	public String nameOfUser;
 	public String image;
 	public GoogleOauthCredential token;
 	
 	public User() {}
-	public User(String name,String userName, String password, String mail,String image) {
+	public User(String nameOfUser,String userName, String password, String mail,String image) {
 		this.userName = userName;
 		this.password = password;
 		this.mail = mail;
-		this.name = name;
+		this.nameOfUser = nameOfUser;
 		this.image = image;
 	}
-	public User(String name,String userName, String password, String mail) {
+	public User(String nameOfUser,String userName, String password, String mail) {
 		this.userName = userName;
 		this.password = password;
 		this.mail = mail;
-		this.name = name;
+		this.nameOfUser = nameOfUser;
 	}
 	public User(Sistem sistem, String userName, String password, String mail){
 		this.userName = userName;
@@ -56,7 +56,7 @@ public class User extends Entity{
 		this.friendsRequests = new ArrayList<User>();
 		this.logged = false;
 		this.image = null;
-		this.name = null;
+		this.nameOfUser = null;
 	}
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -68,6 +68,7 @@ public class User extends Entity{
 	}
 	
 	public void addEvent(Event event){
+		//this.sistem.addEvent(event);
 		this.events.add(event);
 	}
 
@@ -192,8 +193,8 @@ public class User extends Entity{
 		this.logged = logged;
 	}
 	
-	public void setName(String name){
-		this.name = name;
+	public void setName(String nameOfUser){
+		this.nameOfUser = nameOfUser;
 	}
 	
 	public void setImage(String image){

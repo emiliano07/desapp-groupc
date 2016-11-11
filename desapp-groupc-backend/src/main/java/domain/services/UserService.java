@@ -60,7 +60,7 @@ public class UserService extends GenericService<User>{
 	  }
 	 
 	 @Transactional
-	 public void addEventForUser(User user,Event event) {
+	 public void addEventForUser(User user,Event event) throws StainException{
 		 user.addEvent(event);
 		 userRepository.update(user);
 	 }

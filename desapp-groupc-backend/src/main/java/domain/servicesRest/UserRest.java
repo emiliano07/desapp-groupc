@@ -10,6 +10,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
+import org.eclipse.jetty.http.HttpStatus;
+
 import domain.Event;
 import domain.User;
 import domain.builders.UserBuilder;
@@ -59,13 +61,18 @@ public class UserRest {
 	@POST
 	@Path("/addEvent/{userId}")
 	@Consumes("application/json")
-	public Response addEvent(@PathParam("userId") final int id, Event event) {
+	@Produces("application/json")
+	public Response addEvent(@PathParam("userId") final int id,Event event) {
 		Response response;
+		try {
 		User user = userService.getUserRepository().findById(id);
-		user.addEvent(event);
-        response = Response.ok().tag("El evento fue agregado correctamente").build();
-        return response;
-    }
+		userService.addEventForUser(user, event);
+        response = Response.ok().tag("El evento fue agregado correctamente").status(HttpStatus.OK_200).build();
+		 } catch (StainException e) {
+	            response = Response.serverError().tag("No se pudo agregar el Evento").status(HttpStatus.NOT_FOUND_404).build();
+	        }
+		return response;
+	}
 
 	@POST
     @Path("updateUser")

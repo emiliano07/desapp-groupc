@@ -17,7 +17,7 @@ public class EventBuilder {
 	private int amount;
 	private int limitOfPersons;
 	private ArrayList<Event> suggestions;
-	private String name;
+	private String nameOfEvent;
 	private String description;
 	private String image;
 	
@@ -30,7 +30,7 @@ public class EventBuilder {
 		this.amount = 100;
 		this.limitOfPersons = 2;
 		this.suggestions = new ArrayList<Event>();
-		this.name = "no-name";
+		this.nameOfEvent = "no-name";
 		this.description = "no-description";
 		this.image = "no-image";
     }
@@ -40,7 +40,7 @@ public class EventBuilder {
     }
 	
 	 public Event build(){
-		 Event event =  new Event(types, date, scheduler, address, amount, limitOfPersons,name,description,image);
+		 Event event =  new Event(types, date, scheduler, address, amount, limitOfPersons,nameOfEvent,description,image);
 		 event.setSuggestions(suggestions);
 	     return event;
 	 }
@@ -80,8 +80,8 @@ public class EventBuilder {
 	     return this;
 	 }
 	 
-	 public EventBuilder withName(String name){
-		 this.name = name;
+	 public EventBuilder withName(String nameOfEvent){
+		 this.nameOfEvent = nameOfEvent;
 	     return this;
 	 }
 	 

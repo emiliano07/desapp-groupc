@@ -1,5 +1,7 @@
 package domain.services;
 
+import java.util.List;
+
 import org.springframework.transaction.annotation.Transactional;
 
 import domain.Event;
@@ -30,5 +32,14 @@ public class EventService extends GenericService<Event> {
 	public Event obtenerEvent(int id) {
 		return getEventRepository().getEventById(id);
 	}
+	
+	@Transactional
+	public int getCountEvents(Integer quantity) {
+		return getEventRepository().getCountEvents(quantity);
+	}
 
+	@Transactional
+	public List<Event> getEvents(Integer page, Integer quantity) {
+		return getEventRepository().getEvents(page, quantity);
+	}
 }

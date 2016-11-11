@@ -28,7 +28,7 @@
             <many-to-many class="domain.User"  />
         </bag>
 		<property name="logged" type="boolean"/>
-		<property name="name" />
+		<property name="nameOfUser" />
 		<property name="image" />
 		<one-to-one name="token" class="domain.auth0.GoogleOauthCredential" />
 	</class>

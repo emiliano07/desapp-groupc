@@ -12,6 +12,7 @@ import domain.User;
 import domain.builders.EventBuilder;
 import domain.builders.UserBuilder;
 import domain.exceptions.SingUpException;
+import domain.exceptions.StainException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/META-INF/spring-all-contexts.xml")
@@ -33,7 +34,7 @@ public class UserServicesTest {
 	}
 	
 	@Test
-	public void addAEvent() {
+	public void addAEvent() throws StainException {
 		 User user = UserBuilder.aUser()
 				 	 .withUserName("rockandroll")
 				 	 .withPassword("unq2016")

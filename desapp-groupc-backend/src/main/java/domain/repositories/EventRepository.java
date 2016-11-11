@@ -1,5 +1,7 @@
 package domain.repositories;
 
+import java.util.List;
+
 import org.hibernate.Query;
 
 import domain.Event;
@@ -23,4 +25,22 @@ public class EventRepository extends HibernateGenericDao<Event> implements Gener
 		return event;
 	}
 	
+	public int getCountEvents(int quantity) {
+		String hql = "SELECT COUNT(*) FROM " + Event.class.getName();
+		Query query = getHibernateTemplate().getSessionFactory().getCurrentSession().createQuery(hql);
+		return (int) ((Long) query.uniqueResult() / quantity);
+	}
+	
+	public List<Event> getEvents(Integer pages, Integer quantity) {
+		return paginationInTable(Event.class, pages, quantity);
+	}
+	
+	@SuppressWarnings("unchecked")
+	private <E> List<E> paginationInTable(Class<E> class1, Integer pages, Integer quantity) {
+		String hql = "SELECT r " + " FROM " + class1.getName() + " r ";
+		Query query = getHibernateTemplate().getSessionFactory().getCurrentSession().createQuery(hql);
+		query.setFirstResult(pages * quantity);
+		query.setMaxResults(quantity);
+		return query.list();
+	}
 }

@@ -47,4 +47,18 @@ public class EventRest {
 	public Event findPostsPublishedByAuthorId(@PathParam("eventId") final int id) {
 		return eventService.getEventRepository().findById(id);
 	}
+	
+	@GET
+	@Path("/howMuchEvents")
+	@Produces("application/json")
+	public int howMuchEvents() {
+		return eventService.getCountEvents(10);
+	}
+	
+	@GET
+	@Path("/events/{page}")
+	@Produces("application/json")
+	public List<Event> getEvents( @PathParam("page") final Integer page) {
+		return eventService.getEvents(page,10);
+	}
 }

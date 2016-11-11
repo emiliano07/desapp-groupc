@@ -16,7 +16,7 @@
             <key column="SuggestionsOfEventId" />
             <many-to-many class="domain.Event"  />
         </bag>
-        <property name="name" />
+        <property name="nameOfEvent" />
         <property name="description" length="1000"/>
         <property name="image" />
 		

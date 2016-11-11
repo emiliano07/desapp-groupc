@@ -22,7 +22,7 @@ public class UserBuilder {
 	private Sistem sistem;
 	private ArrayList<User> friendsRequests;
 	private Boolean logged;
-	private String name;
+	private String nameOfUser;
 	private String image;
 	
 	public UserBuilder(){
@@ -37,7 +37,7 @@ public class UserBuilder {
         this.friendsRequests = new ArrayList<User>();
         this.logged = false;
         this.image = "no-image";
-        this.name = "no-name";
+        this.nameOfUser = "no-name";
     }
     
 	public static UserBuilder aUser(){
@@ -53,7 +53,7 @@ public class UserBuilder {
 		 user.setFriendsRequests(friendsRequests);
 		 user.setLogged(logged);
 		 user.setImage(image);
-		 user.setName(name);
+		 user.setName(nameOfUser);
 	     return user;
 	 }
 	 
@@ -102,8 +102,8 @@ public class UserBuilder {
 	     return this;
 	 }
 	 
-	 public UserBuilder withName(String name){
-		 this.name = name;
+	 public UserBuilder withName(String nameOfUser){
+		 this.nameOfUser = nameOfUser;
 	     return this;
 	 }
 	 

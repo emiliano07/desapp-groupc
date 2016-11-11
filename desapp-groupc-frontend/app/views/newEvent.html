@@ -1,7 +1,22 @@
 <div style="margin: 10px">
 	<div style="font-size: 25px"><b><u>FORMULARIO PARA AGREGAR UN EVENTO</u></b></div>
+	<!-- <p>Nombre del Evento</p>
+	<input type="text" class="form-control" id="eventName" ng-model="newEvent.name"/> -->
+	<p>Lugar del Evento</p>
+	<input type="text" class="form-control" id="eventAdress" ng-model="newEvent.address"/>
+	<p>Valor del Evento</p>
+	<input type="number" class="form-control" id="eventAmount" ng-model="newEvent.amount"/>
+	<p>Limite de personas del Evento</p>
+	<input type="number" class="form-control" id="eventLimitOfPersons" ng-model="newEvent.limitOfPersons"/>
+	<p>Descripcion del Evento</p>
+	<input type="text" class="form-control" id="eventDescription" ng-model="newEvent.description"/>
+	<p>Imagen del Evento</p>
+	<input type="text" class="form-control" id="eventImage" ng-model="newEvent.image"/>
 	<br>
-	<button type="button" ng-click="agregar()">{{lucio}}</button>
 	<br>
-	<div>{{alert}}</div>
+	<button type="button" ng-click="newEvent(newEvent)" >Agregar Evento</button>
+	<br>
+	<br>
+	<a href="#events"><button>Cancelar</button></a> 
+	<br>
 </div>
