@@ -43,6 +43,7 @@ public class User extends Entity{
 		this.password = password;
 		this.mail = mail;
 		this.nameOfUser = nameOfUser;
+		this.sistem = new Sistem(new LogSistem());
 	}
 	public User(Sistem sistem, String userName, String password, String mail){
 		this.userName = userName;

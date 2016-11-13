@@ -1,5 +1,8 @@
 package domain.services;
 
+import java.util.List;
+
+import org.joda.time.DateTime;
 import org.springframework.transaction.annotation.Transactional;
 
 import domain.Event;
@@ -8,6 +11,8 @@ import domain.User;
 import domain.exceptions.SingUpException;
 import domain.exceptions.StainException;
 import domain.repositories.UserRepository;
+import domain.types.TypeOfScheduler;
+import domain.types.TypeOfTour;
 
 public class UserService extends GenericService<User>{
 
@@ -80,6 +85,11 @@ public class UserService extends GenericService<User>{
 	 @Transactional
 	 public void updateUser(User user) throws StainException {
 		 userRepository.saveOrUpdate(user);
+	 }
+	 
+	 @Transactional
+	 public List<Event> getEvents(User user,TypeOfTour typeOfTour,DateTime date, TypeOfScheduler scheduler,int limitAmount, List<User>friendsSelect){
+		 user.newTour(typeOfTour, date, scheduler, limitAmount, friendsSelect);
 	 }
 }
 

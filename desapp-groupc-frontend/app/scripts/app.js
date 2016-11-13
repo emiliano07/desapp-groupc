@@ -5,12 +5,7 @@ angular.module("stain", ['ngRoute','pascalprecht.translate'])
 .config(['$routeProvider', function($routeProvider) {
 
   $routeProvider.when('/', {
-    templateUrl: "login.html",
-    controller: "LoginController"
-  });
-
-  $routeProvider.when('/home', {
-    templateUrl: "home.html",
+    templateUrl: "views/events.html",
     controller: "EventsController"
   });
 
@@ -35,7 +30,7 @@ angular.module("stain", ['ngRoute','pascalprecht.translate'])
   });
    
   $routeProvider.otherwise({
-        redirectTo: 'login.html'
+        redirectTo: 'views/events.html'
   });
    
 }]);

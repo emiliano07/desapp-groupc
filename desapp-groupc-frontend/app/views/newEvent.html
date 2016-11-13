@@ -10,6 +10,14 @@
 	<input type="number" class="form-control" id="eventLimitOfPersons" ng-model="newEvent.limitOfPersons"/>
 	<p>Descripcion del Evento</p>
 	<input type="text" class="form-control" id="eventDescription" ng-model="newEvent.description"/>
+	<p>Horario del Evento</p>
+	<select style="width: 200px" ng-model="newEvent.horario">
+  		<option >Mañana</option>
+  		<option >Tarde</option>
+  		<option >Noche</option>
+	</select>
+	<br>
+	<br>
 	<p>Imagen del Evento</p>
 	<input type="text" class="form-control" id="eventImage" ng-model="newEvent.image"/>
 	<br>

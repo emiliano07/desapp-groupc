@@ -11,12 +11,16 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 import org.eclipse.jetty.http.HttpStatus;
+import org.joda.time.DateTime;
 
 import domain.Event;
+import domain.Profile;
 import domain.User;
 import domain.builders.UserBuilder;
 import domain.exceptions.StainException;
 import domain.services.UserService;
+import domain.types.TypeOfScheduler;
+import domain.types.TypeOfTour;
 
 @Path("/user")
 public class UserRest {
@@ -85,4 +89,20 @@ public class UserRest {
             return Response.serverError().tag("Error al actualizar el usuario").build();
         }
     }
+	
+	@GET
+	@Path("/profileOf/{userId}")
+	@Produces("application/json")
+	public Profile getProfileOfAUser(@PathParam("userId") final int id) {
+		return userService.getUserRepository().findById(id).profile;
+	}
+	
+	@GET
+	@Path("/eventsForTour/{userId}/{type}/{date}/{scheduler}/{limitAmount}/{friendsSelect}")
+	@Produces("application/json")
+	public List<Event> getProfileOfAUser(@PathParam("userId") final int id,@PathParam("type") final TypeOfTour type,@PathParam("date") final DateTime date,@PathParam("scheduler") final TypeOfScheduler scheduler,@PathParam("limitAmount") final int limitAmount,@PathParam("friendsSelect") final List<User> friendsSelect) {
+		User user = userService.getUserRepository().findById(id);
+		return userService.getEvents(user,type,date,scheduler,limitAmount,friendsSelect);
+	}
+	
 }

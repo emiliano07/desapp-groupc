@@ -8,11 +8,11 @@ angular.module('stain').controller("ProfileController", ["$http", "$log","$scope
     $scope.user = response.data;
   }
 
-  function failEvents(error){
+  function fail(error){
     $log.error('Ocurrio un error: ' + error.data);
     return 'Ocurrio un error';
   }
 
-  $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/userFrom/1').then(succUser).catch(failEvents);
+  $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/userFrom/1').then(succUser).catch(fail);
 
 }]);

@@ -2,7 +2,7 @@
 
 'use strict';
 
-angular.module('stain').controller("NewEventController", ["$http","$scope", function($http,$scope) {
+angular.module('stain').controller("NewEventController", ["$http","$scope","$window","$location", function($http,$scope,$window,$location) {
 
 	$scope.newEvent = function(newEvent){
 	$http.post('http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1' , {
@@ -17,7 +17,9 @@ angular.module('stain').controller("NewEventController", ["$http","$scope", func
 		description: newEvent.description,
 		image: newEvent.image,
     }).success(function(){
-      $scope.updateEvents();
+    	$scope.updateEvents();
+    	$location.path("/events");
+    	window.alert("El evento se agrego correctamente.");
     })
   }
 

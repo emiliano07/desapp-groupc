@@ -9,8 +9,9 @@ import domain.exceptions.UserNotExistException;
 import domain.types.TypeOfScheduler;
 import domain.types.TypeOfTour;
 
-public class Sistem {
+public class Sistem extends Entity{
 	
+	private static final long serialVersionUID = -2734681258305935229L;
 	public ArrayList<User> users;
 	public ArrayList<Event> allEvents;
 	public LogSistem logSistem;

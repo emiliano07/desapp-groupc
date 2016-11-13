@@ -44,24 +44,46 @@ public class SetupExampleData {
     @Transactional
     public void init() throws SingUpException {
     	User user = userService.signUp("Francioni Lucio", "franciolucio","unqui","franciolucio@gmail.com","images/francioniLucio.jpg");
-    	Profile profile = ProfileBuilder.aProfile()
+    	Profile profileUser = ProfileBuilder.aProfile()
     					  .withLimitAmount(500)
     					  .withTypeOfFilm(Type.ACTION)
     					  .withTypeOfFood(Type.PIZZA)
     					  .withTypeOfMusic(Type.ELECTRONIC)
     					  .build();
     	user.setFriends(new ArrayList<User>());
-    	this.userService.addProfileForUser(user, profile);
+    	this.userService.addProfileForUser(user, profileUser);
     	User friend01 = new User("Bart Simpson","bartSimpson","magui","bartSimpson@gmail.com","images/bart.jpg");
     	User friend02 = new User("Corre Caminos","correCaminos","atrapame","correCaminos@gmail.com","images/correCaminos.jpg");
     	User friend03 = new User("Pato Donald","patoDonald","kuakua","patoDonald@gmail.com","images/patoDonald.jpg");
     	User friend04 = new User("Demonio De Tazmania","DemonioDeTazmania","12345","DemonioDeTazmania@gmail.com","images/Demonio_de_tazmania.jpg");
-//    	User friend05 = new User("Juan Pable Rodrigeuz","juanPablo","123456","juanPablo@gmail.com","image");
-//    	User friend06 = new User("Juan Martin Del Potro","juanMartin","1234567","juanMartin@gmail.com","image");
-//    	User friend07= new User("Ivan Fernandez","ivanFernandez","12345678","ivanFernandez@gmail.com","image");
-//    	User friend08 = new User("Jose Luis Peralta","joseLuis12","123456789","joseLuis12@gmail.com","image");
-    	
-    	
+    	Profile profileFriend01 = ProfileBuilder.aProfile()
+				  .withLimitAmount(900)
+				  .withTypeOfFilm(Type.ADVENTURE)
+				  .withTypeOfFood(Type.PASTA)
+				  .withTypeOfMusic(Type.CLASSIC)
+				  .build();
+    	Profile profileFriend02 = ProfileBuilder.aProfile()
+				  .withLimitAmount(420)
+				  .withTypeOfFilm(Type.COMEDY)
+				  .withTypeOfFood(Type.GRILL)
+				  .withTypeOfMusic(Type.REGGAETON)
+				  .build();
+    	Profile profileFriend03 = ProfileBuilder.aProfile()
+				  .withLimitAmount(345)
+				  .withTypeOfFilm(Type.FANTASY)
+				  .withTypeOfFood(Type.FAST_FOOD)
+				  .withTypeOfMusic(Type.POP)
+				  .build();
+    	Profile profileFriend04 = ProfileBuilder.aProfile()
+				  .withLimitAmount(100)
+				  .withTypeOfFilm(Type.COMEDY)
+				  .withTypeOfFood(Type.GRILL)
+				  .withTypeOfMusic(Type.ELECTRONIC)
+				  .build();
+    	this.userService.addProfileForUser(user, profileFriend01);
+    	this.userService.addProfileForUser(user, profileFriend02);
+    	this.userService.addProfileForUser(user, profileFriend03);
+    	this.userService.addProfileForUser(user, profileFriend04);
     	this.userService.addFriendForUser(user, friend01);
     	this.userService.addFriendForUser(user, friend02);
     	this.userService.addFriendForUser(user, friend03);
