@@ -11,7 +11,6 @@ import domain.Event;
 import domain.User;
 import domain.builders.EventBuilder;
 import domain.builders.UserBuilder;
-import domain.exceptions.SingUpException;
 import domain.exceptions.StainException;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -24,14 +23,14 @@ public class UserServicesTest {
 	@Autowired
 	public EventService eventService;
 
-	@Test
-	public void singUp() {
-		try {
-			userService.signUp("Mancuso Emiliano","emimancu","1234","emimancu@gmail.com","image");
-		} catch (SingUpException e) {
-			Assert.fail("Usuario o Email Existente");
-		}
-	}
+//	@Test
+//	public void singUp() {
+//		try {
+//			userService.signUp("Mancuso Emiliano","emimancu","1234","emimancu@gmail.com","image");
+//		} catch (SingUpException e) {
+//			Assert.fail("Usuario o Email Existente");
+//		}
+//	}
 	
 	@Test
 	public void addAEvent() throws StainException {

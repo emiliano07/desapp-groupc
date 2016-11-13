@@ -31,21 +31,7 @@ public class User extends Entity{
 	public GoogleOauthCredential token;
 	
 	public User() {}
-	public User(String nameOfUser,String userName, String password, String mail,String image) {
-		this.userName = userName;
-		this.password = password;
-		this.mail = mail;
-		this.nameOfUser = nameOfUser;
-		this.image = image;
-	}
-	public User(String nameOfUser,String userName, String password, String mail) {
-		this.userName = userName;
-		this.password = password;
-		this.mail = mail;
-		this.nameOfUser = nameOfUser;
-		this.sistem = new Sistem(new LogSistem());
-	}
-	public User(Sistem sistem, String userName, String password, String mail){
+	public User(Sistem sistem, String nameOfUser, String userName, String password, String mail,String image){
 		this.userName = userName;
 		this.password = password;
 		this.mail = mail;
@@ -56,8 +42,8 @@ public class User extends Entity{
 		this.sistem = sistem;
 		this.friendsRequests = new ArrayList<User>();
 		this.logged = false;
-		this.image = null;
-		this.nameOfUser = null;
+		this.image = image;
+		this.nameOfUser = nameOfUser;
 	}
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -73,8 +59,10 @@ public class User extends Entity{
 		this.events.add(event);
 	}
 
-	public void newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
-		this.tours.add(this.sistem.newTour(typeOfTour, date, scheduler, limitAmount, friends));
+	public Tour newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, List<User> friends){
+		Tour tour = this.sistem.newTour(typeOfTour, date, scheduler, limitAmount, friends);
+		this.tours.add(tour);
+		return tour;
 	}
 
 	public void acceptTour(Tour tour){

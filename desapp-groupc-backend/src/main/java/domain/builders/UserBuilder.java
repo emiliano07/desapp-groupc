@@ -45,15 +45,13 @@ public class UserBuilder {
     }
 	
 	 public User build(){
-		 User user =  new User(sistem, userName, password, mail);
+		 User user =  new User(sistem, nameOfUser,userName, password, mail,image);
 		 user.setProfile(this.profile);
 		 user.setTours(tours);
 		 user.setEvents(events);
 		 user.setFriends(friends);
 		 user.setFriendsRequests(friendsRequests);
 		 user.setLogged(logged);
-		 user.setImage(image);
-		 user.setName(nameOfUser);
 	     return user;
 	 }
 	 

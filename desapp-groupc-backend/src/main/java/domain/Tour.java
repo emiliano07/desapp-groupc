@@ -1,6 +1,7 @@
 package domain;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.joda.time.DateTime;
 
@@ -15,13 +16,13 @@ public class Tour extends Entity{
 	public TypeOfScheduler scheduler;
 	public int amount;
 	public int limitAmount;
-	public ArrayList<User> friends;
-	public ArrayList<Event> eventOptions1;
-	public ArrayList<Event> eventOptions2;
+	public List<User> friends;
+	public List<Event> eventOptions1;
+	public List<Event> eventOptions2;
 	public Event event1;
 	public Event event2;
 	
-	public Tour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
+	public Tour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, List<User> friends){
 		this.type = typeOfTour;
 		this.date = date;
 		this.scheduler = scheduler;
@@ -68,7 +69,7 @@ public class Tour extends Entity{
 		return this.limitAmount;
 	}	
 	
-	public ArrayList<User> getFriends() {
+	public List<User> getFriends() {
 		return friends;
 	}
 
@@ -84,8 +85,12 @@ public class Tour extends Entity{
 		return scheduler;
 	}
 	
-	public ArrayList<Event> getEventOptions2(){
+	public List<Event> getEventOptions2(){
 		return this.eventOptions2;
+	}
+	
+	public List<Event> getEventOptions1(){
+		return this.eventOptions1;
 	}
 	
 	public void setEventOptions1(ArrayList<Event> events){

@@ -3,7 +3,6 @@ package domain;
 import org.junit.Assert;
 import org.junit.Test;
 
-import domain.User;
 import domain.builders.UserBuilder;
 import domain.exceptions.InvalidPasswordException;
 import domain.exceptions.PasswordNotmatchException;
@@ -17,7 +16,7 @@ public class LoginSystemTest {
 	@Test
     public void registerNewUserCorrectly() throws Exception{
 		User user = UserBuilder.aUser().build();
-		user.getSistem().registerNewUser("franciolucio", "1234", "franciolucio@gmail.com");
+		user.getSistem().registerNewUser("Francioni Lucio","franciolucio", "1234", "franciolucio@gmail.com","IMAGE");
 		Assert.assertEquals("franciolucio", user.getSistem().users.get(0).userName);
 	}
 	
@@ -27,7 +26,7 @@ public class LoginSystemTest {
 		User userBis = UserBuilder.aUser().withUserName("franciolucio").build();
 		user.getSistem().logSistem.users.put(userBis.userName, userBis.password);
 		try {
-			user.getSistem().registerNewUser("franciolucio", "1234", "franciolucio@gmail.com");
+			user.getSistem().registerNewUser("Francioni Lucio","franciolucio", "1234", "franciolucio@gmail.com","IMAGE");
 		}catch (UserNameAlreadyExistException e) {
 			 System.out.println(e);
 		}
@@ -37,7 +36,7 @@ public class LoginSystemTest {
     public void registerNewUserIncorrectlybecauseNoRegardPassword01() throws Exception{
 		User user = UserBuilder.aUser().withPassword("123").build();
 		try {
-			user.getSistem().registerNewUser("franciolucio", "1234", "franciolucio@gmail.com");
+			user.getSistem().registerNewUser("Francioni Lucio","franciolucio", "1234", "franciolucio@gmail.com","IMAGE");
 			Assert.assertEquals("franciolucio", user.getSistem().users.get(0).userName);
 		}catch (InvalidPasswordException e) {
 			 System.out.println(e);

@@ -1,6 +1,7 @@
 package domain;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.joda.time.DateTime;
 
@@ -12,8 +13,8 @@ import domain.types.TypeOfTour;
 public class Sistem extends Entity{
 	
 	private static final long serialVersionUID = -2734681258305935229L;
-	public ArrayList<User> users;
-	public ArrayList<Event> allEvents;
+	public List<User> users;
+	public List<Event> allEvents;
 	public LogSistem logSistem;
 	
 	public Sistem(LogSistem logSistem){
@@ -50,7 +51,7 @@ public class Sistem extends Entity{
 		}
 	}
 	
-	public Tour newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
+	public Tour newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, List<User> friends){
 		Tour tour = new Tour(typeOfTour, date, scheduler, limitAmount, friends);
 		this.generateEventOptions(tour);
 		return tour;
@@ -112,9 +113,9 @@ public class Sistem extends Entity{
 	//Login Methods
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	public void registerNewUser(String userName, String password, String mail) throws Exception{
+	public void registerNewUser(String nameOfUser,String userName, String password, String mail,String image) throws Exception{
 		this.logSistem.newUser(userName, password);
-		User user = new User(this, userName, password, mail);
+		User user = new User(this, nameOfUser,userName, password, mail,image);
 		this.users.add(user);
 		this.logSistem.users.put(userName, password);
 	}

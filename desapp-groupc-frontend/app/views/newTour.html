@@ -8,22 +8,24 @@
 	<table style="margin-bottom: 20px; width: 100%"">
 		<tr>
 			<td style="padding-right: 20px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="agregar()">Half<br>Orange</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(0)">Half<br>Orange</button>
 			</td>
 			<td style="padding-right: 20px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="agregar()">Saturday<br>Night<br>Fever</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(1)">Saturday<br>Night<br>Fever</button>
 			</td>
 			<td style="padding-right: 20px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="agregar()">Gasolera</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(2)">Gasolera </button>
 			</td>
 			<td style="padding-right: 20px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="agregar()">With<br>Friends</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(3)">With<br>Friends</button>
 			</td>
 			<td>
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="agregar()">Surprise<br>Me</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(4)">Surprise<br>Me</button>
 			</td>
 		</tr>
 	</table>
+
+	<div>Type of tour selected: {{typeOfTour}}</div>
 
 	<table style="width: 100%">
 		<tr>
@@ -38,19 +40,19 @@
 			      				<ul style="display: inline">
         							<li>
           								<label for="title_1">
-            								<input type="radio" id="title_1" name="title" value="A"/>
+            								<input type="radio" id="morning" name="title" value="A"/ ng-click="selectScheduler(0)"/>
             								Morning
           								</label>
         							</li>
         							<li>
           								<label for="title_2">
-            								<input type="radio" id="title_2" name="title" value="B"/>
+            								<input type="radio" id="afternoon" name="title" value="B" ng-click="selectScheduler(1)"/>
             								Afternoon
           								</label>
         							</li>
         							<li>
           								<label for="title_2">
-            								<input type="radio" id="title_3" name="title" value="C"/>
+            								<input type="radio" id="night" name="title" value="C" ng-click="selectScheduler(2)"/>
             								Night
           								</label>
         							</li>
@@ -65,7 +67,7 @@
 						<td style="padding-right: 20px">
 							<fieldset>
 			      				<ul style="display: inline">
-        							<input type="text" id="amount" name="limit amount" required />
+        							<input type="text" id="amount" ng-model=limitAmount name="limit amount" required/>
       			  				</ul>
     						</fieldset>
 						</td>
@@ -80,7 +82,7 @@
 			      				<ul style="display: inline">
 										<div style="overflow-y: scroll; height: 75px" >
 											<div ng-repeat="friend in friends">
-												<a href="#profile">{{friend.userName}}</a>
+												<a ng-click="selectFriend(nombre)" id="nombre">{{friend.userName}}</a>
 											</div>
 										</div>
       			  				</ul>
@@ -91,13 +93,19 @@
 			</td>
 			<td style="padding-right: 20px">
 				<p>Date</p>
-				<input type="date" name="cumpleanios" step="1" min="2013-01-01" max="2013-12-31" value="2013-01-01">
+				<input type="date" ng-model=date name="cumpleanios" step="1" min="2016-11-15" max="2020-12-31" value="2016-11-15">
 			</td>
 		</tr>
 	</table>
 
 	<div style="text-align: right">
-		<button>Cancelar</button>
-		<button>Aceptar</button>
+		<button ng-click="cancel('/events')">Cancelar</button>
+		<button ng-click="aceptar()">Aceptar</button>
 	</div>
+
+	<div>Type of tour selected: {{typeOfTour}}</div>
+	<div>Type of tour selected: {{scheduler}}</div>
+	<div>Type of tour selected: {{limitAmount}}</div>
+	<div>Type of tour selected: {{date}}</div>
+	<div>Type of tour selected: {{friendsSelected}}</div>
 </div>

@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import domain.Event;
 import domain.Profile;
+import domain.Sistem;
 import domain.User;
 import domain.exceptions.SingUpException;
 import domain.exceptions.StainException;
@@ -36,10 +37,9 @@ public class UserService extends GenericService<User>{
 	}
 	
 	@Transactional
-    public User signUp(String name,String userName, String email, String password, String image) throws SingUpException {
+    public User signUp(Sistem sistem ,String name,String userName, String email, String password, String image) throws SingUpException {
         validateUser(userName,email);
-        User user = new User (name,userName,password,email);
-        user.setImage(image);
+        User user = new User(sistem,name,userName,password,email,image);
         userRepository.save(user);
         user = userRepository.findById(user.getId());
         return user;
@@ -89,7 +89,7 @@ public class UserService extends GenericService<User>{
 	 
 	 @Transactional
 	 public List<Event> getEvents(User user,TypeOfTour typeOfTour,DateTime date, TypeOfScheduler scheduler,int limitAmount, List<User>friendsSelect){
-		 user.newTour(typeOfTour, date, scheduler, limitAmount, friendsSelect);
+		 return user.newTour(typeOfTour, date, scheduler, limitAmount, friendsSelect).getEventOptions1();
 	 }
 }
 
