@@ -72,8 +72,10 @@ public class User extends Entity{
 		this.events.add(event);
 	}
 
-	public void newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
-		this.tours.add(this.sistem.newTour(typeOfTour, date, scheduler, limitAmount, friends));
+	public Tour newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, ArrayList<User> friends){
+		Tour tour = this.sistem.newTour(typeOfTour, date, scheduler, limitAmount, friends);
+		this.tours.add(tour);
+		return tour;
 	}
 
 	public void acceptTour(Tour tour){

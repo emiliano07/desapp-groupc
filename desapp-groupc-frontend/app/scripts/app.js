@@ -33,6 +33,11 @@ angular.module("stain", ['ngRoute','pascalprecht.translate'])
     templateUrl: "views/newTour.html",
     controller: "NewTourController"
   });
+
+  $routeProvider.when('/eventsForTour', {
+    templateUrl: "views/eventsForTour.html",
+    controller: "NewTourController"
+  });
    
   $routeProvider.otherwise({
         redirectTo: 'login.html'
