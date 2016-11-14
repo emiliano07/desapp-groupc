@@ -1,15 +1,14 @@
 package domain;
 
 import java.util.ArrayList;
-import org.joda.time.DateTime;
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import org.joda.time.DateTime;
 
 import domain.types.Type;
 import domain.types.TypeOfScheduler;
 
-@XmlRootElement(name="event")
+
 public class Event extends Entity{
 
 	private static final long serialVersionUID = 5114264723960999199L;

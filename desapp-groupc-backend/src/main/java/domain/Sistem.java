@@ -17,6 +17,7 @@ public class Sistem extends Entity{
 	public List<Event> allEvents;
 	public LogSistem logSistem;
 	
+	public Sistem(){}
 	public Sistem(LogSistem logSistem){
 		this.users = new ArrayList<User>();
 		this.allEvents = new ArrayList<Event>();

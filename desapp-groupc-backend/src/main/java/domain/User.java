@@ -3,8 +3,6 @@ package domain;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
 import org.joda.time.DateTime;
 
 import domain.auth0.GoogleOauthCredential;
@@ -12,7 +10,6 @@ import domain.exceptions.UserNotLoggedException;
 import domain.types.TypeOfScheduler;
 import domain.types.TypeOfTour;
 
-@XmlRootElement(name="user")
 public class User extends Entity{
 	
 	private static final long serialVersionUID = -8201505803898337489L;
@@ -55,7 +52,7 @@ public class User extends Entity{
 	}
 	
 	public void addEvent(Event event){
-		//this.sistem.addEvent(event);
+		this.sistem.addEvent(event);
 		this.events.add(event);
 	}
 

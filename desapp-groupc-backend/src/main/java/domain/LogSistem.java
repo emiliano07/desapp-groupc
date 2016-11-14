@@ -8,8 +8,9 @@ import domain.exceptions.PasswordNotmatchException;
 import domain.exceptions.UserNameAlreadyExistException;
 import domain.exceptions.UserNameNotmatchException;
 
-public class LogSistem {
+public class LogSistem extends Entity{
 
+	private static final long serialVersionUID = 257044326221376677L;
 	public Map<String,String> users;
 	
 	public LogSistem(){

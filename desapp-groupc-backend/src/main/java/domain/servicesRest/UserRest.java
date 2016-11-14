@@ -15,6 +15,7 @@ import org.joda.time.DateTime;
 
 import domain.Event;
 import domain.Profile;
+import domain.Sistem;
 import domain.User;
 import domain.builders.UserBuilder;
 import domain.exceptions.StainException;
@@ -105,4 +106,10 @@ public class UserRest {
 		return userService.getEvents(user,type,date,scheduler,limitAmount,friendsSelect);
 	}
 	
+	@GET
+	@Path("/userFromSystem/{userId}")
+	@Produces("application/json")
+	public Sistem getASistem(@PathParam("userId") final int id) {
+		return userService.getUserRepository().findById(id).getSistem();
+	}
 }
