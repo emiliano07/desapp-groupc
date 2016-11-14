@@ -28,4 +28,8 @@ angular.module('stain').controller("NewEventController", ["$http","$scope","$win
       $scope.events = result;      
     }) 
   }
+
+  $scope.cancel = function(path) {
+    $location.path(path);
+  };
 }]);

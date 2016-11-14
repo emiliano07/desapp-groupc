@@ -6,20 +6,19 @@
 	<div style="overflow-y: scroll; height: 500px; margin-top: 10px">
 		<div class="wrap-col" ng-repeat="event in getEvents()">
 			<div class="heading">
-				<div style="font-size: 20px"><b>{{event.address}}</b>
+				<div style="font-size: 20px"><b>{{event.nameOfEvent}}</b>
 				</div>
-				<div class="info">{{event.scheduler}}
+				<div class="info">{{event.scheduler}} - {{event.address}}
 				</div>
 			</div>
 			<auto;class="content">
 			<table>
 				<tr>
 					<td>
-						<img ng-src= {{event.image}}  width="1000" height="1000"/>
+						<img ng-src= {{event.image}}  width="750" height="750"/>
 					</td>
 					<td style="padding-left: 10px">
-						<p>{{event.amount}}</p>
-						<p class="more"><a class="button">{{ 'Details' | translate }}</a></p>
+						<p>{{event.description}} - ${{event.amount}}</p>
 					</td>
 				</tr>
 			</table>

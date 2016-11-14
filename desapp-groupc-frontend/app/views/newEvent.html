@@ -1,30 +1,64 @@
 <div style="margin: 10px">
-	<div style="font-size: 25px"><b><u>FORMULARIO PARA AGREGAR UN EVENTO</u></b></div>
+	<div style="font-size: 25px;padding-bottom: 15px"><b><u>Nuevo Evento</u></b></div>
 	<!-- <p>Nombre del Evento</p>
 	<input type="text" class="form-control" id="eventName" ng-model="newEvent.name"/> -->
-	<p>Lugar del Evento</p>
-	<input type="text" class="form-control" id="eventAdress" ng-model="newEvent.address"/>
-	<p>Valor del Evento</p>
-	<input type="number" class="form-control" id="eventAmount" ng-model="newEvent.amount"/>
-	<p>Limite de personas del Evento</p>
-	<input type="number" class="form-control" id="eventLimitOfPersons" ng-model="newEvent.limitOfPersons"/>
-	<p>Descripcion del Evento</p>
-	<input type="text" class="form-control" id="eventDescription" ng-model="newEvent.description"/>
-	<p>Horario del Evento</p>
-	<select style="width: 200px" ng-model="newEvent.horario">
-  		<option >Mañana</option>
-  		<option >Tarde</option>
-  		<option >Noche</option>
-	</select>
-	<br>
-	<br>
-	<p>Imagen del Evento</p>
-	<input type="text" class="form-control" id="eventImage" ng-model="newEvent.image"/>
-	<br>
-	<br>
-	<button type="button" ng-click="newEvent(newEvent)" >Agregar Evento</button>
-	<br>
-	<br>
-	<a href="#events"><button>Cancelar</button></a> 
-	<br>
+
+	<table style="width: 100%;margin-bottom: 15px">
+		<tr>
+			<td style="padding-right: 20px">
+				<p>Lugar del Evento:</p>
+			</td>
+			<td style="padding-right: 20px;padding-bottom: 10px">
+				<input type="text" class="form-control" id="eventAdress" ng-model="newEvent.address"/>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>Valor:</p>
+			</td>
+			<td style="padding-right: 20px;padding-bottom: 10px">
+				<input type="number" class="form-control" id="eventAmount" ng-model="newEvent.amount" style="width:125px"/>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>Limite de personas:</p>
+			</td>
+			<td style="padding-right: 20px;padding-bottom: 10px">
+				<input type="number" class="form-control" id="eventLimitOfPersons" ng-model="newEvent.limitOfPersons" style="width:75px"/>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>Descripcion:</p>
+			</td>
+			<td style="padding-right: 20px;padding-bottom: 10px">
+				<input type="text" class="form-control" id="eventDescription" ng-model="newEvent.description" style="height:200px;text-align: left"/>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>Horario:</p>
+			</td>
+			<td style="padding-right: 20px;padding-bottom: 10px">
+				<select style="width: 200px" ng-model="newEvent.horario">
+  					<option >Mañana</option>
+  					<option >Tarde</option>
+  					<option >Noche</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>Imagen del Evento:</p>
+			</td>
+			<td style="padding-right: 20px;padding-bottom: 10px">
+				<input type="text" class="form-control" id="eventImage" ng-model="newEvent.image"/>
+			</td>
+		</tr>
+	</table>
+	<div style="text-align: right">
+		<button ng-click="cancel('/events')">Cancelar</button>
+		<button ng-click="newEvent(newEvent)">Agregar evento</button>
+	</div>
 </div>
