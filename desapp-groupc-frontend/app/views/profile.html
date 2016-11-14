@@ -1,10 +1,69 @@
 <div style="margin: 10px">
-	<div style="font-size: 25px"><b><u>{{user.userName}}</u></b></div>
-	<br>
-	<ul>
-		<li><div style="font-size: 18px">{{user.profile.typeOfFilm}}</div></li>
-		<li><div style="font-size: 18px">{{user.profile.typeOfMusic}}<div></li>
-		<li><div style="font-size: 18px">{{user.profile.typeOfFood}}</div></li>
-		<li><div style="font-size: 18px">{{user.profile.limitAmount}}</div></li>
-	</ul>
+	<table style="width: 100%">
+		<tr>
+			<td  style="padding-right: 0px; padding-bottom: 15px">
+				<img ng-src= {{user.image}}  width="100" height="100" />
+			</td>
+			<td style="padding-right: 0px; padding-bottom: 15px">
+				<div style="font-size: 25px; padding-top: 20px"><b><u>{{user.nameOfUser}}</u></b></div>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>Username:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>{{user.userName}}</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>Mail:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>{{user.mail}}</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>Profile:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<table style="width: 100%">
+					<tr>
+						<td  style="padding-right: 0px; padding-bottom: 15px">
+							Type of Film:
+						</td>
+						<td style="padding-right: 0px; padding-bottom: 15px">
+							<div>{{user.profile.typeOfFilm}}</div>
+						</td>
+					</tr>
+					<tr>
+						<td  style="padding-right: 0px; padding-bottom: 15px">
+							Type of Music:
+						</td>
+						<td style="padding-right: 0px; padding-bottom: 15px">
+							<div>{{user.profile.typeOfMusic}}</div>
+						</td>
+					</tr>
+					<tr>
+						<td  style="padding-right: 0px; padding-bottom: 15px">
+							Type of Food:
+						</td>
+						<td style="padding-right: 0px; padding-bottom: 15px">
+							<div>{{user.profile.typeOfFood}}</div>
+						</td>
+					</tr>
+					<tr>
+						<td  style="padding-right: 0px; padding-bottom: 15px">
+							Limit amount:
+						</td>
+						<td style="padding-right: 0px; padding-bottom: 15px">
+							<div>{{user.profile.limitAmount}}</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 </div>

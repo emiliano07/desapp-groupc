@@ -14,7 +14,7 @@
 				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(1)">Saturday<br>Night<br>Fever</button>
 			</td>
 			<td style="padding-right: 20px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(2)">Gasolera </button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(2)">Gasolera</button>
 			</td>
 			<td style="padding-right: 20px">
 				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(3)">With<br>Friends</button>
@@ -25,7 +25,7 @@
 		</tr>
 	</table>
 
-	<div>Type of tour selected: {{typeOfTour}}</div>
+	<div style="padding-bottom:10px"">Type of tour selected: {{typeOfTour}}</div>
 
 	<table style="width: 100%">
 		<tr>
@@ -35,7 +35,7 @@
 						<td style="padding-right: 20px">
 							<p>Scheduler</p>
 						</td>
-						<td style="padding-right: 20px">
+						<td style="padding-right: 20px;padding-bottom: 10px"">
 							<fieldset>
 			      				<ul style="display: inline">
         							<li>
@@ -61,10 +61,10 @@
 						</td>
 					</tr>
 					<tr>
-						<td style="padding-right: 20px">
+						<td style="padding-right: 20px;padding-bottom: 10px"">
 							<p>Limit Amount</p>
 						</td>
-						<td style="padding-right: 20px">
+						<td style="padding-right: 20px;padding-bottom: 10px"">
 							<fieldset>
 			      				<ul style="display: inline">
         							<input type="text" id="amount" ng-model=limitAmount name="limit amount" required/>
@@ -77,14 +77,9 @@
 							<p>Friends</p>
 						</td>
 						<td style="padding-right: 20px">
-							<input type="text" id="friends" name="friends" required />
 							<fieldset>
 			      				<ul style="display: inline">
-										<div style="overflow-y: scroll; height: 75px" >
-											<div ng-repeat="friend in friends">
-												<a ng-click="selectFriend(nombre)" id="nombre">{{friend.userName}}</a>
-											</div>
-										</div>
+        							<input type="text" id="friends" ng-model=friendsSelected name="friends" required/>
       			  				</ul>
     						</fieldset>
 						</td>
@@ -102,10 +97,4 @@
 		<button ng-click="cancel('/events')">Cancelar</button>
 		<button ng-click="aceptar()">Aceptar</button>
 	</div>
-
-	<div>Type of tour selected: {{typeOfTour}}</div>
-	<div>Type of tour selected: {{scheduler}}</div>
-	<div>Type of tour selected: {{limitAmount}}</div>
-	<div>Type of tour selected: {{date}}</div>
-	<div>Type of tour selected: {{friendsSelected}}</div>
 </div>

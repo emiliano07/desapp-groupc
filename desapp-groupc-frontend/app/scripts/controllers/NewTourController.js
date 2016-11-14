@@ -8,7 +8,7 @@ angular.module('stain').controller("NewTourController", ["$http", "$log","$scope
   $scope.scheduler = 0;
   $scope.date = 0;
   $scope.limitAmount = 0;
-  $scope.friendsSelected = [];
+  $scope.friendsSelected = 0;
 
 	$scope.selectTypeOfTour = function(idOfTour){
     $scope.typeOfTour = idOfTour;
@@ -27,7 +27,7 @@ angular.module('stain').controller("NewTourController", ["$http", "$log","$scope
   }
 
   $scope.selectFriend = function(idOfFiernd){
-    $scope.friendsSelected.push(idOfFiernd);
+    $scope.friendsSelected = idOfFiernd;
   }
 
   $scope.cancel = function(path) {
