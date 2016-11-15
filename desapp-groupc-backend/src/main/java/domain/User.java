@@ -52,7 +52,7 @@ public class User extends Entity{
 	}
 	
 	public void addEvent(Event event){
-		this.sistem.addEvent(event);
+		//this.sistem.addEvent(event);
 		this.events.add(event);
 	}
 

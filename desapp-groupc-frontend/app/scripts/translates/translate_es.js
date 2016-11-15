@@ -26,6 +26,10 @@ angular.module('stain')
 		Limit : 'Limits of Persons',
 		Description : 'Description',
 		Scheduler : 'Scheduler',
+		MORNING2 : 'MORNING',
+		AFTERNOON2 : 'AFTERNOON',
+		NIGHT2 : 'NIGTH',
+		Image : 'Image',
 		Morning : 'Morning',
 		Afternoon : 'Afternoon',
 		Night : 'Night',
@@ -49,7 +53,8 @@ angular.module('stain')
 		With : 'With',
 		SurpriseMe : 'Surprise Me',
 		TypeOfTourSelected : 'Type of Tour Selected',
-		Date : 'Date'
+		Date : 'Date',
+		NameEvent : "Name of Event"
 	});
 
 	$translateProvider.translations('es', {
@@ -76,6 +81,9 @@ angular.module('stain')
 		Morning : 'Mañana',
 		Afternoon : 'Tarde',
 		Night : 'Noche',
+		MORNING2 : 'MORNING',
+		AFTERNOON2 : 'AFTERNOON',
+		NIGHT2 : 'NIGTH',
 		Image : 'Imagen',
 		Accept : 'Aceptar',
 		Cancel : 'Cancelar',
@@ -96,7 +104,8 @@ angular.module('stain')
 		With : 'Con',
 		SurpriseMe : 'Sorprendeme',
 		TypeOfTourSelected : 'Tipo de Tour Seleccionado',
-		Date : 'Fecha'
+		Date : 'Fecha',
+		NameEvent : "Nombre del Evento"
 	});
 
 	var language = (navigator.language || navigator.browserLanguage).split('-')[0];

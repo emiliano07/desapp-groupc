@@ -6,6 +6,14 @@
 	<table style="width: 100%;margin-bottom: 15px">
 		<tr>
 			<td style="padding-right: 20px">
+				<p>{{'NameEvent' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px;padding-bottom: 10px">
+				<input type="text" class="form-control" id="eventAdress" ng-model="newEvent.nameOfEvent"/>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
 				<p>{{'Where' | translate}}:</p>
 			</td>
 			<td style="padding-right: 20px;padding-bottom: 10px">
@@ -42,9 +50,9 @@
 			</td>
 			<td style="padding-right: 20px;padding-bottom: 10px">
 				<select style="width: 200px" ng-model="newEvent.horario">
-  					<option >{{'Morning' | translate}}</option>
-  					<option >{{'Afternoon' | translate}}</option>
-  					<option >{{'Night' | translate}}</option>
+  					<option >{{'MORNING2' | translate}}</option>
+  					<option >{{'AFTERNOON2' | translate}}</option>
+  					<option >{{'NIGHT2' | translate}}</option>
 				</select>
 			</td>
 		</tr>

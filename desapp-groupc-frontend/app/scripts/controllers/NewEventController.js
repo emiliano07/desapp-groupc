@@ -6,14 +6,14 @@ angular.module('stain').controller("NewEventController", ["$http","$scope","$win
 
 	$scope.newEvent = function(newEvent){
 	$http.post('http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1' , {
-        types: null,
+    types: null,
 		date: null,
-		scheduler: null,
+		scheduler: newEvent.horario,
 		address: newEvent.address,
 		amount: newEvent.amount,
 		limitOfPersons: newEvent.limitOfPersons,
 		suggestions: null,
-		nameOfEvent: newEvent.name,
+		nameOfEvent: "Samsara",
 		description: newEvent.description,
 		image: newEvent.image,
     }).success(function(){
