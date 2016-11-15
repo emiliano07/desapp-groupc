@@ -2,7 +2,7 @@
 
 'use strict';
 
-angular.module('stain').controller("EventsController", ["$http", "$log","$scope", function($http,$log,$scope) {
+angular.module('stain').controller("EventsController", ["$http", "$log","$scope","$translate", function($http,$log,$scope,$translate) {
 
   // Paginacion
     $scope.amountPages = 0;
@@ -51,9 +51,22 @@ angular.module('stain').controller("EventsController", ["$http", "$log","$scope"
       return $scope.listOfEvents;
     };
 
-     $scope.initEvents = function(){
+    $scope.initEvents = function(){
       $scope.events(0);
       $scope.howMuchEventsRest();
+    };
+
+    $scope.switchLanguage = function(){
+      var langKey = $scope.selected;
+    
+      switch (langKey) {
+        case 'en':
+          $translate.use(langKey);
+          break;
+        case 'es':
+          $translate.use(langKey);
+          break;
+      }
     };
 
      $scope.initEvents();    

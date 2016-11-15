@@ -1,31 +1,31 @@
 <div style="margin: 10px">
 	
-	<div style="font-size: 25px"><b><u>New Tour</u></b>
+	<div style="font-size: 25px"><b><u>{{'NewTour' | translate}}</u></b>
 	</div>
 	<br>
 
 
 	<table style="margin-bottom: 20px; width: 100%"">
 		<tr>
-			<td style="padding-right: 20px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(0)">Half<br>Orange</button>
+			<td style="padding-right: 10px">
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour(0)">{{'Half' | translate}}<br>{{'Orange' | translate}}</button>
 			</td>
-			<td style="padding-right: 20px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(1)">Saturday<br>Night<br>Fever</button>
+			<td style="padding-right: 10px">
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour(1)">{{'Saturday' | translate}}<br>{{'NightSaturday' | translate}}<br>{{'Fever' | translate}}</button>
 			</td>
-			<td style="padding-right: 20px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(2)">Gasolera</button>
+			<td style="padding-right: 10px">
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour(2)">{{'Gasolera' | translate}}</button>
 			</td>
-			<td style="padding-right: 20px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(3)">With<br>Friends</button>
+			<td style="padding-right: 10px">
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour(3)">{{'With' | translate}}<br>{{'Friends' | translate}}</button>
 			</td>
 			<td>
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 75px" ng-click="selectTypeOfTour(4)">Surprise<br>Me</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour(4)">{{'SurpriseMe' | translate}}</button>
 			</td>
 		</tr>
 	</table>
 
-	<div style="padding-bottom:10px"">Type of tour selected: {{typeOfTour}}</div>
+	<div style="padding-bottom:10px"">{{'TypeOfTourSelected' | translate}}: {{typeOfTour}}</div>
 
 	<table style="width: 100%">
 		<tr>
@@ -33,7 +33,7 @@
 				<table style="width: 100%">
 					<tr>
 						<td style="padding-right: 20px">
-							<p>Scheduler</p>
+							<p>{{'Scheduler' | translate}}</p>
 						</td>
 						<td style="padding-right: 20px;padding-bottom: 10px"">
 							<fieldset>
@@ -41,19 +41,19 @@
         							<li>
           								<label for="title_1">
             								<input type="radio" id="morning" name="title" value="A"/ ng-click="selectScheduler(0)"/>
-            								Morning
+            								{{'Morning' | translate}}
           								</label>
         							</li>
         							<li>
           								<label for="title_2">
             								<input type="radio" id="afternoon" name="title" value="B" ng-click="selectScheduler(1)"/>
-            								Afternoon
+            								{{'Afternoon' | translate}}
           								</label>
         							</li>
         							<li>
           								<label for="title_2">
             								<input type="radio" id="night" name="title" value="C" ng-click="selectScheduler(2)"/>
-            								Night
+            								{{'Night' | translate}}
           								</label>
         							</li>
       			  				</ul>
@@ -62,7 +62,7 @@
 					</tr>
 					<tr>
 						<td style="padding-right: 20px;padding-bottom: 10px"">
-							<p>Limit Amount</p>
+							<p>{{'LimitAmount' | translate}}</p>
 						</td>
 						<td style="padding-right: 20px;padding-bottom: 10px"">
 							<fieldset>
@@ -74,7 +74,7 @@
 					</tr>
 					<tr>
 						<td style="padding-right: 20px">
-							<p>Friends</p>
+							<p>{{'Friends' | translate}}</p>
 						</td>
 						<td style="padding-right: 20px">
 							<fieldset>
@@ -87,14 +87,14 @@
 				</table>
 			</td>
 			<td style="padding-right: 20px">
-				<p>Date</p>
+				<p>{{'Date' | translate}}</p>
 				<input type="date" ng-model=date name="cumpleanios" step="1" min="2016-11-15" max="2020-12-31" value="2016-11-15">
 			</td>
 		</tr>
 	</table>
 
 	<div style="text-align: right">
-		<button ng-click="cancel('/events')">Cancelar</button>
-		<button ng-click="aceptar()">Aceptar</button>
+		<button ng-click="cancel('/events')">{{'Cancel' | translate}}</button>
+		<button ng-click="aceptar()">{{'Accept' | translate}}</button>
 	</div>
 </div>
