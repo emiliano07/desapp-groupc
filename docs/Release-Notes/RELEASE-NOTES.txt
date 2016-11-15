@@ -30,7 +30,6 @@ NEW FEATURES:
 * Publicación de WebServices REST para Eventos [CRUD y LIST].
 * Persistencia de Eventos con Hibernate.
 * Persistencia de Usuarios con Hibernate.
-* Configuración del deploy en Heroku.
 
 NOTES:
 * Falta implementar el medio de transporte de los usuarios.
@@ -45,3 +44,40 @@ KNOWN ISSUES:
 * View Perfil: Hay que definir ideas de diseño e implementarlas.
 * View Eventos: Hay que definir ideas de diseño e implementarlas.
 * Dividir los controllers y app en archivos separados.
+* Configuración del deploy en Heroku.
+
+---------------------------------------------------------------------
+Entrega_3.0
+---------------------------------------------------------------------
+NEW FEATURES:
+* Implementación de paginación.
+* Implementación de I18n- US_ES.
+* Implementación de Auditoria de servicios (servicios publicados con Spring utilizando Log4j).
+* Adaptación de la aplicación a responsive web design.
+* Implementación de formatters de $ (moneda) según LOCALE.
+* Implementación del detalle de los eventos.
+* Propuestas según perfil
+* Test de arquitectura.
+* Page Home terminada.
+* View Events terminada.
+* View New Tour terminada.
+* View Profile terminada.
+* View New Event terminada.
+
+NOTES:
+* Falta implementar el medio de transporte de los usuarios.
+* Falta implementar un usuario administrador.
+* Falta autenticar la aplicación con Google.
+* Falta implementar formatters de fecha y # (números) según LOCALE.
+* Falta la funcionalidad de asistire.
+* Falta el CRUD de perfiles.
+* Falta realizar la busqueda por cantidad de personas o sugerencias.
+* Falta implementar del círculo de amistades la busqueda, el agregado y la eliminación de los amigos.
+
+KNOWN ISSUES:
+* Los algoritmos de búsqueda de eventos son bastante sencillos. Habría que pensar si es necesario mejorarlos.
+* Page Login: Bindear el contenido con el backend.
+* View Perfil: Agregar la opción de modificar el perfil.
+* View New Tour: Falta realizar la busqueda de los eventos por los requisitos pedidos.
+* Mejora en la visualizacion del detalle de los eventos.
+* Configuración del deploy en Heroku.
