@@ -31,6 +31,8 @@ http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd">
 		<jaxrs:serviceBeans>
 			<ref bean="eventRest" />
 			<ref bean="userRest" />
+			<ref bean="loginRest" />
+			<ref bean="registerRest" />
 			<!--<ref bean="userRest" /> -->
 		</jaxrs:serviceBeans>
 		<jaxrs:extensionMappings>
@@ -48,19 +50,31 @@ http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd">
 	<!-- <bean id="dao.event" class="domain.servicesRest.daos.EventDAO" /> <bean 
 		id="eventRest" class="domain.servicesRest.EventRest"/> <bean id="dao.user" 
 		class="domain.servicesRest.daos.UserDAO"/> <bean id="userRest" class="domain.servicesRest.UserRest"/> -->
+	
 	<bean id="eventRest" class="domain.servicesRest.EventRest">
 		<constructor-arg>
 			<ref bean="services.event" />
 		</constructor-arg>
 	</bean>
+	
 	<bean id="userRest" class="domain.servicesRest.UserRest">
 		<constructor-arg>
 			<ref bean="services.user" />
 		</constructor-arg>
 	</bean>
+	
+	<bean id="loginRest" class="domain.servicesRest.LoginRest">
+		<property name="registerUserService" ref="services.register" />
+	</bean>
+
+	<bean id="registerRest" class="domain.servicesRest.RegisterRest">
+		<property name="registerUserService" ref="services.register" />
+	</bean>
+	
 	<bean id="setup.exampleData" class="domain.servicesRest.SetupExampleData" init-method="init">
 		<property name="eventService" ref="services.event" />
 		<property name="userService" ref="services.user" />
+		<property name="registerUserService" ref="services.register" />
 	</bean>
 
 </beans>

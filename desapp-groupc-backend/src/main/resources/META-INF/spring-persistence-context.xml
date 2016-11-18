@@ -104,4 +104,8 @@
 	<bean id="persistence.userRepository" class="domain.repositories.UserRepository">
 		<property name="sessionFactory" ref="persistence.sessionFactory" />
 	</bean>
+	
+	<bean id="persistence.registerUserRepository" class="domain.repositories.RegisterUserRepository">
+		<property name="sessionFactory" ref="persistence.sessionFactory" />
+	</bean>
 </beans>

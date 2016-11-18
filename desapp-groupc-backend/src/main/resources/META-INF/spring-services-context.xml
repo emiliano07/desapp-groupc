@@ -16,4 +16,8 @@
 		<property name="repository" ref="persistence.userRepository" />
 		<property name="userRepository" ref="persistence.userRepository" />
 	</bean>
+	
+	<bean id="services.register" class="domain.services.RegisterUserService">
+		<property name="repository" ref="persistence.registerUserRepository" />
+	</bean>
 </beans>

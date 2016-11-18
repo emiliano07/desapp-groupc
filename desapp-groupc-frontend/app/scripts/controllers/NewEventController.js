@@ -4,16 +4,18 @@
 
 angular.module('stain').controller("NewEventController", ["$http","$scope","$window","$location", function($http,$scope,$window,$location) {
 
-	$scope.newEvent = function(newEvent){
+	$scope.daysOfWeek = ['MORNING', 'AFTERNOON', 'NIGHT'];
+
+  $scope.newEvent = function(newEvent){
 	$http.post('http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1' , {
         types: null,
 		date: null,
-		scheduler: null,
+		scheduler: newEvent.horario,
 		address: newEvent.address,
 		amount: newEvent.amount,
 		limitOfPersons: newEvent.limitOfPersons,
 		suggestions: null,
-		nameOfEvent: newEvent.name,
+		nameOfEvent: "",
 		description: newEvent.description,
 		image: newEvent.image,
     }).success(function(){

@@ -33,7 +33,7 @@ angular.module("stain", ['ngRoute','pascalprecht.translate'])
     templateUrl: "views/eventsForTour.html",
     controller: "NewTourController"
   });
-   
+
   $routeProvider.otherwise({
         redirectTo: 'views/events.html'
   });

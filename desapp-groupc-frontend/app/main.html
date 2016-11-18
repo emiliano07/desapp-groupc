@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Social Network by Stain">
+  <meta name="author" content="www.stain.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/zerogrid.css">
+  <link rel="stylesheet" href="css/style_home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <title>STAIN - Where we go?</title>
+  <link href='./images/Logo_Stain_Icon.png' rel='icon' type='image/x-icon'/>
+    
+</head>
+
+<body style="background-image:url(images/fondo-madera-negro.jpg)" ng-app="stain">
+
+<!--Header-->
+<header style="margin-bottom: 15px">
+  <div class="wrap-header zerogrid" style="height: 75px">
+    <div id="logo" style="width: 150px; top: 0px; padding-bottom: 0px; padding-top: 0px"><img src="./images/Logo_Stain.png"/></div>
+    <nav>
+      <div class="wrap-nav" style="top: 20px">
+        <div class="menu">
+          <ul>
+            <li><a href="#events">HOME</a></li>
+            <li><a href="login.html">SIGN OUT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!--Content-->
+<section id="content">
+  <div class="wrap-content zerogrid" style="margin-top: 15px; margin-bottom: 15px">
+  
+    <div id="sidebar" class="col-1-3">
+      <div class="wrap-col">
+        <div class="box">
+          <div class="heading"><h2>Friends</h2></div>
+          <div class="content" ng-controller="EventsController">
+            <div style="overflow-y: scroll; height: 150px" >
+              <div ng-repeat="friend in friends">
+                <img ng-src= {{friend.image}}  width="50" height="50" />
+                <a href="#profile">{{friend.userName}}</a>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="heading"><h2>Options</h2></div>
+          <div class="content">
+            <ul>
+              <li><a href="#profile">My Profile</a></li>
+              <li><a href="#events">My Events</a></li>
+              <li><a href="#newEvent">Add Event</a></li>
+              <li><a href="#newTour">New Tour</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content" class="col-2-3" ng-view>
+    </div>
+
+  </div>
+</section>
+
+<!--Footer-->
+<footer style="margin-top: 15px">
+  <div class="wrap-footer zerogrid">
+    <div class="row">
+      <div class="col-1-3">
+        <div class="wrap-col">
+          <div class="box">
+            <div class="heading"><h2>Stain S.A.</h2></div>
+            <div class="content">
+              <p>Stain S.A. tiene mas de 100 años de experiencia en la organizacion de eventos. Fundada por Alan Marino en el año 1907. Cuenta con mas de 1000 sucursales en todo el mundo. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2-3">
+        <div class="wrap-col">
+          <div class="box">
+            <div class="heading"><h2>Stain - Where we go?</h2></div>
+            <div class="content">
+              <p>Stain - Where we go? es una red social creada por la empresa Stain S.A., que brinda la posibilidad a sus usuarios de organizar diferentes tipos de salidas, ya sea solos, en pareja o con amigos. Cuenta con miles de eventos diferentes y es hoy en dia la principal pagina web elegida por usuarios quienes quieren garantizar una salida inolvidable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © 2016 - <a href="home.html#/events/" target="_blank">Stain - Where we go?</a> by Francioni - Mancuso</p>
+  </div>
+</footer>
+
+  <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/angular-locale-es.js"></script>
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  <script src="scripts/app.js"></script>
+  <script src="scripts/translates/translate_es.js"></script>
+  <script src="scripts/controllers/EventsController.js"></script>
+  <script src="scripts/controllers/NewEventController.js"></script>
+  <script src="scripts/controllers/ProfileController.js"></script>
+  <script src="scripts/controllers/NewTourController.js"></script>
+
+  <script src="bower_components/angular-translate/angular-translate.js"></script>
+
+</body>
+</html>
