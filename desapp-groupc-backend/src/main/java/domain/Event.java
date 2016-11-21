@@ -5,6 +5,11 @@ import java.util.List;
 
 import org.joda.time.DateTime;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+import domain.servicesRest.serialization.JodaDateTimeDeserializer;
+import com.fasterxml.jackson.datatype.joda.ser.DateTimeSerializer;
 import domain.types.Type;
 import domain.types.TypeOfScheduler;
 
@@ -13,6 +18,8 @@ public class Event extends Entity{
 
 	private static final long serialVersionUID = 5114264723960999199L;
 	public List<Type> types;
+	@JsonSerialize(using= DateTimeSerializer.class)
+    @JsonDeserialize(using= JodaDateTimeDeserializer.class)
 	public DateTime date;
 	public TypeOfScheduler scheduler;
 	public String address;

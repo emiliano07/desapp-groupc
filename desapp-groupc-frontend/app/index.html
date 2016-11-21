@@ -17,7 +17,7 @@
 
 </head>
 
-<body >
+<body class="indexPage" ng-controller="LoginController">
   
   <p align="center" style="margin: 0px"><img src="./images/Logo_Stain.png" width='400' height='200' align="center"/></p>
   
@@ -42,10 +42,10 @@
           <form action="">
             <ul class="ul-list">
               <li>
-                <input type="email" required class="input" placeholder="Your Email" ng-model="loginUser.email"/><span class="icon"><i class="fa fa-user"></i></span>
+                <input type="email"  class="input" placeholder="Your Email" ng-model="loginUser.email"/><span class="icon"><i class="fa fa-user"></i></span>
               </li>
               <li>
-                <input type="password" required class="input" placeholder="Password" ng-model="loginUser.password"/><span class="icon"><i class="fa fa-lock"></i></span>
+                <input type="password"  class="input" placeholder="Password" ng-model="loginUser.password"/><span class="icon"><i class="fa fa-lock"></i></span>
               </li>
               <button class="btn btn-primary btn-block btn-flat" ng-click="login(loginUser)">SIGN_IN</button>
             </ul>
@@ -76,12 +76,6 @@
             </ul>
           </form>
         </div>
-        <div class="social-login">Or sign up with &nbsp;
-          <a href="www.facebook.com" class="fb"><i class="fa fa-facebook"></i></a>
-          <a href="" class="tw"><i class="fa fa-twitter"></i></a>
-          <a href="" class="gp"><i class="fa fa-google-plus"></i></a>
-          <a href="" class="in"><i class="fa fa-linkedin"></i></a>
-        </div>
       </section>
     </div>
   </div>
@@ -91,7 +85,24 @@
     </div>
   </footer>
   
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+  </script>
+  
+  <script src="js/angular.js"></script>
+  <script src="js/angular-route.js"></script>
+  <script src="js/angular-locale-es.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/LoginController.js"></script>
+  
 </body>
 </html>

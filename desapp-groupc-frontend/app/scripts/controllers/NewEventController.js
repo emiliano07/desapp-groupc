@@ -15,7 +15,7 @@ angular.module('stain').controller("NewEventController", ["$http","$scope","$win
 		amount: newEvent.amount,
 		limitOfPersons: newEvent.limitOfPersons,
 		suggestions: null,
-    nameOfEvent: "Samsara",
+    nameOfEvent: newEvent.nameOfEvent,
     description: newEvent.description,
 		image: newEvent.image,
     }).success(function(){

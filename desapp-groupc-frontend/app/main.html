@@ -29,10 +29,22 @@
     <nav>
       <div class="wrap-nav" style="top: 20px">
         <div class="menu">
-          <ul>
-            <li><a href="#events">HOME</a></li>
-            <li><a href="index.html">SIGN OUT</a></li>
-          </ul>
+          <table>
+             <tr>
+               <td>
+                 <ul>
+                   <li><a href="#events">{{'Home' | translate}}</a></li>
+                   <li><a href="login.html">{{'SignOut' | translate}}</a></li>
+                 </ul>
+               </td>
+               <td>
+                 <select class="selectpicker" data-style="btn-info" style="width: 100px;margin-top: 7px" ng-controller="EventsController" ng-model="selected" ng-change="switchLanguage()">
+                     <option value="es">{{'Spanish' | translate}}</option>
+                     <option value="en">{{'English' | translate}}</option>
+                   </select>
+                </td>
+               </tr>
+             </table>
         </div>
       </div>
     </nav>
@@ -109,7 +121,7 @@
   </div>
 </footer>
 
-  <script src="js/angular.js"></script>
+    <script src="js/angular.js"></script>
     <script src="js/angular-route.js"></script>
     <script src="js/angular-locale-es.js"></script>
 

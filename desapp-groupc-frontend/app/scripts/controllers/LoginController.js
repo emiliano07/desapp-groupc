@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('stain').controller('LoginController', [ '$http', '$scope', '$window', '$cookies', 
-  '$locale',"$location", function($http, $scope, $window, $cookies, $locale,$location) {
+angular.module('stain').controller("LoginController", [ '$http', '$scope', '$window', '$cookies',"$location", function($http, $scope, $window, $cookies,$location) {
   
 
   // Register
@@ -25,7 +24,7 @@ angular.module('stain').controller('LoginController', [ '$http', '$scope', '$win
 
   $scope.clearRegisterUserForm = function() {
     $scope.registerUser = {};
-  }
+  };
 
   // Login
 
@@ -41,7 +40,7 @@ angular.module('stain').controller('LoginController', [ '$http', '$scope', '$win
 
   $scope.goToMain = function() {
     $window.location.href = '/main.html';
-  }
+  };
 
   // Google Login and register
 
@@ -81,7 +80,7 @@ angular.module('stain').controller('LoginController', [ '$http', '$scope', '$win
 
   $scope.loginError = function() {
     $scope.showLoginError = true;
-  }
+  };
 
  $scope.startApp();
 

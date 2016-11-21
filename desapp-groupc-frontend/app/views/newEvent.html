@@ -64,6 +64,14 @@
 				<input type="text" class="form-control" id="eventImage" ng-model="newEvent.image"/>
 			</td>
 		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'Date' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px;padding-bottom: 10px">
+				<input type="date" name="cumpleanios" min="2016-11-15" max="2020-12-31" value="2016-11-15" id="eventAmount" ng-model="newEvent.date"/>
+			</td>
+		</tr>
 	</table>
 	<div style="text-align: right">
 		<button ng-click="cancel('/events')">{{'Cancel' | translate}}</button>

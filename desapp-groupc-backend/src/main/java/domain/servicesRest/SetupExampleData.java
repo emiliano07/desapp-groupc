@@ -8,7 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 import domain.Event;
 import domain.LogSistem;
 import domain.Profile;
-import domain.RegisterUser;
 import domain.Sistem;
 import domain.User;
 import domain.builders.EventBuilder;
@@ -69,8 +68,8 @@ public class SetupExampleData {
     	sistem.addEvent(event);
     	User user = new User(sistem,"Francioni Lucio", "franciolucio","1234","franciolucio@gmail.com","images/francioniLucio.jpg");
     	userService.save(user);
-    	RegisterUser registerUser = new RegisterUser("franciolucio@gmail.com", "1234", user);
-    	registerUserService.save(registerUser);
+//    	RegisterUser registerUser = new RegisterUser("franciolucio@gmail.com", "1234", user);
+//    	registerUserService.save(registerUser);
     	Profile profileUser = ProfileBuilder.aProfile()
     					  .withLimitAmount(500)
     					  .withTypeOfFilm(Type.ACTION)
@@ -79,10 +78,10 @@ public class SetupExampleData {
     					  .build();
     	user.setFriends(new ArrayList<User>());
     	this.userService.addProfileForUser(user, profileUser);
-//    	User friend01 = new User(sistem,"Bart Simpson","bartSimpson","magui","bartSimpson@gmail.com","images/bart.jpg");
-//    	User friend02 = new User(sistem,"Corre Caminos","correCaminos","atrapame","correCaminos@gmail.com","images/correCaminos.jpg");
-//    	User friend03 = new User(sistem,"Pato Donald","patoDonald","kuakua","patoDonald@gmail.com","images/patoDonald.jpg");
-//    	User friend04 = new User(sistem,"Demonio De Tazmania","DemonioDeTazmania","12345","DemonioDeTazmania@gmail.com","images/Demonio_de_tazmania.jpg");
+    	User friend01 = new User(sistem,"Bart Simpson","bartSimpson","magui","bartSimpson@gmail.com","images/bart.jpg");
+    	User friend02 = new User(sistem,"Corre Caminos","correCaminos","atrapame","correCaminos@gmail.com","images/correCaminos.jpg");
+    	User friend03 = new User(sistem,"Pato Donald","patoDonald","kuakua","patoDonald@gmail.com","images/patoDonald.jpg");
+    	User friend04 = new User(sistem,"Demonio De Tazmania","DemonioDeTazmania","12345","DemonioDeTazmania@gmail.com","images/Demonio_de_tazmania.jpg");
     	Profile profileFriend01 = ProfileBuilder.aProfile()
 				  .withLimitAmount(900)
 				  .withTypeOfFilm(Type.ADVENTURE)
@@ -111,10 +110,10 @@ public class SetupExampleData {
     	this.userService.addProfileForUser(user, profileFriend02);
     	this.userService.addProfileForUser(user, profileFriend03);
     	this.userService.addProfileForUser(user, profileFriend04);
-//    	this.userService.addFriendForUser(user, friend01);
-//    	this.userService.addFriendForUser(user, friend02);
-//    	this.userService.addFriendForUser(user, friend03);
-//    	this.userService.addFriendForUser(user, friend04);
+    	this.userService.addFriendForUser(user, friend01);
+    	this.userService.addFriendForUser(user, friend02);
+    	this.userService.addFriendForUser(user, friend03);
+    	this.userService.addFriendForUser(user, friend04);
     	Event event01 = EventBuilder.aEvent()
     					.withAddress("Palermo")
     					.withName("Rosebar")
