@@ -30,11 +30,11 @@ angular.module('stain').controller("NewTourController", ["$http", "$log","$scope
     $scope.friendsSelected = idOfFiernd;
   }
 
-  $scope.cancel = function(path) {
+  $scope.back = function(path) {
     $location.path(path);
   };
 
-  $scope.aceptar = function() {
+  $scope.next = function() {
     $location.path('/eventsForTour/' + $scope.typeOfTour + '/' + $scope.scheduler + '/' + $scope.limitAmount + '/' + $scope.friendsSelected);
   };
 

@@ -38,6 +38,11 @@ angular.module("stain", [
     controller: "EventsForTourController"
   });
 
+  $routeProvider.when('/tourComplete/:typeOfTour/:scheduler/:limitAmount/:friendsSelected/:eventSelected1/:eventSelected2', {
+    templateUrl: "views/tourComplete.html",
+    controller: "TourCompleteController"
+  });
+
   $routeProvider.otherwise({
         redirectTo: 'views/events.html'
   });

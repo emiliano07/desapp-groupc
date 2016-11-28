@@ -9,6 +9,7 @@
 				<div style="font-size: 20px"><b>{{event.nameOfEvent}}</b>
 				</div>
 				<div class="info">{{event.scheduler}} - {{event.address}}
+					<button ng-click="verMapa()">{{'Ubicacion' | translate}}</button>
 				</div>
 			</div>
 			<auto;class="content">
@@ -19,9 +20,6 @@
 					</td>
 					<td style="padding-left: 10px">
 						<p>{{event.description}} - {{'Coin' | translate}}{{event.amount}}</p>
-					</td>
-					<td style="padding-left: 10px">
-						<button ng-click="verMapa()">Ver Mapa</button>
 					</td>
 				</tr>
 			</table>

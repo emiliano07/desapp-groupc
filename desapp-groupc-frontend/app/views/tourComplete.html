@@ -1,0 +1,71 @@
+<div style="margin: 10px">
+
+	<div style="font-size: 25px"><b><u>{{'TourFinished' | translate}}</u></b>
+	</div>
+	<br>
+
+	<table style="width: 400px">
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'TypeOfTourSelected' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>{{typeOfTour}}</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'Scheduler' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>{{scheduler}}</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'Date' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>{{date}}</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'LimitAmount' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>{{limitAmount}}</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'Friends' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>{{friendsSelected}}</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'EventSelected' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>{{eventSelected1}}</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'EventSelected' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>{{eventSelected2}}</p>
+			</td>
+		</tr>
+	</table>
+
+	<div style="text-align: right">
+		<button ng-click="back()">{{'Back' | translate}}</button>
+		<button ng-click="finish()">{{'Finish' | translate}}</button>
+	</div>
+
+</div>
