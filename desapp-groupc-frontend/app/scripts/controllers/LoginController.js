@@ -8,6 +8,7 @@ angular.module('stain').controller("LoginController", [ '$http', '$scope', '$win
   $scope.showERegisterError = false;
   $scope.showERegisterSuccess = false;
   $scope.registerUser = {};
+  $scope.emi = 0;
 
   $scope.register = function(user) {
     $http.post( 'http://localhost:8080/desapp-groupc-backend/rest/register/newuser', {
@@ -15,8 +16,10 @@ angular.module('stain').controller("LoginController", [ '$http', '$scope', '$win
       email : user.email,
       password : user.password
     }).success(function() {
+      $scope.emi = 10;
       $scope.showERegisterSuccess = true;
       $scope.clearRegisterUserForm();
+      $location.path("/events");
     }).error(function() {
       $scope.showERegisterError = true;
     })

@@ -2,7 +2,7 @@
 
 'use strict';
 
-angular.module('stain').controller("EventsController", ["$http", "$log","$scope","$translate", function($http,$log,$scope,$translate) {
+angular.module('stain').controller("EventsController", ["$http", "$log","$scope","$translate","$window", function($http,$log,$scope,$translate,$window) {
 
   // Paginacion
     $scope.amountPages = 0;
@@ -69,6 +69,10 @@ angular.module('stain').controller("EventsController", ["$http", "$log","$scope"
       }
     };
 
+    $scope.verMapa = function() {
+      $window.location.href = 'googleMaps.html';
+    };
+    
      $scope.initEvents();    
 
 
