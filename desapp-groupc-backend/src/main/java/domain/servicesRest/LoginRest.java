@@ -6,7 +6,6 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import domain.User;
@@ -28,8 +27,8 @@ public class LoginRest {
 
 	@POST
 	@Path("/connect")
-	@Produces(MediaType.APPLICATION_JSON)
-	@Consumes(MediaType.APPLICATION_JSON)
+	@Consumes("application/json")
+	@Produces("application/json")
 	public Response login(LoginUser loginUser) {
 		try {
 			User user = getRegisterUserService().login(loginUser);
@@ -41,8 +40,8 @@ public class LoginRest {
 
 	@POST
 	@Path("/googleconnect")
-	@Produces(MediaType.APPLICATION_JSON)
-	@Consumes(MediaType.APPLICATION_JSON)
+	@Consumes("application/json")
+	@Produces("application/json")
 	public Response googleConnect(LoginUser loginUser) {
 		try {
 			User user = this.getRegisterUserService().googleConnect(loginUser);

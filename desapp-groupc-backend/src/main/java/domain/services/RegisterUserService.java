@@ -49,12 +49,4 @@ public class RegisterUserService extends GenericService<RegisterUser> {
 				new UserBuilder().withName(loginUser.getName()).build());
 		this.save(registerUser);
 	}
-	
-	@Transactional
-	public void registerAdmin(LoginUser loginUser) {
-		RegisterUser registerUser = new RegisterUser(loginUser.getEmail(), loginUser.getPassword(),
-				new UserBuilder().withName(loginUser.getName()).build());
-		this.save(registerUser);
-	}
-
 }
