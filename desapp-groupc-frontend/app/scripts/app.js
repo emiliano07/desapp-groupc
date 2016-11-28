@@ -29,9 +29,9 @@ angular.module("stain", ['ngRoute','pascalprecht.translate'])
     controller: "NewTourController"
   });
 
-  $routeProvider.when('/eventsForTour', {
+  $routeProvider.when('/eventsForTour/:typeOfTour/:scheduler/:limitAmount/:friendsSelected', {
     templateUrl: "views/eventsForTour.html",
-    controller: "NewTourController"
+    controller: "EventsForTourController"
   });
 
   $routeProvider.otherwise({

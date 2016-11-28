@@ -4,8 +4,8 @@
 
 angular.module('stain').controller("NewTourController", ["$http", "$log","$scope","$location", function($http,$log,$scope,$location) {
 
-  $scope.typeOfTour = "Tour not selected";
-  $scope.scheduler = 0;
+  $scope.typeOfTour = '-';
+  $scope.scheduler = '';
   $scope.date = 0;
   $scope.limitAmount = 0;
   $scope.friendsSelected = 0;
@@ -35,13 +35,8 @@ angular.module('stain').controller("NewTourController", ["$http", "$log","$scope
   };
 
   $scope.aceptar = function() {
-    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/eventsForTour/1' + $scope.typeOfTour + '/' + $scope.date + '/' + $scope.scheduler + '/' + $scope.limitAmount + '/' + $scope.friendsSelected).then(succEvents).catch(fail);
-    $location.path('/eventsForTour');
+    $location.path('/eventsForTour/' + $scope.typeOfTour + '/' + $scope.scheduler + '/' + $scope.limitAmount + '/' + $scope.friendsSelected);
   };
-
-  function succEvents(response){
-    $scope.eventsForTour = response.data;
-  }
 
   function succFriends(response){
     $scope.friends = response.data;

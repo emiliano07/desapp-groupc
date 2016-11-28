@@ -52,7 +52,7 @@ public class Sistem extends Entity{
 		}
 	}
 	
-	public Tour newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, List<User> friends){
+	public Tour newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, int friends){
 		Tour tour = new Tour(typeOfTour, date, scheduler, limitAmount, friends);
 		this.generateEventOptions(tour);
 		return tour;
@@ -79,7 +79,7 @@ public class Sistem extends Entity{
 	}
 	
 	private Boolean conditionC(Event event, Tour tour){
-		return event.getLimitOfPersons() <= tour.getFriends().size();
+		return event.getLimitOfPersons() <= tour.getFriends();
 	}
 	
 	private Boolean conditionD(Event event, Tour tour){

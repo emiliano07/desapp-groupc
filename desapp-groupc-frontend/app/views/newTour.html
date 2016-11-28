@@ -8,19 +8,19 @@
 	<table style="margin-bottom: 20px; width: 100%"">
 		<tr>
 			<td style="padding-right: 10px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour('Half Orange');">{{'Half' | translate}}<br>{{'Orange' | translate}}</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour('HALF_ORANGE');">{{'Half' | translate}}<br>{{'Orange' | translate}}</button>
 			</td>
 			<td style="padding-right: 10px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour('Saturday Night Fever');">{{'Saturday' | translate}}<br>{{'NightSaturday' | translate}}<br>{{'Fever' | translate}}</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour('SATURDAY_NIGHT_FEVER');">{{'Saturday' | translate}}<br>{{'NightSaturday' | translate}}<br>{{'Fever' | translate}}</button>
 			</td>
 			<td style="padding-right: 10px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour('Gasolera');">{{'Gasolera' | translate}}</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour('GASOLERA');">{{'Gasolera' | translate}}</button>
 			</td>
 			<td style="padding-right: 10px">
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour('With Friends');">{{'With' | translate}}<br>{{'Friends' | translate}}</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour('WITH_FRIENDS');">{{'With' | translate}}<br>{{'Friends' | translate}}</button>
 			</td>
 			<td>
-				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour('Surprise Me');">{{'SurpriseMe' | translate}}</button>
+				<button type="button" class="btn btn-warning" style="height: 75px; width: 110px" ng-click="selectTypeOfTour('SURPRISE_ME');">{{'SurpriseMe' | translate}}</button>
 			</td>
 		</tr>
 	</table>
@@ -40,19 +40,19 @@
 			      				<ul style="display: inline">
         							<li>
           								<label for="title_1">
-            								<input type="radio" id="morning" name="title" value="A"/ ng-click="selectScheduler(0)"/>
+            								<input type="radio" id="morning" name="title" value="A"/ ng-click="selectScheduler('MORNING');"/>
             								{{'Morning' | translate}}
           								</label>
         							</li>
         							<li>
           								<label for="title_2">
-            								<input type="radio" id="afternoon" name="title" value="B" ng-click="selectScheduler(1)"/>
+            								<input type="radio" id="afternoon" name="title" value="B" ng-click="selectScheduler('AFTERNOON');"/>
             								{{'Afternoon' | translate}}
           								</label>
         							</li>
         							<li>
           								<label for="title_2">
-            								<input type="radio" id="night" name="title" value="C" ng-click="selectScheduler(2)"/>
+            								<input type="radio" id="night" name="title" value="C" ng-click="selectScheduler('NIGHT');"/>
             								{{'Night' | translate}}
           								</label>
         							</li>

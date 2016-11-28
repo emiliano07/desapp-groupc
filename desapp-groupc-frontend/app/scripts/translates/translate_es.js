@@ -54,6 +54,10 @@ angular.module('stain')
 		SurpriseMe : 'Surprise Me',
 		TypeOfTourSelected : 'Type of Tour Selected',
 		Date : 'Date',
+		AvailableEvents : 'Available Events',
+		Option1 : 'Option 1',
+		Option2 : 'Option 2',
+		SelectEvent : 'Select Event',
 		NameEvent : "Name of Event"
 	});
 
@@ -105,6 +109,10 @@ angular.module('stain')
 		SurpriseMe : 'Sorprendeme',
 		TypeOfTourSelected : 'Tipo de Tour Seleccionado',
 		Date : 'Fecha',
+		AvailableEvents : 'Eventos Disponibles',
+		Option1 : 'Opcion 1',
+		Option2 : 'Opcion 2',
+		SelectEvent : 'Seleccionar Evento',
 		NameEvent : "Nombre del Evento"
 	});
 

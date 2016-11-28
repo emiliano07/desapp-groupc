@@ -18,7 +18,7 @@ public class TourBuilder {
 	private TypeOfScheduler scheduler;
 	private int amount;
 	private int limitAmount;
-	private ArrayList<User> friends;
+	private int friends;
 	private ArrayList<Event> eventOptions1;
 	private ArrayList<Event> eventOptions2;
 	private Event event1;
@@ -31,7 +31,7 @@ public class TourBuilder {
 		this.scheduler = TypeOfScheduler.MORNING;
 		this.amount = 1000;
 		this.limitAmount = 500;
-		this.friends = new ArrayList<User>();
+		this.friends = 0;
 		this.eventOptions1 = new ArrayList<Event>();
 		this.eventOptions2 = new ArrayList<Event>();
 		this.event1 = new Event(new ArrayList<Type>(), new DateTime(), TypeOfScheduler.MORNING, "no-address", 100, 2,"no-name","no-description","no-image");
@@ -72,7 +72,7 @@ public class TourBuilder {
 	     return this;
 	 }
 	 
-	 public TourBuilder withFriends(ArrayList<User> friends){
+	 public TourBuilder withFriends(int friends){
 		 this.friends = friends;
 	     return this;
 	 }

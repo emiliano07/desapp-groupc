@@ -88,7 +88,7 @@ public class UserService extends GenericService<User>{
 	 }
 	 
 	 @Transactional
-	 public List<Event> getEvents(User user,TypeOfTour typeOfTour,DateTime date, TypeOfScheduler scheduler,int limitAmount, List<User>friendsSelect){
+	 public List<Event> getEvents(User user,TypeOfTour typeOfTour,DateTime date, TypeOfScheduler scheduler,int limitAmount, int friendsSelect){
 		 return user.newTour(typeOfTour, date, scheduler, limitAmount, friendsSelect).getEventOptions1();
 	 }
 }

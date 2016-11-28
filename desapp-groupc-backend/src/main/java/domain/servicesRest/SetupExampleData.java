@@ -17,6 +17,7 @@ import domain.services.EventService;
 import domain.services.RegisterUserService;
 import domain.services.UserService;
 import domain.types.Type;
+import domain.types.TypeOfScheduler;
 
 
 public class SetupExampleData {
@@ -135,6 +136,9 @@ public class SetupExampleData {
     	Event event04 = EventBuilder.aEvent()
 				.withAddress("Quilmes")
 				.withName("El Bosque")
+				.withScheduler(TypeOfScheduler.MORNING)
+				.withLimitOfPersons(3)
+				.withAmount(500)
 				.withDescription("Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.")
 				.withImage("images/elBosque.jpg")
 				.build();
@@ -142,5 +146,7 @@ public class SetupExampleData {
     	this.eventService.save(event02);
     	this.eventService.save(event03);
     	this.eventService.save(event04);
+    	user.addEvent(event04);
+    	userService.update(user);
     }
 }

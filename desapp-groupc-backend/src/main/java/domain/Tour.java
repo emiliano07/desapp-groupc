@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.joda.time.DateTime;
 
+import domain.builders.EventBuilder;
 import domain.types.TypeOfScheduler;
 import domain.types.TypeOfTour;
 
@@ -16,13 +17,13 @@ public class Tour extends Entity{
 	public TypeOfScheduler scheduler;
 	public int amount;
 	public int limitAmount;
-	public List<User> friends;
+	public int friends;
 	public List<Event> eventOptions1;
 	public List<Event> eventOptions2;
 	public Event event1;
 	public Event event2;
 	
-	public Tour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, List<User> friends){
+	public Tour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, int friends){
 		this.type = typeOfTour;
 		this.date = date;
 		this.scheduler = scheduler;
@@ -69,7 +70,7 @@ public class Tour extends Entity{
 		return this.limitAmount;
 	}	
 	
-	public List<User> getFriends() {
+	public int getFriends() {
 		return friends;
 	}
 
@@ -90,7 +91,19 @@ public class Tour extends Entity{
 	}
 	
 	public List<Event> getEventOptions1(){
-		return this.eventOptions1;
+		//return this.eventOptions1;
+		List<Event> l = new ArrayList<Event>();
+		Event event04 = EventBuilder.aEvent()
+				.withAddress("Quilmes")
+				.withName("El Bosque")
+				.withScheduler(TypeOfScheduler.MORNING)
+				.withLimitOfPersons(3)
+				.withAmount(500)
+				.withDescription("Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.")
+				.withImage("images/elBosque.jpg")
+				.build();
+		l.add(event04);
+		return l;
 	}
 	
 	public void setEventOptions1(ArrayList<Event> events){
