@@ -64,7 +64,29 @@ angular.module('stain')
 		Finish : 'Finish',
 		TourFinished : 'Tour Finished',
 		Ubicacion : 'Location',
-		NameEvent : "Name of Event"
+		Save : 'Save',
+		NameEvent : "Name of Event",
+		HORROR : 'HORROR',
+		ADVENTURE : 'ADVENTURE',
+		FANTASY : 'FANTASY',
+		COMEDY : 'COMEDY',
+		ACTION : 'ACTION',
+		ELECTRONIC : 'ELECTRONIC',
+		POP : 'POP',
+		CLASSIC : 'CLASSIC',
+		ROCK : 'ROCK',
+		REGGAETON : 'REGGAETON',
+		PASTA : 'PASTA',
+		FASTFOOD : 'FAST_FOOD',
+		PIZZA : 'PIZZA',
+		SUSHI : 'SUSHI',
+		GRILL : 'GRILL',
+		Pleassures : 'Pleassures',
+		Dates : 'Dates',
+		MyFriends : 'My Friends',
+		OtherUsers : 'Other Users',
+		DeleteFriend : 'Delete Friend',
+		AddFriend : 'Add New Friend'
 	});
 
 	var language = (navigator.language || navigator.browserLanguage).split('-')[0];

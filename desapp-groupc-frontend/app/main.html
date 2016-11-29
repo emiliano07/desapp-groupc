@@ -7,13 +7,13 @@
   <meta charset="utf-8">
   <meta name="description" content="Social Network by Stain">
   <meta name="author" content="www.stain.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="css/zerogrid.css">
+  <link rel="stylesheet" href="css/zerogrid.css">
   <link rel="stylesheet" href="css/style_home.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <title>STAIN - Where we go?</title>
   <link href='./images/Logo_Stain_Icon.png' rel='icon' type='image/x-icon'/>
@@ -62,8 +62,8 @@
           <div class="content" ng-controller="EventsController">
             <div style="overflow-y: scroll; height: 150px" >
               <div ng-repeat="friend in friends">
-                <img ng-src= {{friend.image}}  width="50" height="50" />
-                <a href="#profile">{{friend.userName}}</a>
+                <img style="width: 30px; height: 30px" ng-src= {{friend.image}}  width="50" height="50" />
+                <a href="#profile">{{friend.nameOfUser}}</a>
                 <br>
                 <br>
               </div>

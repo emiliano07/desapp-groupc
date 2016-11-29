@@ -5,7 +5,7 @@
 
 	<div style="overflow-y: scroll; height: 500px; margin-top: 10px">
 		<div class="wrap-col" ng-repeat="event in getEvents()">
-			<div class="heading">
+			<div class="heading" style="padding-bottom: 7px">
 				<div style="font-size: 20px"><b>{{event.nameOfEvent}}</b>
 				</div>
 				<div class="info">{{event.scheduler}} - {{event.address}}
@@ -15,8 +15,8 @@
 			<auto;class="content">
 			<table>
 				<tr>
-					<td>
-						<img ng-src= {{event.image}}  width="750" height="750"/>
+					<td style="height: 175px;width: 200px">
+						<img style="width: 200px; height: 175px" ng-src= {{event.image}}  width="750" height="750"/>
 					</td>
 					<td style="padding-left: 10px">
 						<p>{{event.description}} - {{'Coin' | translate}}{{event.amount}}</p>
