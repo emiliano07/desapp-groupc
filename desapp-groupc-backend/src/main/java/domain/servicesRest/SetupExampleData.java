@@ -81,6 +81,8 @@ public class SetupExampleData {
     	this.userService.addProfileForUser(user, profileUser);
     	User friend01 = new User(sistem,"Bart Simpson","bartSimpson","magui","bartSimpson@gmail.com","images/bart.jpg");
     	User friend02 = new User(sistem,"Corre Caminos","correCaminos","atrapame","correCaminos@gmail.com","images/correCaminos.jpg");
+    	User friend05 = new User(sistem,"Cauteruccio","caute9","12345","cautegol@gmail.com","images/Demonio_de_tazmania.jpg");
+    	friend02.addFriend(friend05);
     	User friend03 = new User(sistem,"Pato Donald","patoDonald","kuakua","patoDonald@gmail.com","images/patoDonald.jpg");
     	User friend04 = new User(sistem,"Demonio De Tazmania","DemonioDeTazmania","12345","DemonioDeTazmania@gmail.com","images/Demonio_de_tazmania.jpg");
     	Profile profileFriend01 = ProfileBuilder.aProfile()

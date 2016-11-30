@@ -67,9 +67,6 @@
                     <option>{{'ACTION' | translate}}</option>
                   </select>
                 </td>
-                <td>
-                  <button ng-click="save()">{{'Save' | translate}}</button>
-                </td>
               </tr>
               <tr>
                 <td style="padding-right: 0px; padding-bottom: 15px">
@@ -86,9 +83,6 @@
                     <option>{{'ROCK' | translate}}</option>
                     <option>{{'REGGAETON' | translate}}</option>
                   </select>
-                  <td>
-                    <button ng-click="save()">{{'Save' | translate}}</button>
-                  </td>
                 </td>
               </tr>
               <tr>
@@ -106,9 +100,6 @@
                     <option>{{'SUSHI' | translate}}</option>
                     <option>{{'GRILL' | translate}}</option>
                   </select>
-                  <td>
-                    <button ng-click="save()">{{'Save' | translate}}</button>
-                  </td>
                 </td>
               </tr>
               <tr>
@@ -121,14 +112,14 @@
                 <td>
                   <input type="number" required class="form-control" id="limitAmount" ng-model="limitAmount" style="width:150px;height: 23px"/>
                 </td>
-                <td>
-                  <button ng-click="save()">{{'Save' | translate}}</button>
-                </td>
               </tr>
             </table>
           </td>
         </tr>
       </table>
+      <div style="text-align: right">
+        <button ng-click="save()">{{'Save' | translate}}</button>
+      </div>
     </div>
 
     <div id="Amigos" class="tabcontent">
@@ -161,7 +152,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <button ng-click="delete()">{{'DeleteFriend' | translate}}</button>
+                            <button ng-click="delete(friend)">{{'DeleteFriend' | translate}}</button>
                           </td>
                         </tr>
                       </table>
@@ -173,7 +164,7 @@
           </td>
           <td style="padding-left: 10px">
             <div style="overflow-y: scroll; height: 200px; width: 100%">
-              <div ng-repeat="friend in friends" style="margin-bottom: 10px">
+              <div ng-repeat="friend in othersFriends" style="margin-bottom: 10px">
                 <table>
                   <tr>
                     <td style="padding-right: 10px; height: 50px">
@@ -188,7 +179,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <button ng-click="add()">{{'AddFriend' | translate}}</button>
+                            <button ng-click="add(friend)">{{'AddFriend' | translate}}</button>
                           </td>
                         </tr>
                       </table>

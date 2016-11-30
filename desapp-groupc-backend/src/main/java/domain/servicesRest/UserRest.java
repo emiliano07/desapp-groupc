@@ -20,6 +20,7 @@ import domain.User;
 import domain.builders.UserBuilder;
 import domain.exceptions.StainException;
 import domain.services.UserService;
+import domain.types.Type;
 import domain.types.TypeOfScheduler;
 import domain.types.TypeOfTour;
 
@@ -63,6 +64,29 @@ public class UserRest {
 		return userService.getUserRepository().findById(id).getFriends();
 	}
 	
+	@GET
+	@Path("/addFriend/{userId}/{friendId}")
+	@Produces("application/json")
+	public List<User> allNewFriendsFromTheUser(@PathParam("userId") final int id, @PathParam("friendId") final int idFriend) throws StainException {
+		User user = userService.getUserRepository().findById(id);
+		User newFriend = userService.getUserRepository().findById(idFriend);
+		user.addFriend(newFriend);
+		//userService.updateUser(user);
+		return user.getFriends();
+	}
+	
+	@GET
+	@Path("/deleteFriend/{userId}/{friendId}")
+	@Produces("application/json")
+	public List<User> allNewDeleteFriendsFromTheUser(@PathParam("userId") final int id, @PathParam("friendId") final int idFriend) throws StainException {
+		User user = userService.getUserRepository().findById(id);
+		User newFriend = userService.getUserRepository().findById(idFriend);
+		user.deleteFriend(newFriend);
+		userService.updateUser(user);
+		userService.updateUser(newFriend);
+		return user.getFriends();
+	}
+	
 	@POST
 	@Path("/addEvent/{userId}")
 	@Consumes("application/json")
@@ -77,6 +101,19 @@ public class UserRest {
 	            response = Response.serverError().tag("No se pudo agregar el Evento").status(HttpStatus.NOT_FOUND_404).build();
 	        }
 		return response;
+	}
+	
+	@GET
+	@Path("/updateProfile/{userId}/{film}/{food}/{music}/{amount}")
+	@Produces("application/json")
+	public User updateProfile(@PathParam("userId") final int id, @PathParam("film") final Type typeOfFilm, @PathParam("food") final Type typeOfFood, @PathParam("music") final Type typeOfMusic, @PathParam("amount") final int limitAmount) throws StainException {
+		User user = userService.getUserRepository().findById(id);
+		user.profile.typeOfFilm = typeOfFilm;
+		user.profile.typeOfMusic = typeOfMusic;
+		user.profile.typeOfFood = typeOfFood;
+		user.profile.limitAmount = limitAmount;
+		userService.updateProfile(user);
+		return user;
 	}
 
 	@POST
