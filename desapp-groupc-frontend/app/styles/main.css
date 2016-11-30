@@ -59,6 +59,41 @@ body {
   margin-top: 28px;
 }
 
+.busquedaDeUbicacion {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 32px;
+  outline: none;
+}
+
+#origin-input,
+#destination-input {
+  background-color: #fff;
+  font-size: 18px;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  width: 250px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: #100707;
+}
+
+#mode-selector {
+  color: #fff;
+  background-color: #84AE68;
+  margin-left: 12px;
+  padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+  font-size: 17px;
+  font-weight: 300;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {

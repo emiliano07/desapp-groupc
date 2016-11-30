@@ -1,12 +1,24 @@
-function initMap() {
+angular.module('stain').controller('EventDetailController', ["$http", "$log","$scope","$routeParams", "$location", function($http, $log, $scope, $routeParams, $location) {
+ 
+  $scope.initMap = function() {
   var origin_place_id = null;
   var destination_place_id = null;
   var travel_mode = google.maps.TravelMode.WALKING;
-  var map = new google.maps.Map(document.getElementById('map'), {
-    mapTypeControl: false,
-    center: {lat: -34.678921, lng: -58.458050},
-    zoom: 11
-  });
+  var buenosAires = {
+        lat : -34.6261939,
+        lng : -58.410998
+    };
+   var map = new google.maps.Map(document.getElementById('map'), {
+        mapTypeControl : false,
+        center : buenosAires,
+        zoom : 11
+    });
+
+  /*var marker = new google.maps.Marker({
+          map: map,
+          position: buenosAires,
+          title: 'Hello World!'
+  });*/
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
   directionsDisplay.setMap(map);
@@ -94,6 +106,8 @@ function initMap() {
   }
 }
 
-  function back() {
-    window.location('main.html')
-  }
+  $scope.initMap();
+
+}]);
+
+
