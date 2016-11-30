@@ -65,6 +65,11 @@ public class UserService extends GenericService<User>{
 	  }
 	 
 	 @Transactional
+	 public void updateProfile(User user) throws StainException{
+		 userRepository.update(user);
+	 }
+	 
+	 @Transactional
 	 public void addEventForUser(User user,Event event) throws StainException{
 		 user.addEvent(event);
 		 userRepository.update(user);
