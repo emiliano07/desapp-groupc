@@ -43,6 +43,11 @@ angular.module("stain", [
     controller: "TourCompleteController"
   });
 
+   $routeProvider.when('/eventDetail/', {
+    templateUrl: "views/eventDetail.html",
+    controller: "EventDetailController"
+  });
+
   $routeProvider.otherwise({
         redirectTo: 'views/events.html'
   });
