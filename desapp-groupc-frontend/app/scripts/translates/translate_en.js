@@ -14,6 +14,7 @@ angular.module('stain')
    		Options : 'Options',
    		MyProfile : 'My Profile',
    		MyEvents : 'My Events',
+   		MyTours : 'My Tours',
    		AddEvent : 'Add Event',
    		NewTour : 'New Tour',
    		Text1: 'Stain S.A. has more than 100 years of experience in organizing events. Founded by Alan Marino in 1907. It has more than 1000 branches worldwide.',

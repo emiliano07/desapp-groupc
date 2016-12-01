@@ -6,7 +6,6 @@ import org.joda.time.DateTime;
 
 import domain.Event;
 import domain.Tour;
-import domain.User;
 import domain.types.Type;
 import domain.types.TypeOfScheduler;
 import domain.types.TypeOfTour;

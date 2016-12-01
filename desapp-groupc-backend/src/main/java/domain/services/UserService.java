@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import domain.Event;
 import domain.Profile;
 import domain.Sistem;
+import domain.Tour;
 import domain.User;
 import domain.exceptions.SingUpException;
 import domain.exceptions.StainException;
@@ -95,6 +96,12 @@ public class UserService extends GenericService<User>{
 	 @Transactional
 	 public void addProfileForUser(User user,Profile profile) {
 		 user.loadProfile(profile);
+		 userRepository.update(user);
+	 }
+	 
+	 @Transactional
+	 public void addTourForUser(User user,Tour tour) {
+		 user.addTour(tour);
 		 userRepository.update(user);
 	 }
 	 

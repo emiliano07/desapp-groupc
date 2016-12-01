@@ -16,6 +16,7 @@ import org.joda.time.DateTime;
 import domain.Event;
 import domain.Profile;
 import domain.Sistem;
+import domain.Tour;
 import domain.User;
 import domain.builders.UserBuilder;
 import domain.exceptions.StainException;
@@ -192,5 +193,19 @@ public class UserRest {
 	@Produces("application/json")
 	public Sistem getASistem(@PathParam("userId") final int id) {
 		return userService.getUserRepository().findById(id).getSistem();
+	}
+	
+	@GET
+	@Path("/eventsFrom/{userId}")
+	@Produces("application/json")
+	public List<Event> getEventsFromUser(@PathParam("userId") final int id) {
+		return userService.getUserRepository().findById(id).getEvents();
+	}
+	
+	@GET
+	@Path("/toursFrom/{userId}")
+	@Produces("application/json")
+	public List<Tour> getToursFromUser(@PathParam("userId") final int id) {
+		return userService.getUserRepository().findById(id).getTours();
 	}
 }

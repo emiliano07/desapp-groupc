@@ -23,6 +23,7 @@ public class Tour extends Entity{
 	public Event event1;
 	public Event event2;
 	
+	public Tour(){}
 	public Tour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, int friends){
 		this.type = typeOfTour;
 		this.date = date;

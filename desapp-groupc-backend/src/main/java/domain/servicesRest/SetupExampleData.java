@@ -2,6 +2,7 @@ package domain.servicesRest;
 
 import java.util.ArrayList;
 
+import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -9,6 +10,7 @@ import domain.Event;
 import domain.LogSistem;
 import domain.Profile;
 import domain.Sistem;
+import domain.Tour;
 import domain.User;
 import domain.builders.EventBuilder;
 import domain.builders.ProfileBuilder;
@@ -18,6 +20,7 @@ import domain.services.RegisterUserService;
 import domain.services.UserService;
 import domain.types.Type;
 import domain.types.TypeOfScheduler;
+import domain.types.TypeOfTour;
 
 
 public class SetupExampleData {
@@ -88,6 +91,7 @@ public class SetupExampleData {
     	friend02.addFriend(friend05);
     	friend03.addFriend(friend05);
     	friend04.addFriend(friend05);
+    	Tour tour = new Tour(TypeOfTour.GASOLERA, new DateTime(), TypeOfScheduler.NIGHT, 500, 7);
     	Profile profileFriend01 = ProfileBuilder.aProfile()
 				  .withLimitAmount(900)
 				  .withTypeOfFilm(Type.ADVENTURE)
@@ -147,6 +151,12 @@ public class SetupExampleData {
 				.withDescription("Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.")
 				.withImage("images/elBosque.jpg")
 				.build();
+    	event01.suggestions.add(event02);
+    	event01.suggestions.add(event03);
+    	event01.suggestions.add(event04);
+    	tour.event1 = event01;
+    	tour.event1 = event02;
+    	//user.tours.add(tour);
     	this.eventService.save(event01);
     	this.eventService.save(event02);
     	this.eventService.save(event03);

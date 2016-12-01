@@ -1,0 +1,71 @@
+<div style="margin: 10px">
+
+	<div style="font-size: 25px"><b><u>{{'MyTours' | translate}}</u></b>
+	</div>
+
+	<div style="overflow-y: scroll; height: 500px; width: 100%; margin-top: 10px">
+    	<div ng-repeat="tour in tours" style="margin-right: 15px">
+    		<table style="width: 400px">
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'TypeOfTourSelected' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>tour.typeOfTour</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'Scheduler' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>tour.scheduler</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'Date' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>tour.date</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'LimitAmount' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>tour.limitAmount</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'Friends' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>tour.friendsSelected</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'EventSelected' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>tour.eventSelected1</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding-right: 20px">
+				<p>{{'EventSelected' | translate}}:</p>
+			</td>
+			<td style="padding-right: 20px">
+				<p>tour.eventSelected2</p>
+			</td>
+		</tr>
+	</table>
+
+
+			<hr>
+    	</div>       
+    </div>
+</div>

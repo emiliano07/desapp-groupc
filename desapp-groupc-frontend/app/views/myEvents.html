@@ -1,0 +1,27 @@
+<div style="margin: 10px">
+
+	<div style="font-size: 25px"><b><u>{{'MyEvents' | translate}}</u></b>
+	</div>
+
+	<div style="overflow-y: scroll; height: 500px; width: 100%; margin-top: 10px">
+    	<div ng-repeat="event in events" style="margin-right: 15px">
+    		<div class="heading" style="padding-bottom: 7px">
+				<div style="font-size: 20px"><b>{{event.nameOfEvent}}</b>
+			</div>
+			<table>
+				<tr>
+					<td style="height: 175px;width: 200px">
+						<img style="width: 200px; height: 175px" ng-src= {{event.image}}  width="750" height="750"/>
+					</td>
+					<td style="padding-left: 10px">
+						<p>{{event.description}}</p>
+						<div style="text-align: right">
+							<button ng-click="details(event)">{{'Detail' | translate}}</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<hr>
+    	</div>       
+    </div>
+</div>
