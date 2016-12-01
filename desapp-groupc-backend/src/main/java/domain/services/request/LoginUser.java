@@ -1,13 +1,16 @@
 package domain.services.request;
 
-public class LoginUser {
+import domain.Entity;
 
+public class LoginUser extends Entity {
+	
+	private static final long serialVersionUID = -4770988715846359417L;
 	private String email;
 	private String password;
 	private String name;
 
 	public LoginUser(String name, String email, String password) {
-		this.setName(name);
+		this.name = name;
 		this.email = email;
 		this.password = password;
 	}

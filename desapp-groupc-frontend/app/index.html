@@ -21,64 +21,22 @@
   
   <p align="center" style="margin: 0px"><img src="./images/Logo_Stain.png" width='400' height='200' align="center"/></p>
   
-  <div id="login-form">
-  
-    <input type="radio" checked id="login" name="switch" class="hide">
-    <input type="radio" id="signup" name="switch" class="hide">
-
-    <div>
-      <ul class="form-header">
-        <li>
-          <label for="login"><i class="fa fa-lock"></i> LOGIN<label for="login">
-        </li>
-        <li>
-          <label for="signup"><i class="fa fa-credit-card"></i> REGISTER</label>
-        </li>
-      </ul>
+  <div class="login " ng-controller='LoginCtrl as login'>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="import" rel="import" href="bower_components/google-signin/google-signin.html">
+      <div class="logmod__alter">
+        <div class="logmod__alter-container" >
+          <google-signin
+            offline-always-prompt="true"
+            brand="google"
+            client-id="369239102362-4vo831vj07bgrliv7mou40726vri201m.apps.googleusercontent.com"
+            scopes="profile email openid"
+            >
+          </google-signin>
+        </div>
+      </div>
     </div>
-    <div class="section-out">
-      <section class="login-section">
-        <div class="login">
-          <form action="">
-            <ul class="ul-list">
-              <li>
-                <input type="email"  class="input" placeholder="Your Email" ng-model="loginUser.email"/><span class="icon"><i class="fa fa-user"></i></span>
-              </li>
-              <li>
-                <input type="password"  class="input" placeholder="Password" ng-model="loginUser.password"/><span class="icon"><i class="fa fa-lock"></i></span>
-              </li>
-              <button class="btn btn-primary btn-block btn-flat" ng-click="login(loginUser)">SIGN_IN</button>
-            </ul>
-          </form>
-        </div>
-        <div class="social-login">Or sign in with &nbsp;
-          <a href="" class="fb"><i class="fa fa-facebook"></i></a>
-          <a href="" class="tw"><i class="fa fa-twitter"></i></a>
-          <a href="" class="gp"><i class="fa fa-google-plus"></i></a>
-          <a href="" class="in"><i class="fa fa-linkedin"></i></a>
-        </div>
-      </section>
 
-      <section class="signup-section">
-        <div class="login">
-          <form action="">
-            <ul class="ul-list">
-              <li>
-                <input type="userName" required class="input" ng-model="user.name" placeholder="Your UserName"/><span class="icon"><i class="fa fa-user"></i></span>
-              </li>
-              <li>
-                <input type="email" required class="input" ng-model="user.email" placeholder="Your Email"/><span class="icon"><i class="fa fa-user"></i></span>
-              </li>
-              <li>
-                <input type="password" required class="input" ng-model="user.password" placeholder="Password"/><span class="icon"><i class="fa fa-lock"></i></span>
-              </li>
-              <button class="btn btn-primary btn-block btn-flat" ng-click="register(user)">SIGN_IN</button>
-            </ul>
-          </form>
-        </div>
-      </section>
-    </div>
-  </div>
   <footer>
     <div class="copyright">
       <p>Copyright © 2016 - <a href="/main.html" target="_blank">Stain - Where we go?</a> by Francioni - Mancuso</p>
@@ -100,6 +58,8 @@
   <script src="js/angular-locale-es.js"></script>
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  <script src="https://sdk.auth0.com/auth0.js#client=J9rwVoToDbj0iy8yLvtv5kDqnHp8m4mw"></script>
   
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/LoginController.js"></script>
