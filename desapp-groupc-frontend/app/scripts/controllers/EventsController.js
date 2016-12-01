@@ -2,7 +2,7 @@
 
 'use strict';
 
-angular.module('stain').controller("EventsController", ["$http", "$log","$scope","$translate","$location", function($http,$log,$scope,$translate,$location) {
+angular.module('stain').controller("EventsController", ["$http", "$log","$scope","$translate","$location","MyService", function($http,$log,$scope,$translate,$location,MyService) {
 
   // Paginacion
     $scope.amountPages = 0;
@@ -69,8 +69,9 @@ angular.module('stain').controller("EventsController", ["$http", "$log","$scope"
       }
     };
 
-    $scope.verMapa = function() {
-      $location.path('/eventDetail');
+    $scope.details = function(eventt) {
+      MyService.data.event = eventt;
+      $location.path('/eventDetail/');
     };
     
      $scope.initEvents();    

@@ -83,6 +83,13 @@ angular.module('stain')
 		MyFriends : 'Mis Amigos',
 		OtherUsers : 'Otros Usuarios',
 		DeleteFriend : 'Eliminar Amigo',
-		AddFriend : 'Agregar Nuevo Amigo'
+		AddFriend : 'Agregar Nuevo Amigo',
+		EventDetails : 'Detalle del Evento',
+		Attend : 'Asitire',
+		Map : 'Mapa',
+		Detail : 'Detalle',
+		LimitOfPersons : 'Limite de Personas',
+		Suggestions: 'Sugerencias',
+		NotAttend : 'No Asistire'
 	});
 });

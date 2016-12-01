@@ -19,6 +19,7 @@ import domain.Sistem;
 import domain.User;
 import domain.builders.UserBuilder;
 import domain.exceptions.StainException;
+import domain.services.EventService;
 import domain.services.UserService;
 import domain.types.Type;
 import domain.types.TypeOfScheduler;
@@ -28,11 +29,13 @@ import domain.types.TypeOfTour;
 public class UserRest {
 
 	UserService userService;
+	EventService eventService;
 	
 	public UserRest() {}
 	
-	public UserRest(UserService userService) {
+	public UserRest(UserService userService,EventService eventService) {
 		this.userService = userService;
+		this.eventService = eventService;
 	}
 
 	@POST
@@ -128,12 +131,44 @@ public class UserRest {
         }
     }
 	
+	@POST
+    @Path("assist/{userId}/{eventId}")
+    @Consumes("application/json")
+    public Response assistEvent(@PathParam("userId") final int idUser,@PathParam("eventId") final int idEvent){
+        User user = userService.getUserRepository().findById(idUser);
+		Event event = eventService.getEventRepository().findById(idEvent);
+		user.addEventGo(event);
+		//userService.updateUser(user);
+		return Response.ok().tag("Se actualizo el usuario correctamente").build();
+    }
+	
+	@POST
+    @Path("notAssist/{userId}/{eventId}")
+    @Consumes("application/json")
+    public Response notAssistEvent(@PathParam("userId") final int idUser,@PathParam("eventId") final int idEvent){
+        User user = userService.getUserRepository().findById(idUser);
+		Event event = eventService.getEventRepository().findById(idEvent);
+		user.removeEventGo(event);
+		//userService.updateUser(user);
+		return Response.ok().tag("Se actualizo el usuario correctamente").build();
+    }
+	
+	@GET
+	@Path("/assistEvent/{userId}/{eventId}")
+	@Produces("application/json")
+	public Boolean assistToAEvent(@PathParam("userId") final int idUser, @PathParam("eventId") final int idEvent) {
+		User user = userService.getUserRepository().findById(idUser);
+		Event event = eventService.getEventRepository().findById(idEvent);
+		return user.assist(event);
+	}
+	
 	@GET
 	@Path("/profileOf/{userId}")
 	@Produces("application/json")
 	public Profile getProfileOfAUser(@PathParam("userId") final int id) {
 		return userService.getUserRepository().findById(id).profile;
 	}
+	
 	//@PathParam("date") final DateTime date,/{date}
 	@GET
 	@Path("/eventsForTour/{userId}/{type}/{scheduler}/{limitAmount}/{friendsSelect}")

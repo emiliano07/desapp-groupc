@@ -1,0 +1,504 @@
+2016-11-30 00:12:27,166 INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:285) - Root WebApplicationContext: initialization started
+2016-11-30 00:12:27,304 INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:510) - Refreshing Root WebApplicationContext: startup date [Wed Nov 30 00:12:27 ART 2016]; root of context hierarchy
+2016-11-30 00:12:27,371 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from URL [file:/C:/Users/Emiliano/Desktop/UNQ/Programación/Cuatrimestre%20Actual/Desarrollo%20de%20Aplicaciones/Git%20-Desapp/desapp-groupc/desapp-groupc-backend/target/classes/META-INF/spring-persistence-context.xml]
+2016-11-30 00:12:27,575 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from URL [file:/C:/Users/Emiliano/Desktop/UNQ/Programación/Cuatrimestre%20Actual/Desarrollo%20de%20Aplicaciones/Git%20-Desapp/desapp-groupc/desapp-groupc-backend/target/classes/META-INF/spring-services-context.xml]
+2016-11-30 00:12:27,618 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2016-11-30 00:12:27,662 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+2016-11-30 00:12:27,696 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-soap.xml]
+2016-11-30 00:12:27,721 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml]
+2016-11-30 00:12:27,757 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-extension-http.xml]
+2016-11-30 00:12:28,141 INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/Users/Emiliano/Desktop/UNQ/Programación/Cuatrimestre%20Actual/Desarrollo%20de%20Aplicaciones/Git%20-Desapp/desapp-groupc/desapp-groupc-backend/target/classes/META-INF/hibernate.properties]
+2016-11-30 00:12:28,142 INFO  org.springframework.core.io.support.PropertiesLoaderSupport (PropertiesLoaderSupport.java:172) - Loading properties file from URL [file:/C:/Users/Emiliano/Desktop/UNQ/Programación/Cuatrimestre%20Actual/Desarrollo%20de%20Aplicaciones/Git%20-Desapp/desapp-groupc/desapp-groupc-backend/target/classes/META-INF/jdbc.properties]
+2016-11-30 00:12:28,603 INFO  org.hibernate.annotations.common.reflection.java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-30 00:12:28,611 INFO  org.hibernate.Version (Version.java:54) - HHH000412: Hibernate Core {4.3.6.Final}
+2016-11-30 00:12:28,614 INFO  org.hibernate.cfg.Environment (Environment.java:239) - HHH000206: hibernate.properties not found
+2016-11-30 00:12:28,616 INFO  org.hibernate.cfg.Environment (Environment.java:346) - HHH000021: Bytecode provider name : javassist
+2016-11-30 00:12:28,686 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-30 00:12:28,743 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-30 00:12:28,762 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-30 00:12:28,781 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-30 00:12:28,798 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-30 00:12:28,811 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-30 00:12:28,826 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-30 00:12:28,839 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-30 00:12:28,853 WARN  org.hibernate.internal.util.xml.DTDEntityResolver (DTDEntityResolver.java:75) - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+2016-11-30 00:12:29,537 INFO  org.hibernate.dialect.Dialect (Dialect.java:145) - HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2016-11-30 00:12:29,662 INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator (TransactionFactoryInitiator.java:62) - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-30 00:12:29,667 INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory (ASTQueryTranslatorFactory.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-30 00:12:30,031 INFO  org.hibernate.tuple.PojoInstantiator (PojoInstantiator.java:85) - HHH000182: No default (no-argument) constructor for class: domain.Tour (class must be instantiated by Interceptor)
+2016-11-30 00:12:31,551 INFO  org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:343) - HHH000227: Running hbm2ddl schema export
+2016-11-30 00:12:31,569 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Event_suggestions drop constraint FK_9nwl220ucpw8ygpwbus2bhhcs
+2016-11-30 00:12:31,570 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.EVENT_SUGGESTIONS
+2016-11-30 00:12:31,571 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Event_suggestions drop constraint FK_kmqk2bs6ng1od3ym1uskt93ej
+2016-11-30 00:12:31,572 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.EVENT_SUGGESTIONS
+2016-11-30 00:12:31,573 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table REGISTER_USERS drop constraint FK_rh8vdsncnrgcg7ov0o8b790x7
+2016-11-30 00:12:31,573 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.REGISTER_USERS
+2016-11-30 00:12:31,574 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Sistem_allEvents drop constraint FK_o9oq1dtnckdjpka93abbkbclv
+2016-11-30 00:12:31,575 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.SISTEM_ALLEVENTS
+2016-11-30 00:12:31,577 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Sistem_allEvents drop constraint FK_p95x351g56uj8edm0bpsifens
+2016-11-30 00:12:31,577 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.SISTEM_ALLEVENTS
+2016-11-30 00:12:31,578 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Sistem_users drop constraint FK_rtulj6qgfmae6qy6ruwifdyx2
+2016-11-30 00:12:31,579 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.SISTEM_USERS
+2016-11-30 00:12:31,580 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Sistem_users drop constraint FK_aewahlbkbt3cjo1ho111kciil
+2016-11-30 00:12:31,581 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.SISTEM_USERS
+2016-11-30 00:12:31,582 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_eventOptions1 drop constraint FK_mbw8gd6s5f7obj4bx2mg9dn3v
+2016-11-30 00:12:31,582 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_EVENTOPTIONS1
+2016-11-30 00:12:31,583 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_eventOptions1 drop constraint FK_gac8qo6m9dddy6q9u6bsmnkwt
+2016-11-30 00:12:31,584 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_EVENTOPTIONS1
+2016-11-30 00:12:31,585 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_eventOptions2 drop constraint FK_au1901pv5mgikf144wcmag9ve
+2016-11-30 00:12:31,586 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_EVENTOPTIONS2
+2016-11-30 00:12:31,587 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_eventOptions2 drop constraint FK_gf2o3qescdxr4lgnrrncl7ce6
+2016-11-30 00:12:31,587 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_EVENTOPTIONS2
+2016-11-30 00:12:31,592 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_friends drop constraint FK_7g27vvs19apxfyqwv0plnppii
+2016-11-30 00:12:31,592 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_FRIENDS
+2016-11-30 00:12:31,593 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table Tour_friends drop constraint FK_xajk8k082q2x0nq6kruroanr
+2016-11-30 00:12:31,594 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.TOUR_FRIENDS
+2016-11-30 00:12:31,595 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_events drop constraint FK_4pr39bb5dojmtrovuvf5sdtey
+2016-11-30 00:12:31,596 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_EVENTS
+2016-11-30 00:12:31,597 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_events drop constraint FK_mfjjiiilgb4i5dibnlfw9xnsr
+2016-11-30 00:12:31,598 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_EVENTS
+2016-11-30 00:12:31,598 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_friends drop constraint FK_skh40ccucn70buj38cuq3yxol
+2016-11-30 00:12:31,599 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_FRIENDS
+2016-11-30 00:12:31,600 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_friends drop constraint FK_o3t7elxbo5l1iumd35oh6tjfd
+2016-11-30 00:12:31,601 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_FRIENDS
+2016-11-30 00:12:31,602 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_friendsRequests drop constraint FK_8dcfkc86yuiemlc0fvx9q9w4x
+2016-11-30 00:12:31,602 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_FRIENDSREQUESTS
+2016-11-30 00:12:31,603 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_friendsRequests drop constraint FK_sqcfmg76e4a8ksahcj2eu0fc5
+2016-11-30 00:12:31,604 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_FRIENDSREQUESTS
+2016-11-30 00:12:31,605 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_tours drop constraint FK_rce1xefw9f2e00o1s264j0klm
+2016-11-30 00:12:31,605 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_TOURS
+2016-11-30 00:12:31,607 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:425) - HHH000389: Unsuccessful: alter table User_tours drop constraint FK_9uff7s7qrh7ulblt7nbm1c8sw
+2016-11-30 00:12:31,607 ERROR org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:426) - usuario no tiene privilegios suficientes o objeto no encontrado: PUBLIC.USER_TOURS
+2016-11-30 00:12:31,728 INFO  org.hibernate.tool.hbm2ddl.SchemaExport (SchemaExport.java:405) - HHH000230: Schema export complete
+2016-11-30 00:12:31,932 INFO  org.springframework.orm.hibernate4.HibernateTransactionManager (HibernateTransactionManager.java:360) - Using DataSource [org.apache.commons.dbcp.BasicDataSource@30e92cb9] of Hibernate SessionFactory for HibernateTransactionManager
+2016-11-30 00:12:31,993 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader (XmlBeanDefinitionReader.java:317) - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2016-11-30 00:12:32,246 INFO  org.springframework.jdbc.support.SQLErrorCodesFactory (SQLErrorCodesFactory.java:126) - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2016-11-30 00:12:33,629 INFO  org.apache.cxf.endpoint.ServerImpl (ServerImpl.java:93) - Setting the server's publish address to be null
+2016-11-30 00:12:34,281 INFO  org.springframework.web.context.ContextLoader (ContextLoader.java:325) - Root WebApplicationContext: initialization completed in 7111 ms
+2016-11-30 00:12:34,303 INFO  org.eclipse.jetty.util.log.Log (Log.java:186) - Logging initialized @8577ms
+2016-11-30 00:12:34,360 INFO  org.apache.cxf.transport.servlet.CXFServlet (CXFServlet.java:139) - Load the bus with application context
+2016-11-30 00:12:34,370 INFO  org.springframework.context.support.AbstractApplicationContext (AbstractApplicationContext.java:510) - Refreshing org.apache.cxf.bus.spring.BusApplicationContext@44c13103: startup date [Wed Nov 30 00:12:34 ART 2016]; parent: Root WebApplicationContext
+2016-11-30 00:12:34,410 INFO  org.apache.cxf.transport.servlet.AbstractCXFServlet (AbstractCXFServlet.java:115) - Servlet transport factory already registered 
+2016-11-30 00:13:20,064 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:20,064 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/howMuchEvents
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:20,064 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 3
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/events/0
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:21,759 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:20 GMT]}
+Payload: 0
+--------------------------------------
+2016-11-30 00:13:21,790 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:20 GMT]}
+Payload: [{"id":1,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Palermo","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"Rosebar","description":"Si estás cansado del trabajo, tuviste un día largo y querés relajarte y divertirte Rosebar es el lugar adecuado. Rosebar es un boliche ubicado en la zona de Palermo en la calle Honduras 5445 que sacar a sus clientes de la rutina diaria adentrándose en un ambiente cómodo y agradable.","image":"images/rosebar.jpg"},{"id":2,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Palermo Soho","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"KIKA","description":"Nueva disco ubicada entre Palermo Soho y Palermo Hollywood. Fácil acceso desde cualquier punto de Capital o Gran Buenos Aires. Una perfecta combinación de espacios y servicios, 800m2 distribuidos en dos plantas con capacidad para 1200 personas.","image":"images/kika.jpg"},{"id":3,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Puerto Madero","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"Asia de Cuba","description":"Asia de Cuba es un boliche ubicado en el barrio de Puerto Madero a metros del Hotel Hilton. Cubierto por una temática oriental con lamparas de papel y tonos anaranjados es un lugar especial para vivir una cena con platos extravagantes e internacionales que después se transforma en una de las discos mas prestigiosas de Buenos Aires.","image":"images/Asia_de_Cuba.jpg"},{"id":4,"types":null,"date":1480475554169,"scheduler":"MORNING","address":"Quilmes","amount":500,"limitOfPersons":3,"suggestions":[],"nameOfEvent":"El Bosque","description":"Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.","image":"images/elBosque.jpg"}]
+--------------------------------------
+2016-11-30 00:13:21,764 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:20 GMT]}
+Payload: [{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}]
+--------------------------------------
+2016-11-30 00:13:21,798 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 4
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/howMuchEvents
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:21,819 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:21 GMT]}
+Payload: 0
+--------------------------------------
+2016-11-30 00:13:21,810 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 5
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/events/0
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:21,824 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 6
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:21,869 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 5
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:21 GMT]}
+Payload: [{"id":1,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Palermo","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"Rosebar","description":"Si estás cansado del trabajo, tuviste un día largo y querés relajarte y divertirte Rosebar es el lugar adecuado. Rosebar es un boliche ubicado en la zona de Palermo en la calle Honduras 5445 que sacar a sus clientes de la rutina diaria adentrándose en un ambiente cómodo y agradable.","image":"images/rosebar.jpg"},{"id":2,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Palermo Soho","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"KIKA","description":"Nueva disco ubicada entre Palermo Soho y Palermo Hollywood. Fácil acceso desde cualquier punto de Capital o Gran Buenos Aires. Una perfecta combinación de espacios y servicios, 800m2 distribuidos en dos plantas con capacidad para 1200 personas.","image":"images/kika.jpg"},{"id":3,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Puerto Madero","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"Asia de Cuba","description":"Asia de Cuba es un boliche ubicado en el barrio de Puerto Madero a metros del Hotel Hilton. Cubierto por una temática oriental con lamparas de papel y tonos anaranjados es un lugar especial para vivir una cena con platos extravagantes e internacionales que después se transforma en una de las discos mas prestigiosas de Buenos Aires.","image":"images/Asia_de_Cuba.jpg"},{"id":4,"types":null,"date":1480475554169,"scheduler":"MORNING","address":"Quilmes","amount":500,"limitOfPersons":3,"suggestions":[],"nameOfEvent":"El Bosque","description":"Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.","image":"images/elBosque.jpg"}]
+--------------------------------------
+2016-11-30 00:13:21,886 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 7
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/howMuchEvents
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:21,892 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 8
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/events/0
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:21,899 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 7
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:21 GMT]}
+Payload: 0
+--------------------------------------
+2016-11-30 00:13:21,938 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 8
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:21 GMT]}
+Payload: [{"id":1,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Palermo","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"Rosebar","description":"Si estás cansado del trabajo, tuviste un día largo y querés relajarte y divertirte Rosebar es el lugar adecuado. Rosebar es un boliche ubicado en la zona de Palermo en la calle Honduras 5445 que sacar a sus clientes de la rutina diaria adentrándose en un ambiente cómodo y agradable.","image":"images/rosebar.jpg"},{"id":2,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Palermo Soho","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"KIKA","description":"Nueva disco ubicada entre Palermo Soho y Palermo Hollywood. Fácil acceso desde cualquier punto de Capital o Gran Buenos Aires. Una perfecta combinación de espacios y servicios, 800m2 distribuidos en dos plantas con capacidad para 1200 personas.","image":"images/kika.jpg"},{"id":3,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Puerto Madero","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"Asia de Cuba","description":"Asia de Cuba es un boliche ubicado en el barrio de Puerto Madero a metros del Hotel Hilton. Cubierto por una temática oriental con lamparas de papel y tonos anaranjados es un lugar especial para vivir una cena con platos extravagantes e internacionales que después se transforma en una de las discos mas prestigiosas de Buenos Aires.","image":"images/Asia_de_Cuba.jpg"},{"id":4,"types":null,"date":1480475554169,"scheduler":"MORNING","address":"Quilmes","amount":500,"limitOfPersons":3,"suggestions":[],"nameOfEvent":"El Bosque","description":"Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.","image":"images/elBosque.jpg"}]
+--------------------------------------
+2016-11-30 00:13:22,035 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 6
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:22 GMT]}
+Payload: [{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}]
+--------------------------------------
+2016-11-30 00:13:22,042 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 9
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:22,143 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 9
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:22 GMT]}
+Payload: [{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}]
+--------------------------------------
+2016-11-30 00:13:38,044 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 10
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/userFrom/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:38,046 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 11
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:38,059 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 12
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/3
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:38,126 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 12
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:38 GMT]}
+Payload: [{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}]
+--------------------------------------
+2016-11-30 00:13:38,149 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 10
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:38 GMT]}
+Payload: {"id":1,"userName":"franciolucio","password":"1234","mail":"franciolucio@gmail.com","profile":{"id":1,"typeOfFilm":"ACTION","typeOfMusic":"ELECTRONIC","typeOfFood":"PIZZA","limitAmount":500},"tours":[],"events":[{"id":4,"types":null,"date":1480475554169,"scheduler":"MORNING","address":"Quilmes","amount":500,"limitOfPersons":3,"suggestions":[],"nameOfEvent":"El Bosque","description":"Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.","image":"images/elBosque.jpg"}],"friends":[{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Francioni Lucio","image":"images/francioniLucio.jpg","token":null,"name":"franciolucio"}
+--------------------------------------
+2016-11-30 00:13:38,164 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 11
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:38 GMT]}
+Payload: [{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}]
+--------------------------------------
+2016-11-30 00:13:57,273 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 13
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/updateProfile/1/ADVENTURE/FAST_FOOD/ELECTRONIC/500
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:57,339 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 13
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:57 GMT]}
+Payload: {"id":1,"userName":"franciolucio","password":"1234","mail":"franciolucio@gmail.com","profile":{"id":1,"typeOfFilm":"ADVENTURE","typeOfMusic":"ELECTRONIC","typeOfFood":"FAST_FOOD","limitAmount":500},"tours":[],"events":[{"id":4,"types":null,"date":1480475554169,"scheduler":"MORNING","address":"Quilmes","amount":500,"limitOfPersons":3,"suggestions":[],"nameOfEvent":"El Bosque","description":"Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.","image":"images/elBosque.jpg"}],"friends":[{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Francioni Lucio","image":"images/francioniLucio.jpg","token":null,"name":"franciolucio"}
+--------------------------------------
+2016-11-30 00:13:58,744 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 14
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/userFrom/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:13:58,807 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 14
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:13:58 GMT]}
+Payload: {"id":1,"userName":"franciolucio","password":"1234","mail":"franciolucio@gmail.com","profile":{"id":1,"typeOfFilm":"ADVENTURE","typeOfMusic":"ELECTRONIC","typeOfFood":"FAST_FOOD","limitAmount":500},"tours":[],"events":[{"id":4,"types":null,"date":1480475554169,"scheduler":"MORNING","address":"Quilmes","amount":500,"limitOfPersons":3,"suggestions":[],"nameOfEvent":"El Bosque","description":"Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.","image":"images/elBosque.jpg"}],"friends":[{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Francioni Lucio","image":"images/francioniLucio.jpg","token":null,"name":"franciolucio"}
+--------------------------------------
+2016-11-30 00:14:04,288 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 15
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/updateProfile/1/ADVENTURE/FAST_FOOD/ELECTRONIC/6000
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:14:04,384 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 15
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:14:04 GMT]}
+Payload: {"id":1,"userName":"franciolucio","password":"1234","mail":"franciolucio@gmail.com","profile":{"id":1,"typeOfFilm":"ADVENTURE","typeOfMusic":"ELECTRONIC","typeOfFood":"FAST_FOOD","limitAmount":6000},"tours":[],"events":[{"id":4,"types":null,"date":1480475554169,"scheduler":"MORNING","address":"Quilmes","amount":500,"limitOfPersons":3,"suggestions":[],"nameOfEvent":"El Bosque","description":"Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.","image":"images/elBosque.jpg"}],"friends":[{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Francioni Lucio","image":"images/francioniLucio.jpg","token":null,"name":"franciolucio"}
+--------------------------------------
+2016-11-30 00:14:05,540 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 16
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/userFrom/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:14:05,586 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 16
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:14:05 GMT]}
+Payload: {"id":1,"userName":"franciolucio","password":"1234","mail":"franciolucio@gmail.com","profile":{"id":1,"typeOfFilm":"ADVENTURE","typeOfMusic":"ELECTRONIC","typeOfFood":"FAST_FOOD","limitAmount":6000},"tours":[],"events":[{"id":4,"types":null,"date":1480475554169,"scheduler":"MORNING","address":"Quilmes","amount":500,"limitOfPersons":3,"suggestions":[],"nameOfEvent":"El Bosque","description":"Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.","image":"images/elBosque.jpg"}],"friends":[{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Francioni Lucio","image":"images/francioniLucio.jpg","token":null,"name":"franciolucio"}
+--------------------------------------
+2016-11-30 00:14:18,832 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 17
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/addFriend/1/4
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:14:18,833 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 18
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/3
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:14:18,857 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 18
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:14:18 GMT]}
+Payload: [{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}]
+--------------------------------------
+2016-11-30 00:14:18,910 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 17
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:14:18 GMT]}
+Payload: [{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"},{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}]
+--------------------------------------
+2016-11-30 00:14:20,661 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 19
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/deleteFriend/1/4
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:14:20,661 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 20
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/3
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:14:20,686 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 20
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:14:20 GMT]}
+Payload: [{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}]
+--------------------------------------
+2016-11-30 00:14:20,766 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 19
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:14:20 GMT]}
+Payload: [{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}]
+--------------------------------------
+2016-11-30 00:14:24,928 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 21
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/events/0
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:14:24,935 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 22
+Address: http://localhost:8080/desapp-groupc-backend/rest/event/howMuchEvents
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:14:24,951 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 23
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/1
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:14:24,960 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 22
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:14:24 GMT]}
+Payload: 0
+--------------------------------------
+2016-11-30 00:14:24,965 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 21
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:14:24 GMT]}
+Payload: [{"id":1,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Palermo","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"Rosebar","description":"Si estás cansado del trabajo, tuviste un día largo y querés relajarte y divertirte Rosebar es el lugar adecuado. Rosebar es un boliche ubicado en la zona de Palermo en la calle Honduras 5445 que sacar a sus clientes de la rutina diaria adentrándose en un ambiente cómodo y agradable.","image":"images/rosebar.jpg"},{"id":2,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Palermo Soho","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"KIKA","description":"Nueva disco ubicada entre Palermo Soho y Palermo Hollywood. Fácil acceso desde cualquier punto de Capital o Gran Buenos Aires. Una perfecta combinación de espacios y servicios, 800m2 distribuidos en dos plantas con capacidad para 1200 personas.","image":"images/kika.jpg"},{"id":3,"types":null,"date":1480475554169,"scheduler":"NIGHT","address":"Puerto Madero","amount":100,"limitOfPersons":2,"suggestions":[],"nameOfEvent":"Asia de Cuba","description":"Asia de Cuba es un boliche ubicado en el barrio de Puerto Madero a metros del Hotel Hilton. Cubierto por una temática oriental con lamparas de papel y tonos anaranjados es un lugar especial para vivir una cena con platos extravagantes e internacionales que después se transforma en una de las discos mas prestigiosas de Buenos Aires.","image":"images/Asia_de_Cuba.jpg"},{"id":4,"types":null,"date":1480475554169,"scheduler":"MORNING","address":"Quilmes","amount":500,"limitOfPersons":3,"suggestions":[],"nameOfEvent":"El Bosque","description":"Cuatro pistas de baile con la mejor música e iluminación. Cada una de ellas te ofrece un estilo diferente, para que tu noche tenga el entorno que vos prefieras. Además, en una de estas pistas podés disfrutar de una gran variedad de shows.","image":"images/elBosque.jpg"}]
+--------------------------------------
+2016-11-30 00:14:25,049 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 23
+Response-Code: 200
+Content-Type: application/json
+Headers: {Date=[Wed, 30 Nov 2016 03:14:25 GMT]}
+Payload: [{"id":2,"userName":"bartSimpson","password":"magui","mail":"bartSimpson@gmail.com","profile":{"id":2,"typeOfFilm":"ADVENTURE","typeOfMusic":"CLASSIC","typeOfFood":"PASTA","limitAmount":900},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Bart Simpson","image":"images/bart.jpg","token":null,"name":"bartSimpson"},{"id":3,"userName":"correCaminos","password":"atrapame","mail":"correCaminos@gmail.com","profile":{"id":3,"typeOfFilm":"COMEDY","typeOfMusic":"REGGAETON","typeOfFood":"GRILL","limitAmount":420},"tours":[],"events":[],"friends":[{"id":4,"userName":"caute9","password":"12345","mail":"cautegol@gmail.com","profile":{"id":4,"typeOfFilm":"FANTASY","typeOfMusic":"POP","typeOfFood":"FAST_FOOD","limitAmount":345},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Cauteruccio","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"caute9"}],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Corre Caminos","image":"images/correCaminos.jpg","token":null,"name":"correCaminos"},{"id":5,"userName":"patoDonald","password":"kuakua","mail":"patoDonald@gmail.com","profile":{"id":5,"typeOfFilm":"COMEDY","typeOfMusic":"ELECTRONIC","typeOfFood":"GRILL","limitAmount":100},"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Pato Donald","image":"images/patoDonald.jpg","token":null,"name":"patoDonald"},{"id":6,"userName":"DemonioDeTazmania","password":"12345","mail":"DemonioDeTazmania@gmail.com","profile":null,"tours":[],"events":[],"friends":[],"sistem":null,"friendsRequests":[],"logged":false,"nameOfUser":"Demonio De Tazmania","image":"images/Demonio_de_tazmania.jpg","token":null,"name":"DemonioDeTazmania"}]
+--------------------------------------
+2016-11-30 00:15:29,009 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 24
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1
+Http-Method: OPTIONS
+Content-Type: 
+Headers: {Accept=[*/*], accept-encoding=[gzip, deflate, sdch, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], Access-Control-Request-Headers=[content-type], Access-Control-Request-Method=[POST], connection=[keep-alive], Content-Type=[null], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+--------------------------------------
+2016-11-30 00:15:29,016 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 24
+Response-Code: 200
+Content-Type: text/xml
+Headers: {Allow=[POST, GET, OPTIONS, HEAD], Date=[Wed, 30 Nov 2016 03:15:29 GMT]}
+--------------------------------------
+2016-11-30 00:15:29,027 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 25
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json;charset=UTF-8
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Length=[229], content-type=[application/json;charset=UTF-8], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+Payload: {"types":null,"date":null,"scheduler":"NIGTH","address":"en la concha de tu hermana","amount":15,"limitOfPersons":500,"suggestions":null,"nameOfEvent":"Nico chupala","description":"lucio come gordas","image":"images/samsara.jpg"}
+--------------------------------------
+2016-11-30 00:15:29,158 ERROR org.apache.cxf.jaxrs.utils.JAXRSUtils (JAXRSUtils.java:1030) - Error deserializing input stream into target class Event, content type : application/json;charset=UTF-8
+2016-11-30 00:15:29,164 WARN  org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper (WebApplicationExceptionMapper.java:54) - WebApplicationException has been caught : Can not construct instance of domain.types.TypeOfScheduler from String value ("NIGTH"): value not one of declared Enum instance names: [NIGHT, MORNING, AFTERNOON]
+ at [Source: {"types":null,"date":null,"scheduler":"NIGTH","address":"en la concha de tu hermana","amount":15,"limitOfPersons":500,"suggestions":null,"nameOfEvent":"Nico chupala","description":"lucio come gordas","image":"images/samsara.jpg"}; line: 1, column: 39] (through reference chain: domain.Event["scheduler"])
+2016-11-30 00:15:29,165 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 25
+Response-Code: 500
+Content-Type: text/xml
+Headers: {Date=[Wed, 30 Nov 2016 03:15:29 GMT]}
+--------------------------------------
+2016-11-30 00:15:33,051 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Inbound Message
+----------------------------
+ID: 26
+Address: http://localhost:8080/desapp-groupc-backend/rest/user/addEvent/1
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: application/json;charset=UTF-8
+Headers: {Accept=[application/json, text/plain, */*], accept-encoding=[gzip, deflate, br], Accept-Language=[en-US,en;q=0.8,es;q=0.6], connection=[keep-alive], Content-Length=[229], content-type=[application/json;charset=UTF-8], Host=[localhost:8080], Origin=[http://localhost:9000], Referer=[http://localhost:9000/main.html], User-Agent=[Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36]}
+Payload: {"types":null,"date":null,"scheduler":"NIGTH","address":"en la concha de tu hermana","amount":15,"limitOfPersons":500,"suggestions":null,"nameOfEvent":"Nico chupala","description":"lucio come gordas","image":"images/samsara.jpg"}
+--------------------------------------
+2016-11-30 00:15:33,055 ERROR org.apache.cxf.jaxrs.utils.JAXRSUtils (JAXRSUtils.java:1030) - Error deserializing input stream into target class Event, content type : application/json;charset=UTF-8
+2016-11-30 00:15:33,056 WARN  org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper (WebApplicationExceptionMapper.java:54) - WebApplicationException has been caught : Can not construct instance of domain.types.TypeOfScheduler from String value ("NIGTH"): value not one of declared Enum instance names: [NIGHT, MORNING, AFTERNOON]
+ at [Source: {"types":null,"date":null,"scheduler":"NIGTH","address":"en la concha de tu hermana","amount":15,"limitOfPersons":500,"suggestions":null,"nameOfEvent":"Nico chupala","description":"lucio come gordas","image":"images/samsara.jpg"}; line: 1, column: 39] (through reference chain: domain.Event["scheduler"])
+2016-11-30 00:15:33,059 INFO  org.apache.cxf.interceptor.AbstractLoggingInterceptor (AbstractLoggingInterceptor.java:149) - Outbound Message
+---------------------------
+ID: 26
+Response-Code: 500
+Content-Type: text/xml
+Headers: {Date=[Wed, 30 Nov 2016 03:15:33 GMT]}
+--------------------------------------

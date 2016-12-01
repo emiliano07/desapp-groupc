@@ -31,5 +31,9 @@
 		<property name="nameOfUser" />
 		<property name="image" />
 		<one-to-one name="token" class="domain.auth0.GoogleOauthCredential" />
+		<bag name="eventsGo" lazy="false" >
+            <key column="eventsGoId" />
+            <many-to-many class="domain.Event"  />
+        </bag>
 	</class>
 </hibernate-mapping>

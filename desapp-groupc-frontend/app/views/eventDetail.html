@@ -1,25 +1,64 @@
-<div ng-app="stain">
+<div style="margin: 10px">
 
-    <div style="font-size: 20px"><b>Descripcion del evento</b></div>
-    <div style="font-size: 15"><b>Aca va toda la descripcion</b></div>
-    <div style="font-size: 18"><b>Mapa:</b></div>
-    
-    
-
-    <input id="origin-input" class="busquedaDeUbicacion" type="text" placeholder="origin location">
-
-    <input id="destination-input" class="busquedaDeUbicacion" type="text" placeholder="destination location">
-
-    <div id="mode-selector" class="busquedaDeUbicacion">
-      <input type="radio" name="type" id="changemode-walking" checked="checked">
-      <label for="changemode-walking">Walking</label>
-
-      <input type="radio" name="type" id="changemode-driving">
-      <label for="changemode-driving">Driving</label>
+  <div style="margin: 10px">
+    <table style="width: 100%">
+      <tr>
+        <td style="padding-right: 0px; padding-bottom: 15px">
+          <div style="font-size: 40px;padding-bottom: 5px; padding-top: 1px"><b>{{event.nameOfEvent}}</b>
+          </div>
+          <div class="info">{{event.scheduler}} - {{event.address}}
+          </div>
+          <!--<div>{{'Date' | translate}}: {{event.date}}
+          </div>-->
+          <div>{{'LimitOfPersons' | translate}}: {{event.limitOfPersons}}
+          </div>
+          <div>{{'Coin' | translate}}{{event.amount}}
+          </div>
+          <br>
+          <button ng-click="assistt()">{{'Attend' | translate}}</button>
+          <button ng-click="notAssist()">{{'NotAttend' | translate}}</button>
+          <div style="padding-top: 3px">{{assist}}
+          </div>
+        <td style="width: 275px;height: 225px;padding-right: 0px; padding-bottom: 15px">
+          <img style="width: 275px; height: 225px" ng-src= {{event.image}}  width="750" height="750"/>
+        </td>
+      </tr>
+    </table>
+    <div>
+      <div style="font-size: 20px"><b>{{'Description' | translate}}</b>
+      </div>
+      <p>{{event.description}}</p>
     </div>
+    <br>
+    <div>
+      <input id="origin-input" class="busquedaDeUbicacion" type="text" placeholder="origin location">
+      <input id="destination-input" class="busquedaDeUbicacion" type="text" placeholder="destination location">
+      <div id="mode-selector" class="busquedaDeUbicacion">
+        <input type="radio" name="type" id="changemode-walking" checked="checked">
+        <label for="changemode-walking">Walking</label>
+        <input type="radio" name="type" id="changemode-driving">
+        <label for="changemode-driving">Driving</label>
+      </div>
+      <div id="map" style="height:320px;">
+      </div> 
+    </div>
+    <br>
+    <div>
+      <div style="font-size: 20px"><b>{{'Suggestions' | translate}}</b>
+      </div>
+      <p>{{event.suggestions}}</p>
+    </div>
+  </div>
+  <br>
+  {{o}}
+</div>
 
-    <div id="map" style="height:320px;"></div>
- </div>
+
+
+
+
+    
+
 
 
 
