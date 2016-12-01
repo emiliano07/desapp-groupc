@@ -28,6 +28,16 @@ angular.module("stain", [
     controller: "NewEventController"
   });
 
+  $routeProvider.when('/myEvents', {
+    templateUrl: "views/myEvents.html",
+    controller: "MyEventsController"
+  });
+
+  $routeProvider.when('/myTours', {
+    templateUrl: "views/myTours.html",
+    controller: "MyToursController"
+  });
+
   $routeProvider.when('/newTour', {
     templateUrl: "views/newTour.html",
     controller: "NewTourController"

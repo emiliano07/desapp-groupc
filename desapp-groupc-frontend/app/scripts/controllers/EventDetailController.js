@@ -22,6 +22,15 @@ $scope.notAssist = function() {
   })
 };
 
+$scope.getSuggestions = function() {
+  return $scope.event.suggestions;
+};
+
+$scope.details = function(eventt) {
+  MyService.data.event = eventt;
+  $location.path('/eventDetail/');
+};
+
 /*-------------------------------------------------------------------------------------------*/
 /*Google Maps*/
 

@@ -51,6 +51,10 @@ public class User extends Entity{
 
 	public void loadProfile(Profile profile){
 		this.profile = profile;
+	}	
+
+	public void addTour(Tour tour){
+		this.tours.add(tour);
 	}
 	
 	public List<Event> myEventsGo(){
@@ -102,6 +106,7 @@ public class User extends Entity{
 	public void addFriend(User friend){
 		this.friends.add(friend);
 	}
+	
 	
 	public User searchFriend(User user) throws Exception{
 		return this.sistem.searchFriend(user);
