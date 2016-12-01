@@ -125,6 +125,16 @@ public class User extends Entity{
 		this.friendsRequests.remove(friend);
 	}
 	
+	public List<User> optionalFriends(){
+		List<User> of = new ArrayList<User>();
+		int numAleatorio=(int)Math.floor(Math.random()*(friends.size()));
+		of = friends.get(numAleatorio).friends;
+		for (User f  : this.friends){
+			of.remove(f);
+		}
+		return of;
+	}
+	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//Login Methods
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////

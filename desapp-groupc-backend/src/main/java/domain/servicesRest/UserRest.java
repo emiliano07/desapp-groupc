@@ -74,7 +74,8 @@ public class UserRest {
 		User user = userService.getUserRepository().findById(id);
 		User newFriend = userService.getUserRepository().findById(idFriend);
 		user.addFriend(newFriend);
-		//userService.updateUser(user);
+		//userService.delete(user);
+		//userService.save(user);
 		return user.getFriends();
 	}
 	
@@ -167,6 +168,13 @@ public class UserRest {
 	@Produces("application/json")
 	public Profile getProfileOfAUser(@PathParam("userId") final int id) {
 		return userService.getUserRepository().findById(id).profile;
+	}
+	
+	@GET
+	@Path("/optionalFriends/{userId}")
+	@Produces("application/json")
+	public List<User> getoptionalFriends(@PathParam("userId") final int id) {
+		return userService.getUserRepository().findById(id).optionalFriends();
 	}
 	
 	//@PathParam("date") final DateTime date,/{date}

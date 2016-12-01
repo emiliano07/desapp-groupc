@@ -54,16 +54,16 @@ angular.module('stain').controller("ProfileController", ["$http", "$log","$scope
 
   $scope.delete = function(friend) {
     $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/deleteFriend/1/' + friend.id).then(succFriends).catch(fail);
-    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/3').then(succOthersFriends).catch(fail);
+    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/optionalFriends/1').then(succOthersFriends).catch(fail);
   };
 
   $scope.add = function(friend) {
     $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/addFriend/1/' + friend.id).then(succFriends).catch(fail);
-    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/3').then(succOthersFriends).catch(fail);
+    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/optionalFriends/1').then(succOthersFriends).catch(fail);
   };
 
   $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/userFrom/1').then(succUser).catch(fail);
   $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/1').then(succFriends).catch(fail);
-  $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/allFriends/3').then(succOthersFriends).catch(fail);
+  $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/optionalFriends/1').then(succOthersFriends).catch(fail);
 
 }]);
