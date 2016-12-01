@@ -1,5 +1,30 @@
-angular.module('stain').controller('EventDetailController', ["$http", "$log","$scope","$routeParams", "$location", function($http, $log, $scope, $routeParams, $location) {
- 
+/*Event Detail Controller*/
+
+angular.module('stain').factory("MyService", function() {
+  return {
+    data: {}
+  };
+});
+
+angular.module('stain').controller('EventDetailController', ["$http", "$log","$scope","$routeParams", "$location","MyService", function($http, $log, $scope, $routeParams, $location, MyService) {
+
+$scope.event = MyService.data.event;
+
+$scope.assistt = function() {
+  $http.post('http://localhost:8080/desapp-groupc-backend/rest/user/assist/1/' + $scope.event.id , {}).success(function(){
+    $scope.assist = "Asistire";
+  })
+};
+
+$scope.notAssist = function() {
+  $http.post('http://localhost:8080/desapp-groupc-backend/rest/user/notAssist/1/' + $scope.event.id , {}).success(function(){
+    $scope.assist = "No Asistire";
+  })
+};
+
+/*-------------------------------------------------------------------------------------------*/
+/*Google Maps*/
+
   $scope.initMap = function() {
   var origin_place_id = null;
   var destination_place_id = null;
@@ -108,6 +133,21 @@ angular.module('stain').controller('EventDetailController', ["$http", "$log","$s
 
   $scope.initMap();
 
+/*-------------------------------------------------------------------------------------------*/
+
+function succ(response){
+  if (!response.data) {
+    $scope.assist = "Asistire";
+  } else {
+    $scope.assist = "No Asistire";
+  }
+}
+
+  function fail(error){
+    $log.error('Ocurrio un error: ' + error.data);
+    return 'Ocurrio un error';
+  }
+
+  $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/assistEvent/1/' + $scope.event.id).then(succ).catch(fail);
+
 }]);
-
-

@@ -8,9 +8,6 @@
 			<div class="heading" style="padding-bottom: 7px">
 				<div style="font-size: 20px"><b>{{event.nameOfEvent}}</b>
 				</div>
-				<div class="info">{{event.scheduler}} - {{event.address}}
-					<button ng-click="verMapa()">{{'Ubicacion' | translate}}</button>
-				</div>
 			</div>
 			<auto;class="content">
 			<table>
@@ -19,7 +16,10 @@
 						<img style="width: 200px; height: 175px" ng-src= {{event.image}}  width="750" height="750"/>
 					</td>
 					<td style="padding-left: 10px">
-						<p>{{event.description}} - {{'Coin' | translate}}{{event.amount}}</p>
+						<p>{{event.description}}</p>
+						<div style="text-align: right">
+							<button ng-click="details(event)">{{'Detail' | translate}}</button>
+						</div>
 					</td>
 				</tr>
 			</table>

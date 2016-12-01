@@ -86,7 +86,14 @@ angular.module('stain')
 		MyFriends : 'My Friends',
 		OtherUsers : 'Other Users',
 		DeleteFriend : 'Delete Friend',
-		AddFriend : 'Add New Friend'
+		AddFriend : 'Add New Friend',
+		EventDetails : 'Event Details',
+		Attend : 'Will Attend',
+		Map : 'Map',
+		Detail : 'Detail',
+		LimitOfPersons : 'Limit of Persons',
+		Suggestions: 'Suggestions',
+		NotAttend : 'Not Attend'
 	});
 
 	var language = (navigator.language || navigator.browserLanguage).split('-')[0];
