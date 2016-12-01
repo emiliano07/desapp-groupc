@@ -8,6 +8,12 @@ angular.module('stain').controller("EventsController", ["$http", "$log","$scope"
     $scope.amountPages = 0;
     $scope.page = 0;
 
+    $scope.buscar = function(eventoABuscar) {
+      $http.get( 'http://localhost:8080/desapp-groupc-backend/rest/event/eventsSearch/'+ eventoABuscar.buscador).success(function(result) {
+        $scope.listOfEvents = result;
+      })
+    };
+
     $scope.howMuchEventsRest = function(){
       $http.get( 'http://localhost:8080/desapp-groupc-backend/rest/event/howMuchEvents').success(function(result) {
         $scope.amountPages = result;

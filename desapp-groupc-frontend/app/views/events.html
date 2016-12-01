@@ -3,6 +3,17 @@
 	<div style="font-size: 25px"><b><u>{{'UpcomingEvents' | translate}}</u></b>
 	</div>
 
+	<table style="margin-top:10px">
+		<tr>
+			<td>
+				<input type="text" class="form-control" id="eventoABuscador" placeholder="Cantidad de personas a buscar" style="width: 250px;height:30px" ng-model="eventoABuscar.buscador"/>
+			</td>
+			<td>
+				<button style="width: 100%;height:30px" ng-click="buscar(eventoABuscar)">Buscar</button>
+			</td>
+		</tr>
+	</table>
+
 	<div style="overflow-y: scroll; height: 500px; margin-top: 10px">
 		<div class="wrap-col" ng-repeat="event in getEvents()">
 			<div class="heading" style="padding-bottom: 7px">

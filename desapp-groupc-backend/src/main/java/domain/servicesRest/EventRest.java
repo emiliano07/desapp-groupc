@@ -1,5 +1,6 @@
 package domain.servicesRest;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ws.rs.GET;
@@ -61,4 +62,18 @@ public class EventRest {
 	public List<Event> getEvents( @PathParam("page") final Integer page) {
 		return eventService.getEvents(page,10);
 	}
+	
+	@GET
+	@Path("/eventsSearch/{limitOfPerson}")
+	@Produces("application/json")
+	public List<Event> getEventsSearch(@PathParam("limitOfPerson") final Integer limitOfPerson) {
+		List<Event> events = eventService.getEventRepository().findAll();
+		List<Event> filtradoDeEventos = new ArrayList<Event>();
+		for(Event e : events){
+			if(e.limitOfPersons >= limitOfPerson){
+				filtradoDeEventos.add(e);
+			}
+		}
+		return filtradoDeEventos;
+		}
 }
