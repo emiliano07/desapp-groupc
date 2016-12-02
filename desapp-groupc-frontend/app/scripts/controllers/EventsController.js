@@ -7,9 +7,10 @@ angular.module('stain').controller("EventsController", ["$http", "$log","$scope"
   // Paginacion
     $scope.amountPages = 0;
     $scope.page = 0;
+    $scope.eventoABuscar = 0;
 
     $scope.buscar = function(eventoABuscar) {
-      $http.get( 'http://localhost:8080/desapp-groupc-backend/rest/event/eventsSearch/'+ eventoABuscar.buscador).success(function(result) {
+      $http.get( 'http://localhost:8080/desapp-groupc-backend/rest/event/eventsSearch/'+ eventoABuscar).success(function(result) {
         $scope.listOfEvents = result;
       })
     };

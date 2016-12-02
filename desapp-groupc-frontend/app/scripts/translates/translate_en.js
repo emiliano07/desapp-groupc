@@ -94,7 +94,9 @@ angular.module('stain')
 		Detail : 'Detail',
 		LimitOfPersons : 'Limit of Persons',
 		Suggestions: 'Suggestions',
-		NotAttend : 'Not Attend'
+		NotAttend : 'Not Attend',
+		MinPersons : 'Minim of Persons',
+		Find : 'Find'
 	});
 
 	var language = (navigator.language || navigator.browserLanguage).split('-')[0];

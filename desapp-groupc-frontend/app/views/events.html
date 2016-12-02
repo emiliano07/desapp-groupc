@@ -1,15 +1,19 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.min.js"></script>
+
 <div style="margin: 10px">
 
 	<div style="font-size: 25px"><b><u>{{'UpcomingEvents' | translate}}</u></b>
 	</div>
 
-	<table style="margin-top:10px">
+	<div style="margin-top: 10px;margin-bottom: 1px">{{'MinPersons' | translate}}:
+	</div>
+	<table style="margin-top:1px">
 		<tr>
 			<td>
-				<input type="text" class="form-control" id="eventoABuscador" placeholder="Cantidad de personas a buscar" style="width: 250px;height:30px" ng-model="eventoABuscar.buscador"/>
+				<input type="text" class="form-control" style="width: 50px;height:30px" ng-model="eventoABuscar"/>
 			</td>
 			<td>
-				<button style="width: 100%;height:30px" ng-click="buscar(eventoABuscar)">Buscar</button>
+				<button style="width: 100%;height:30px" ng-click="buscar(eventoABuscar)">{{'Find' | translate}}</button>
 			</td>
 		</tr>
 	</table>
