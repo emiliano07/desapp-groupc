@@ -100,8 +100,8 @@ public class UserService extends GenericService<User>{
 	 }
 	 
 	 @Transactional
-	 public void addTourForUser(User user,Tour tour) {
-		 user.addTour(tour);
+	 public void addTourForUser(User user,Tour tour) throws StainException{
+		 user.addTour(tour); 
 		 userRepository.update(user);
 	 }
 	 

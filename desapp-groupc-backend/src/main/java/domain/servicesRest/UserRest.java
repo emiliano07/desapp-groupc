@@ -41,7 +41,7 @@ public class UserRest {
 
 	@POST
 	@Path("/newUser")
-	@Produces("application/json")
+	@Produces("application/json") 
 	public User user() {
 		User user = UserBuilder.aUser().build();
 		return user;
@@ -107,6 +107,30 @@ public class UserRest {
 	            response = Response.serverError().tag("No se pudo agregar el Evento").status(HttpStatus.NOT_FOUND_404).build();
 	        }
 		return response;
+	}
+	
+	@POST
+	@Path("/addTour/{userId}")
+	@Consumes("application/json")
+	@Produces("application/json")
+	public Response addTour(@PathParam("userId") final int id,Tour tour) {
+		Response response;
+		try {
+		User user = userService.getUserRepository().findById(id);
+		userService.addTourForUser(user, tour);;
+        response = Response.ok().tag("El tour fue agregado correctamente").status(HttpStatus.OK_200).build();
+		 } catch (StainException e) {
+	            response = Response.serverError().tag("No se pudo agregar el tour").status(HttpStatus.NOT_FOUND_404).build();
+	        }
+		return response;
+	}
+	
+	@GET
+	@Path("/myTours/{userId}")
+	@Produces("application/json")
+	public List<Tour> myTours(@PathParam("userId") final int idUser) {
+		User user = userService.getUserRepository().findById(idUser);
+		return user.tours;
 	}
 	
 	@GET

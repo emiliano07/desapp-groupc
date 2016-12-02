@@ -13,7 +13,28 @@ $scope.back = function() {
   };
 
 $scope.finish = function() {
-    $location.path('/events');
-  };
+  $http.post('http://localhost:8080/desapp-groupc-backend/rest/user/addTour/1' , {
+    type: $scope.typeOfTour,
+    date: $scope.date,
+    scheduler: $scope.scheduler,
+    amount: null,
+    limitAmount:$scope.limitAmount,
+    friends: $scope.friendsSelected,
+    eventOptions1:null,
+    eventOptions2:null,
+    event1: null,
+    event2:null,
+    }).success(function(){
+      $scope.updateTour();
+      $location.path('/events');
+      window.alert("El tour se agrego correctamente.");
+    })
+  }
+
+  $scope.updateTour = function(){
+    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/myTours/1').success(function(result) { 
+      $scope.tours = result;      
+    }) 
+  }
 
 }]);

@@ -22,11 +22,11 @@ public class Tour extends Entity{
 	public List<Event> eventOptions2;
 	public Event event1;
 	public Event event2;
-	
+	 
 	public Tour(){}
 	public Tour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, int friends){
 		this.type = typeOfTour;
-		this.date = date;
+		this.date = date; 
 		this.scheduler = scheduler;
 		this.amount = 0;
 		this.limitAmount = limitAmount;

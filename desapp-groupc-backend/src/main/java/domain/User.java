@@ -20,7 +20,7 @@ public class User extends Entity{
 	public List<Tour> tours;
 	public List<Event> events; //Eventos que agrego
 	public List<User> friends;
-	public Sistem sistem; 
+	public Sistem sistem;  
 	public List<User> friendsRequests;
 	public Boolean logged;
 	public String nameOfUser;
