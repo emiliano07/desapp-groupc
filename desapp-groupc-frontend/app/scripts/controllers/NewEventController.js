@@ -20,7 +20,7 @@ angular.module('stain').controller("NewEventController", ["$http","$scope","$win
 		image: newEvent.image,
     }).success(function(){
     	$scope.updateEvents();
-    	$location.path("/events");
+    	$location.path("/myEvents");
     	window.alert("El evento se agrego correctamente.");
     })
   }

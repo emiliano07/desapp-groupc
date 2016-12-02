@@ -91,6 +91,8 @@ angular.module('stain')
 		Detail : 'Detalle',
 		LimitOfPersons : 'Limite de Personas',
 		Suggestions: 'Sugerencias',
-		NotAttend : 'No Asistire'
+		NotAttend : 'No Asistire',
+		MinPersons : 'Minimo de Personas',
+		Find :'Buscar'
 	});
 });
