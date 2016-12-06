@@ -26,7 +26,7 @@ $scope.finish = function() {
     event2:null,
     }).success(function(){
       $scope.updateTour();
-      $location.path('/events');
+      $location.path('/myTours');
       window.alert("El tour se agrego correctamente.");
     })
   }

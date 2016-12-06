@@ -13,6 +13,7 @@ public class LogSistem extends Entity{
 	private static final long serialVersionUID = 257044326221376677L;
 	public Map<String,String> users;
 	
+	//public LogSistem(){}
 	public LogSistem(){
 		this.users = new HashMap<String, String>(); //kEY -> UserName //VALUE -> Password
 	}

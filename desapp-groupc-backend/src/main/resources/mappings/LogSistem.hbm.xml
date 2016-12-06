@@ -7,10 +7,10 @@
 		<id column="ID" name="id">
 			<generator class="native" />
 		</id>
-		<!-- <map name="users" cascade="all">
-         <key column="users"/>
-         <index column="users_type" type="string"/>
-         <one-to-many class="domain.User"/>
-      </map> -->
+		<map name="users" table="allUser" lazy="false">
+			<key column="users_id" />
+			<map-key type="text" column="user_userName" />
+			<element type="text" column="user_password" />
+		</map>
 	</class>
 </hibernate-mapping>

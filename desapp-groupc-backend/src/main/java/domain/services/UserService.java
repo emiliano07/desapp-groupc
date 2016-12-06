@@ -24,8 +24,7 @@ public class UserService extends GenericService<User>{
 	private UserRepository userRepository;
 	private EventRepository eventRepository;
 
-	public UserService() {
-	}
+	public UserService() {}
 
 	public UserService(UserRepository userRepository,EventRepository eventRepository) {
 		this.userRepository = userRepository;
@@ -111,7 +110,12 @@ public class UserService extends GenericService<User>{
 	 }
 	 
 	 @Transactional
-	 public List<Event> getEvents(User user,TypeOfTour typeOfTour,DateTime date, TypeOfScheduler scheduler,int limitAmount, int friendsSelect){
+	 public List<Event> getEvents1(User user,TypeOfTour typeOfTour,DateTime date, TypeOfScheduler scheduler,int limitAmount, int friendsSelect){
+		 return user.newTour(typeOfTour, date, scheduler, limitAmount, friendsSelect).getEventOptions1();
+	 }
+	 
+	 @Transactional
+	 public List<Event> getEvents2(User user,TypeOfTour typeOfTour,DateTime date, TypeOfScheduler scheduler,int limitAmount, int friendsSelect){
 		 return user.newTour(typeOfTour, date, scheduler, limitAmount, friendsSelect).getEventOptions1();
 	 }
 }

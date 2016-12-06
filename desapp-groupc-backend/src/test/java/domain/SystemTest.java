@@ -17,8 +17,8 @@ public class SystemTest {
 	@Test
     public void newTour() {
 		User user = UserBuilder.aUser().build();
-		user.newTour(TypeOfTour.GASOLERA, new DateTime(), TypeOfScheduler.MORNING, 500, 0);
-		Assert.assertEquals(TypeOfTour.GASOLERA, user.tours.get(0).getType());
+		Tour tour = user.newTour(TypeOfTour.GASOLERA, new DateTime(), TypeOfScheduler.MORNING, 500, 0);
+		Assert.assertEquals(TypeOfTour.GASOLERA, tour.getType());
 	}
 	
 	@Test
@@ -61,8 +61,8 @@ public class SystemTest {
 		user.getSistem().addEvent(event03);
 		Tour t = user.newTour(TypeOfTour.GASOLERA, new DateTime(), TypeOfScheduler.NIGHT, 300, 2);
 		user.getSistem().generateEventOptions(t);
-		user.getSistem().selectEvent1ForATour(event02, user.getTours().get(0));
-		Assert.assertEquals(1, user.getTours().get(0).eventOptions2.size());
-		Assert.assertEquals(event03, user.getTours().get(0).eventOptions2.get(0));
+		user.getSistem().selectEvent1ForATour(event02, t);
+		Assert.assertEquals(1, t.eventOptions2.size());
+		Assert.assertEquals(event03, t.eventOptions2.get(0));
 	}
 }

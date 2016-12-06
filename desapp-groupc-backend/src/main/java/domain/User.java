@@ -79,19 +79,18 @@ public class User extends Entity{
 	}
 	
 	public void addEvent(Event event){
-		//this.sistem.addEvent(event);
+		this.sistem.addEvent(event);
 		this.events.add(event);
 	}
 	
 	public void removeEvent(Event event){
-		//this.sistem.addEvent(event);
-		this.events.add(event);
+		this.sistem.removeEvent(event);
+		this.events.remove(event);
 	}
 
 	public Tour newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, int friends){
-		Tour tour = new Tour(typeOfTour, date, scheduler, limitAmount, friends);//this.sistem.newTour(typeOfTour, date, scheduler, limitAmount, friends);
-		this.tours.add(tour);
-		return tour;
+		Tour tour = new Tour(typeOfTour, date, scheduler, limitAmount, friends);
+		return this.sistem.generateEventOptions(tour);
 	}
 
 	public void acceptTour(Tour tour){
@@ -122,8 +121,8 @@ public class User extends Entity{
 	}
 	
 	public void acceptFriend(User friend){
-		this.friends.add(friend);
-		friend.getFriends().add(this);
+		this.addFriend(friend);
+		friend.addFriend(this);
 	}
 	
 	public void cancelFriend(User friend){
@@ -202,19 +201,19 @@ public class User extends Entity{
 		this.profile = profile;
 	}
 	
-	public void setTours(ArrayList<Tour> tours) {
+	public void setTours(List<Tour> tours) {
 		this.tours = tours;
 	}
 	
-	public void setEvents(ArrayList<Event> events) {
+	public void setEvents(List<Event> events) {
 		this.events = events;
 	}
 
-	public void setFriendsRequests(ArrayList<User> friendsRequests) {
+	public void setFriendsRequests(List<User> friendsRequests) {
 		this.friendsRequests = friendsRequests;
 	}
 
-	public void setFriends(ArrayList<User> friends) {
+	public void setFriends(List<User> friends) {
 		this.friends = friends;
 	}
 	
@@ -230,7 +229,6 @@ public class User extends Entity{
 		this.image = image;
 	}
 	
-    
     public GoogleOauthCredential getToken() {
         return token;
     }

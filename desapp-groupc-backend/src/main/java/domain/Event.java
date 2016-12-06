@@ -72,7 +72,7 @@ public class Event extends Entity{
 		return this.limitOfPersons;
 	}
 	
-	public void setSuggestions(ArrayList<Event> suggestions) {
+	public void setSuggestions(List<Event> suggestions) {
 		this.suggestions = suggestions;
 	}
 

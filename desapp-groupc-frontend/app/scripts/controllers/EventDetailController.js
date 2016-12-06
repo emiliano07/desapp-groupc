@@ -48,11 +48,12 @@ $scope.details = function(eventt) {
         zoom : 11
     });
 
-  /*var marker = new google.maps.Marker({
+  var marker = new google.maps.Marker({
           map: map,
-          position: buenosAires,
-          title: 'Hello World!'
-  });*/
+          position: {lat:-34.5858548,lng:-58.4335074},
+          title: 'Rosebar'
+  });
+
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
   directionsDisplay.setMap(map);

@@ -19,13 +19,13 @@ angular.module('stain').controller('EventsForTourController', ["$http", "$log","
   $scope.selectEvent1 = function(event){
     $scope.eventSelected1 = event.nameOfEvent;
     $scope.newLimitAmount = ($scope.limitAmount - event.amount);
-    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/eventsForTour/1/' + $scope.typeOfTour + '/' + $scope.scheduler + '/' + $scope.newLimitAmount + '/' + $scope.friendsSelected).then(succEvent1).catch(fail);
+    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/eventsForTour2/1/' + $scope.typeOfTour + '/' + $scope.scheduler + '/' + $scope.newLimitAmount + '/' + $scope.friendsSelected).then(succEvent2).catch(fail);
   };
 
   $scope.selectEvent2 = function(event){
     $scope.eventSelected2 = event.nameOfEvent;
-    $scope.newLimitAmount = ($scope.limitAmount - event.amount);
-    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/eventsForTour/1/' + $scope.typeOfTour + '/' + $scope.scheduler + '/' + $scope.newLimitAmount + '/' + $scope.friendsSelected).then(succEvent2).catch(fail);
+    $scope.newLimitAmount = ($scope.limitAmount - event.amount);   
+    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/eventsForTour1/1/' + $scope.typeOfTour + '/' + $scope.scheduler + '/' + $scope.newLimitAmount + '/' + $scope.friendsSelected).then(succEvent1).catch(fail);
   };
 
   function succEvents(response){
@@ -33,11 +33,11 @@ angular.module('stain').controller('EventsForTourController', ["$http", "$log","
     $scope.eventsForTour2 = response.data;
   }
 
-  function succEvent1(response){
+  function succEvent2(response){
     $scope.eventsForTour2 = response.data;
   }
 
-  function succEvent2(response){
+  function succEvent1(response){
     $scope.eventsForTour1 = response.data;
   }
 
@@ -58,6 +58,6 @@ angular.module('stain').controller('EventsForTourController', ["$http", "$log","
       $window.location.href = 'googleMaps.html';
   };
 
-  $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/eventsForTour/1/' + $scope.typeOfTour + '/' + $scope.scheduler + '/' + $scope.limitAmount + '/' + $scope.friendsSelected).then(succEvents).catch(fail);
+  $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/eventsForTour1/1/' + $scope.typeOfTour + '/' + $scope.scheduler + '/' + $scope.limitAmount + '/' + $scope.friendsSelected).then(succEvents).catch(fail);
 
 }]);

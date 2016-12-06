@@ -12,11 +12,6 @@ angular.module('stain').controller("ProfileController", ["$http", "$log","$scope
     $scope.limitAmount = $scope.user.profile.limitAmount;
   }
 
-  function fail(error){
-    $log.error('Ocurrio un error: ' + error.data);
-    return 'Ocurrio un error';
-  }
-
   $scope.save = function(profile){
     $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/updateProfile/1/' + $scope.typeOfFilm + '/' + $scope.typeOfFood + '/' +  $scope.typeOfMusic + '/' +  $scope.limitAmount).then(succUpdateProfile).catch(fail);
   }

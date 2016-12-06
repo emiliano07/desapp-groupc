@@ -3,12 +3,8 @@ package domain;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.joda.time.DateTime;
-
 import domain.exceptions.NoFriendException;
 import domain.exceptions.UserNotExistException;
-import domain.types.TypeOfScheduler;
-import domain.types.TypeOfTour;
 
 public class Sistem extends Entity{
 	
@@ -46,21 +42,19 @@ public class Sistem extends Entity{
 		this.allEvents.add(event);
 	}
 	
+	public void removeEvent(Event event){
+		this.allEvents.remove(event);
+	}
+	
 	public void existsUser(User user) throws Exception{
 		if(! this.users.contains(user)){
 			throw new NoFriendException();
 		}
 	}
 	
-	public Tour newTour(TypeOfTour typeOfTour, DateTime date, TypeOfScheduler scheduler, int limitAmount, int friends){
-		Tour tour = new Tour(typeOfTour, date, scheduler, limitAmount, friends);
-		this.generateEventOptions(tour);
-		return tour;
-	}
-
-	public void generateEventOptions(Tour tour){
-	//Deberia hacer una query que traiga los eventos para una fecha, horario, limite de personas y monto indicados
-		ArrayList<Event> events = new ArrayList<Event>();
+	public Tour generateEventOptions(Tour tour){
+	//Deberia hacer una query que traiga los eventos para una fecha, horario, limite de personas y monto indicados?
+		List<Event> events = new ArrayList<Event>();
 		for(Event event: this.allEvents){
 			if(this.conditionA(event, tour) && this.conditionB(event, tour) && this.conditionC(event, tour) && this.conditionD(event, tour)){
 				events.add(event);
@@ -68,10 +62,12 @@ public class Sistem extends Entity{
 		}
 		tour.setEventOptions1(events);
 		tour.setEventOptions2(events);
+		return tour;
 	}  
 	
 	private Boolean conditionA(Event event, Tour tour){
-		return event.getDate().equals(tour.getDate());
+		//return event.getDate().equals(tour.getDate());
+		return true;
 	}
 	
 	private Boolean conditionB(Event event, Tour tour){
@@ -79,7 +75,7 @@ public class Sistem extends Entity{
 	}
 	
 	private Boolean conditionC(Event event, Tour tour){
-		return event.getLimitOfPersons() <= tour.getFriends();
+		return event.getLimitOfPersons() >= tour.getFriends();
 	}
 	
 	private Boolean conditionD(Event event, Tour tour){
@@ -88,7 +84,6 @@ public class Sistem extends Entity{
 	 
 	public void selectEvent1ForATour(Event event, Tour tour){
 		tour.addEvent1(1, event);
-		tour.eventOptions2.remove(event);
 		this.refreshEvents2(tour);
 	}
 
@@ -97,9 +92,9 @@ public class Sistem extends Entity{
 	}
 	
 	private void refreshEvents2(Tour tour) {
-		ArrayList<Event> result = new ArrayList<Event>();
+		List<Event> result = new ArrayList<Event>();
 		for(Event event: tour.getEventOptions2()){
-			if(this.conditionE(event, tour)){
+			if(this.conditionE(event, tour) && event != tour.event1){
 				result.add(event);
 			}
 		}
@@ -142,5 +137,28 @@ public class Sistem extends Entity{
 
 	public void logOut(String userName) throws Exception{
 		this.obtainUser(userName).setLogged(false);
+	}
+	
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//Getters & Setters
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	public List<User> getUsers() {
+		return users;
+	}
+	public void setUsers(List<User> users) {
+		this.users = users;
+	}
+	public List<Event> getAllEvents() {
+		return allEvents;
+	}
+	public void setAllEvents(List<Event> allEvents) {
+		this.allEvents = allEvents;
+	}
+	public LogSistem getLogSistem() {
+		return logSistem;
+	}
+	public void setLogSistem(LogSistem logSistem) {
+		this.logSistem = logSistem;
 	}
 }

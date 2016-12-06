@@ -1,0 +1,125 @@
+<div style="margin: 10px">
+  <br>
+  <div style="margin: 10px">
+    <table style="width: 100%">
+      <tr>
+        <td  style="padding-right: 0px; padding-bottom: 15px">
+          <img ng-src= {{user.image}}  width="100" height="100" />
+        </td>
+        <td style="padding-right: 0px; padding-bottom: 15px">
+          <div style="font-size: 25px; padding-top: 20px"><b>{{user.nameOfUser}}</b></div>
+        </td>
+      </tr>
+    </table>
+
+    <ul class="tab">
+      <li><a href="javascript:void(0)" class="tablinks" ng-click="openTab('Datos')">{{'Dates' | translate}}</a></li>
+      <li><a href="javascript:void(0)" class="tablinks" ng-click="openTab('Gustos')">{{'Pleassures' | translate}}</a></li>
+      <li><a href="javascript:void(0)" class="tablinks" ng-click="openTab('Amigos')">{{'Friends' | translate}}</a></li>
+    </ul>
+
+    <div id="Datos" class="tabcontent">
+      <h3><b><u>{{'Dates' | translate}}</u></b></h3>
+      <br>
+      <table>
+        <tr>
+          <td style="padding-right: 20px">
+            <p><b>{{'Username' | translate}}:</b></p>
+          </td>
+          <td style="padding-right: 20px">
+            <p>{{user.userName}}</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-right: 20px">
+            <p><b>{{'Mail' | translate}}:</b></p>
+          </td>
+          <td style="padding-right: 20px">
+            <p>{{user.mail}}</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Gustos" class="tabcontent">
+      <h3><b><u>{{'Pleassures' | translate}}</u></b></h3>
+      <br>
+      <table style="width: 100%">
+        <tr>
+          <td style="padding-right: 20px">
+            <table style="width: 100%">
+              <tr>
+                <td style="padding-right: 0px; padding-bottom: 15px">
+                  <b>{{'TypeOfFilm' | translate}}:</b>
+                </td>
+                <td style="padding-right: 0px; padding-bottom: 15px">
+                  <div>{{user.profile.typeOfFilm}}</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right: 0px; padding-bottom: 15px">
+                  <b>{{'TypeOfMusic' | translate}}:</b>
+                </td>
+                <td style="padding-right: 0px; padding-bottom: 15px">
+                  <div>{{user.profile.typeOfMusic}}</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right: 0px; padding-bottom: 15px">
+                  <b>{{'TypeOfFood' | translate}}:</b>
+                </td>
+                <td style="padding-right: 0px; padding-bottom: 15px">
+                  <div>{{user.profile.typeOfFood}}</div>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-right: 0px; padding-bottom: 15px">
+                  <b>{{'LimitAmount' | translate}}:</b>
+                </td>
+                <td style="padding-right: 0px; padding-bottom: 15px">
+                  <div>{{user.profile.limitAmount}}</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Amigos" class="tabcontent">
+      <h3><b><u>{{'Friends' | translate}}</u></b></h3>
+      <br>
+      <table style="width: 100%">
+        <tr>
+          <td style="padding-right: 0px; padding-bottom: 15px; padding-right: 10px">
+            <b>{{'Friends' | translate}}:</b>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-right: 10px">
+            <div style="overflow-y: scroll; height: 200px; width: 100%">
+              <div ng-repeat="friend in friends" style="margin-bottom: 10px">
+                <table>
+                  <tr>
+                    <td style="padding-right: 10px; height: 50px">
+                      <img style="width: 50px; height: 50px" ng-src= {{friend.image}} width="50" height="50" />
+                    </td>
+                    <td>
+                      <table>
+                        <tr style="padding-bottom: 5px">
+                          <td>
+                            <a href="#friendProfile/{{friend.id}}">{{friend.nameOfUser}}</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>  
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

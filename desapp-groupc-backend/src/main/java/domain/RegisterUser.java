@@ -10,9 +10,7 @@ public class RegisterUser extends Entity {
 	private String password;
 	private User user;
 
-	public RegisterUser() {
-	}
-
+	public RegisterUser() {}
 	public RegisterUser(String email, String password, User user) {
 		this.email = email;
 		this.password = password;

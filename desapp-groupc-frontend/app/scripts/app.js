@@ -23,6 +23,11 @@ angular.module("stain", [
     controller: "ProfileController"
   });
 
+  $routeProvider.when('/friendProfile/:idFriend', {
+    templateUrl: "views/friendProfile.html",
+    controller: "FriendProfileController"
+  });
+
   $routeProvider.when('/newEvent', {
     templateUrl: "views/newEvent.html",
     controller: "NewEventController"

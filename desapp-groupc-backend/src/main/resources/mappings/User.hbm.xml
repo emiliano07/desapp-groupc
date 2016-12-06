@@ -7,6 +7,7 @@
 		<id column="ID" name="id">
 			<generator class="native" />
 		</id>
+		<one-to-one name="sistem" class="domain.Sistem"/>
 		<property name="userName" />
 		<property name="password" />
 		<property name="mail" />

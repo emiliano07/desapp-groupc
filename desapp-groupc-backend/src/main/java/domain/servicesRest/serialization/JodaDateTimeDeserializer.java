@@ -1,17 +1,17 @@
 package domain.servicesRest.serialization;
 
+import java.io.IOException;
+
+import org.joda.time.DateTime;
+import org.joda.time.ReadableInstant;
+
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.deser.std.StdScalarDeserializer;
-import com.fasterxml.jackson.datatype.joda.cfg.JacksonJodaDateFormat;
-import com.fasterxml.jackson.datatype.joda.deser.DateTimeDeserializer;
-import domain.servicesRest.DateTimeTransformer;
-import org.joda.time.DateTime;
-import org.joda.time.ReadableInstant;
 
-import java.io.IOException;
+import domain.servicesRest.DateTimeTransformer;
 
 /**
  * Created by prospero on 6/2/16.

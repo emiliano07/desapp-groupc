@@ -63,7 +63,7 @@
             <div style="overflow-y: scroll; height: 150px" >
               <div ng-repeat="friend in friends">
                 <img style="width: 30px; height: 30px" ng-src= {{friend.image}}  width="50" height="50" />
-                <a href="#profile">{{friend.nameOfUser}}</a>
+                <a href="#friendProfile/{{friend.id}}">{{friend.nameOfUser}}</a>
                 <br>
                 <br>
               </div>
@@ -144,6 +144,7 @@
   <script src="scripts/controllers/EventsForTourController.js"></script>
   <script src="scripts/controllers/TourCompleteController.js"></script>
   <script src="scripts/controllers/EventDetailController.js"></script>
+  <script src="scripts/controllers/FriendProfileController.js"></script>
 
   <script src="bower_components/angular-translate/angular-translate.js"></script>
 

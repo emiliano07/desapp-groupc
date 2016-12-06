@@ -75,7 +75,6 @@ public class UserRest {
 		User user = userService.getUserRepository().findById(id);
 		User newFriend = userService.getUserRepository().findById(idFriend);
 		user.addFriend(newFriend);
-		
 		//userService.delete(user);
 		//userService.save(user);
 		return user.getFriends();
@@ -205,12 +204,21 @@ public class UserRest {
 	
 	//@PathParam("date") final DateTime date,/{date}
 	@GET
-	@Path("/eventsForTour/{userId}/{type}/{scheduler}/{limitAmount}/{friendsSelect}")
+	@Path("/eventsForTour1/{userId}/{type}/{scheduler}/{limitAmount}/{friendsSelect}")
 	@Produces("application/json")
-	public List<Event> getProfileOfAUser(@PathParam("userId") final int id,@PathParam("type") final TypeOfTour type,@PathParam("scheduler") final TypeOfScheduler scheduler,@PathParam("limitAmount") final int limitAmount,@PathParam("friendsSelect") final int friendsSelect) {
+	public List<Event> eventsForTour1(@PathParam("userId") final int id,@PathParam("type") final TypeOfTour type,@PathParam("scheduler") final TypeOfScheduler scheduler,@PathParam("limitAmount") final int limitAmount,@PathParam("friendsSelect") final int friendsSelect) {
 		User user = userService.getUserRepository().findById(id);
-		return userService.getEvents(user,type,new DateTime(),scheduler,limitAmount,friendsSelect);
+		return userService.getEvents1(user,type,new DateTime(),scheduler,limitAmount,friendsSelect);
 	}
+	
+	//@PathParam("date") final DateTime date,/{date}
+		@GET
+		@Path("/eventsForTour2/{userId}/{type}/{scheduler}/{limitAmount}/{friendsSelect}")
+		@Produces("application/json")
+		public List<Event> eventsForTour2(@PathParam("userId") final int id,@PathParam("type") final TypeOfTour type,@PathParam("scheduler") final TypeOfScheduler scheduler,@PathParam("limitAmount") final int limitAmount,@PathParam("friendsSelect") final int friendsSelect) {
+			User user = userService.getUserRepository().findById(id);
+			return userService.getEvents2(user,type,new DateTime(),scheduler,limitAmount,friendsSelect);
+		}
 	
 	@GET
 	@Path("/userFromSystem/{userId}")
@@ -231,5 +239,12 @@ public class UserRest {
 	@Produces("application/json")
 	public List<Tour> getToursFromUser(@PathParam("userId") final int id) {
 		return userService.getUserRepository().findById(id).getTours();
+	}
+	
+	@GET
+	@Path("/sistem/{userId}")
+	@Produces("application/json")
+	public List<Event> getEventOfTheSistem(@PathParam("userId") final int id) {
+		return userService.getUserRepository().findById(id).getSistem().getAllEvents();
 	}
 }
