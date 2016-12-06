@@ -12,13 +12,13 @@ $scope.event = MyService.data.event;
 
 $scope.assistt = function() {
   $http.post('http://localhost:8080/desapp-groupc-backend/rest/user/assist/1/' + $scope.event.id , {}).success(function(){
-    $scope.assist = "Asistire";
+    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/assistEvent/1/' + $scope.event.id).then(succ).catch(fail);
   })
 };
 
 $scope.notAssist = function() {
   $http.post('http://localhost:8080/desapp-groupc-backend/rest/user/notAssist/1/' + $scope.event.id , {}).success(function(){
-    $scope.assist = "No Asistire";
+    $http.get('http://localhost:8080/desapp-groupc-backend/rest/user/assistEvent/1/' + $scope.event.id).then(succ).catch(fail);
   })
 };
 
@@ -146,11 +146,7 @@ $scope.details = function(eventt) {
 /*-------------------------------------------------------------------------------------------*/
 
 function succ(response){
-  if (!response.data) {
-    $scope.assist = "Asistire";
-  } else {
-    $scope.assist = "No Asistire";
-  }
+  $scope.assist = response.data;
 }
 
   function fail(error){

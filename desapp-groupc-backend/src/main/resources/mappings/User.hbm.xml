@@ -34,7 +34,7 @@
 		<one-to-one name="token" class="domain.auth0.GoogleOauthCredential" />
 		<bag name="eventsGo" lazy="false" >
             <key column="eventsGoId" />
-            <many-to-many class="domain.Event"  />
+            <element column="idEvent" type="int"/>
         </bag>
 	</class>
 </hibernate-mapping>

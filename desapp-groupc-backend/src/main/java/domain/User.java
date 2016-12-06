@@ -26,7 +26,7 @@ public class User extends Entity{
 	public String nameOfUser;
 	public String image;
 	public GoogleOauthCredential token;
-	public List<Event> eventsGo; //Eventos que voy a ir
+	public List<Integer> eventsGo; //Eventos que voy a ir
 	
 	public User() {}
 	public User(Sistem sistem, String nameOfUser, String userName, String password, String mail,String image){
@@ -42,7 +42,7 @@ public class User extends Entity{
 		this.logged = false;
 		this.image = image;
 		this.nameOfUser = nameOfUser;
-		this.eventsGo = new ArrayList<Event>();
+		this.eventsGo = new ArrayList<Integer>();
 	}
 	
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -57,25 +57,16 @@ public class User extends Entity{
 		this.tours.add(tour);
 	}
 	
-	public List<Event> myEventsGo(){
-		List<Event> myEventsGo = this.eventsGo;
-		for (Tour t  : this.tours){
-			myEventsGo.add(t.event1);
-			myEventsGo.add(t.event2);
-		}
-		return myEventsGo;
+	public void removeEventGo(Integer id){
+		this.eventsGo.remove(id);
 	}
 	
-	public void removeEventGo(Event event){
-		this.eventsGo.remove(event);
+	public void addEventGo(Integer id){
+		this.eventsGo.add(id);
 	}
 	
-	public void addEventGo(Event event){
-		this.eventsGo.add(event);
-	}
-	
-	public boolean assist(Event event){
-		return this.myEventsGo().contains(event);
+	public boolean assist(Integer key){
+		return this.eventsGo.contains(key);
 	}
 	
 	public void addEvent(Event event){

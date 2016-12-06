@@ -10,17 +10,16 @@
 
 	<div style="overflow-y: scroll; height: 250px; margin-top: 10px">
 		<div class="wrap-col" ng-repeat="event in getEventsForTour1()">
-			<div class="heading">
+			<div style="padding-bottom: 5px:" class="heading">
 				<div style="font-size: 20px"><b>{{event.nameOfEvent}}</b>
 				</div>
 				<div class="info">{{event.scheduler}} - {{event.address}}
-					<button ng-click="verMapa()">{{'Ubicacion' | translate}}</button>
 				</div>
 			</div>
 			<auto;class="content">
 			<table>
 				<tr>
-					<td>
+					<td style="height: 175px;width: 200px">
 						<img ng-src= {{event.image}}  width="750" height="750"/>
 					</td>
 					<td style="padding-left: 10px">
@@ -39,17 +38,16 @@
 
 	<div style="overflow-y: scroll; height: 250px; margin-top: 10px">
 		<div class="wrap-col" ng-repeat="event in getEventsForTour2()">
-			<div class="heading">
+			<div style="padding-bottom: 5px:" class="heading">
 				<div style="font-size: 20px"><b>{{event.nameOfEvent}}</b>
 				</div>
 				<div class="info">{{event.scheduler}} - {{event.address}}
-					<button ng-click="verMapa()">{{'Ubicacion' | translate}}</button>
 				</div>
 			</div>
 			<auto;class="content">
 			<table>
 				<tr>
-					<td>
+					<td style="height: 175px;width: 200px">
 						<img ng-src= {{event.image}}  width="750" height="750"/>
 					</td>
 					<td style="padding-left: 10px">

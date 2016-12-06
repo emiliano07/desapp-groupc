@@ -1,6 +1,5 @@
 package domain.servicesRest;
 
-import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -8,7 +7,6 @@ import domain.Event;
 import domain.LogSistem;
 import domain.Profile;
 import domain.Sistem;
-import domain.Tour;
 import domain.User;
 import domain.builders.EventBuilder;
 import domain.builders.ProfileBuilder;
@@ -17,7 +15,6 @@ import domain.services.RegisterUserService;
 import domain.services.UserService;
 import domain.types.Type;
 import domain.types.TypeOfScheduler;
-import domain.types.TypeOfTour;
 
 
 public class SetupExampleData {
@@ -191,12 +188,6 @@ public class SetupExampleData {
     	friend03.loadProfile(profileFriend03);
     	friend04.loadProfile(profileFriend04);
     	friend05.loadProfile(profileFriend05);
-    	
-    	//Tours
-    	Tour tour01 = user.newTour(TypeOfTour.GASOLERA, new DateTime(), TypeOfScheduler.NIGHT, 500, 7);
-    	tour01.setEvent1(event01);
-    	tour01.setEvent1(event02);
-    	//user.addTour(tour01);
     	
     	//Guardo el usuario en la base de datos
     	userService.save(user);

@@ -110,6 +110,11 @@ public class UserService extends GenericService<User>{
 	 }
 	 
 	 @Transactional
+	 public void deleteUser(User user) throws StainException {
+		 userRepository.delete(user);
+	 }
+	 
+	 @Transactional
 	 public List<Event> getEvents1(User user,TypeOfTour typeOfTour,DateTime date, TypeOfScheduler scheduler,int limitAmount, int friendsSelect){
 		 return user.newTour(typeOfTour, date, scheduler, limitAmount, friendsSelect).getEventOptions1();
 	 }

@@ -160,32 +160,29 @@ public class UserRest {
 	@POST
     @Path("assist/{userId}/{eventId}")
     @Consumes("application/json")
-    public Response assistEvent(@PathParam("userId") final int idUser,@PathParam("eventId") final int idEvent){
+    public Response assistEvent(@PathParam("userId") final int idUser,@PathParam("eventId") final Integer idEvent) throws StainException{
         User user = userService.getUserRepository().findById(idUser);
-		Event event = eventService.getEventRepository().findById(idEvent);
-		user.addEventGo(event);
-		//userService.updateUser(user);
+		user.addEventGo(idEvent);
+		userService.updateUser(user);
 		return Response.ok().tag("Se actualizo el usuario correctamente").build();
     }
 	
 	@POST
     @Path("notAssist/{userId}/{eventId}")
     @Consumes("application/json")
-    public Response notAssistEvent(@PathParam("userId") final int idUser,@PathParam("eventId") final int idEvent){
+    public Response notAssistEvent(@PathParam("userId") final int idUser,@PathParam("eventId") final Integer idEvent) throws StainException{
         User user = userService.getUserRepository().findById(idUser);
-		Event event = eventService.getEventRepository().findById(idEvent);
-		user.removeEventGo(event);
-		//userService.updateUser(user);
+		user.removeEventGo(idEvent);
+		userService.updateUser(user);
 		return Response.ok().tag("Se actualizo el usuario correctamente").build();
     }
 	
 	@GET
 	@Path("/assistEvent/{userId}/{eventId}")
 	@Produces("application/json")
-	public Boolean assistToAEvent(@PathParam("userId") final int idUser, @PathParam("eventId") final int idEvent) {
+	public Boolean assistToAEvent(@PathParam("userId") final int idUser, @PathParam("eventId") final Integer idEvent) {
 		User user = userService.getUserRepository().findById(idUser);
-		Event event = eventService.getEventRepository().findById(idEvent);
-		return user.assist(event);
+		return user.assist(idEvent);
 	}
 	
 	@GET

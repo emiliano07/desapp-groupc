@@ -86,7 +86,7 @@ angular.module('stain')
 		DeleteFriend : 'Eliminar Amigo',
 		AddFriend : 'Agregar Nuevo Amigo',
 		EventDetails : 'Detalle del Evento',
-		Attend : 'Asitire',
+		Attend : 'Asistire',
 		Map : 'Mapa',
 		Detail : 'Detalle',
 		LimitOfPersons : 'Limite de Personas',
